@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>从硅沙到逻辑门：重拾我的晶体管与逻辑门物理直觉 · 郑鹤</title>
+<meta name="date" content="2026-07-19">
+<meta name="category" content="实践">
+<meta name="summary" content="重拾晶体管与逻辑门物理直觉：从硅掺杂（Doping）、MOSFET 结构到 CMOS 门电路的电流与电场分析，用纯静态交互式 SVG 模拟器和 Python 跑通 Lab 1 NAND 逻辑生成。">
+<meta name="description" content="重拾晶体管与逻辑门物理直觉：从硅掺杂（Doping）、MOSFET 结构到 CMOS 门电路的电流与电场分析，用纯静态交互式 SVG 模拟器和 Python 跑通 Lab 1 NAND 逻辑生成。">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="alternate" type="application/atom+xml" title="郑鹤 · ZhengHe" href="/feed.xml">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/assets/js/site.js"></script>
+<style>
+  /* Local Styles for Interactive Simulators */
+  .sim-container {
+    background: var(--surface-2);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .sim-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+  }
+  .sim-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--ink);
+  }
+  .sim-controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .sim-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--muted);
+    font-size: 12px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .sim-btn:hover {
+    background: var(--surface-2);
+    color: var(--ink);
+  }
+  .sim-btn.active {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 600;
+  }
+  .sim-viewport {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16/10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sim-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  /* SVG elements styling */
+  .svg-wire {
+    fill: none;
+    stroke: var(--line-strong);
+    stroke-width: 3px;
+    transition: stroke 0.2s ease, filter 0.2s ease;
+  }
+  .svg-wire.high {
+    stroke: #859900; /* Solarized Green */
+    filter: drop-shadow(0 0 3px rgba(133, 153, 0, 0.4));
+  }
+  .svg-wire.low {
+    stroke: #dc322f; /* Solarized Red */
+    filter: drop-shadow(0 0 3px rgba(220, 50, 47, 0.4));
+  }
+  .svg-gate {
+    fill: var(--surface-2);
+    stroke: var(--line-strong);
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .svg-gate:hover {
+    stroke: var(--accent);
+    fill: var(--accent-soft);
+  }
+  .svg-gate.active {
+    fill: color-mix(in oklab, var(--accent) 8%, var(--surface));
+    stroke: var(--accent);
+  }
+  .svg-text {
+    fill: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    pointer-events: none;
+    user-select: none;
+  }
+  .svg-text-bold {
+    fill: var(--ink);
+    font-weight: 600;
+  }
+  .svg-node {
+    fill: var(--surface-2);
+    stroke: var(--line-strong);
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .svg-node:hover {
+    transform: scale(1.05);
+    transform-origin: center;
+  }
+  .svg-node.high {
+    fill: #859900;
+    stroke: #859900;
+  }
+  .svg-node.low {
+    fill: #dc322f;
+    stroke: #dc322f;
+  }
+
+  /* MOSFET styles */
+  .region-p {
+    fill: rgba(203, 75, 22, 0.07);
+    stroke: #cb4b16;
+    stroke-width: 1px;
+  }
+  .region-n {
+    fill: rgba(38, 139, 210, 0.07);
+    stroke: #268bd2;
+    stroke-width: 1px;
+  }
+  .region-gate {
+    fill: var(--line-strong);
+    stroke: var(--ink);
+    stroke-width: 1px;
+  }
+  .region-oxide {
+    fill: var(--surface-2);
+    stroke: var(--line-strong);
+    stroke-width: 1.5px;
+  }
+  .channel-n {
+    fill: rgba(38, 139, 210, 0.25);
+  }
+  .channel-p {
+    fill: rgba(220, 50, 47, 0.25);
+  }
+
+  /* Lattice Doping styles */
+  .atom-silicon {
+    fill: var(--surface-2);
+    stroke: var(--line-strong);
+    stroke-width: 2px;
+    transition: all 0.3s ease;
+  }
+  .atom-dopant-n {
+    fill: rgba(38, 139, 210, 0.15);
+    stroke: #268bd2;
+    stroke-width: 2px;
+  }
+  .atom-dopant-p {
+    fill: rgba(220, 50, 47, 0.15);
+    stroke: #dc322f;
+    stroke-width: 2px;
+  }
+  .carrier-electron {
+    fill: #268bd2;
+    stroke: var(--surface);
+    stroke-width: 1.5px;
+    filter: drop-shadow(0 0 3px #268bd2);
+  }
+  .carrier-hole {
+    fill: transparent;
+    stroke: #dc322f;
+    stroke-width: 2px;
+    stroke-dasharray: 2, 2;
+    filter: drop-shadow(0 0 3px #dc322f);
+  }
+  .lattice-bond {
+    stroke: var(--line-strong);
+    stroke-width: 1.5px;
+    opacity: 0.4;
+  }
+  .lattice-bond.active-flow {
+    stroke: var(--accent);
+    stroke-width: 2px;
+  }
+</style>
+</head>
+<body>
+<site-nav></site-nav>
+
+<main class="container">
+  <section class="til-single">
+    <a class="back mono" href="/til/" style="font-size:12px;color:var(--muted);">← TIL</a>
+    <div class="date">2026-07-19</div>
+    <div class="til-card">
+      <h3>从硅沙到逻辑门：重拾我的晶体管与逻辑门物理直觉</h3>
+      <!-- til:body -->
+      <div class="body">
+        <p>作为一个写了多年业务代码和分布式系统的程序员，我一直习惯将底层硬件视为一个黑盒。CPU 就像是一个只听得懂 0 和 1、以超高主频疯狂吞吐指令的无情机器。但每当优化遇到瓶颈，或者看到那些底层的汇编指令时，我总觉得心里缺了点什么——那几十亿个微小的晶体管，究竟是如何仅仅通过通电和断电，就拼凑出如此庞大而复杂的数字帝国的？</p>
+        <p>带着这种好奇，最近我与我的 AI 结对伙伴 Antigravity 从零开始共同设计了这套《Chip Design from the Bottom Up》课程，并决定尝试从最底层的物理原理出发，合作手造一个 CPU。今天把我们一起推敲出来的第一模块 <strong>Physics & Gates（物理与逻辑门）</strong> 的心得，以及合作写出来的这几个交互式模拟器整理记录下来。</p>
+
+        <hr style="border: 0; border-top: 1px solid var(--line); margin: 32px 0;">
+
+        <h2>1. 掺杂硅片（Silicon & Doping）：制造移动的“载流子”</h2>
+        <p>在最底层的物理尺度上，芯片是由<strong>硅（Silicon）</strong>制成的。纯净的单晶硅中，每个硅原子有 4 个价电子，与相邻的 4 个硅原子共享，形成极其稳定的共价键结构。因为所有的价电子都被锁死在共价键里，纯硅在室温下的导电性极差。</p>
+        <p>为了让硅导电，我们需要通过<strong>掺杂（Doping）</strong>强行打破这种平衡。根据掺入杂质的不同，我们可以制造出两种材料：</p>
+        <ul>
+          <li><strong>N型半导体（Negative）：</strong>掺入有 5 个价电子的元素（如磷 P）。其中 4 个价电子形成共价键，多出来的第 5 个电子就会变成自由移动的<strong>负电荷载流子（自由电子）</strong>。</li>
+          <li><strong>P型半导体（Positive）：</strong>掺入只有 3 个价电子的元素（如硼 B）。由于缺少电子，在共价键中会留下一个空位，即<strong>空穴（Hole）</strong>。</li>
+        </ul>
+
+        <div class="analogy-box" style="background: var(--surface-2); border-left: 4px solid var(--accent); padding: 12px 16px; border-radius: 4px; margin: 16px 0;">
+          <div class="analogy-title" style="font-weight: 600; color: var(--accent-ink); font-size: 14px; margin-bottom: 4px;">💡 软件工程师视角</div>
+          <div class="analogy-body" style="font-size: 13.5px; line-height: 1.6; color: var(--muted);">
+            把纯硅晶格想象成一个刚好填满的定长数组。
+            <strong>N型掺杂</strong>就像是往数组里塞入了一个多余的指针（自由电子），它无法在固定槽位安家，因而可以在内存空间中漂移；
+            <strong>P型掺杂</strong>则是故意删掉一个元素留下一个空槽（空穴）。当其他元素移动来填补这个空槽时，空槽本身就在向相反方向移动。
+          </div>
+        </div>
+
+        <p><strong>扫清的第一个直觉迷雾：空穴真的能移动吗？</strong></p>
+        <p>以前我一直觉得“空穴移动”是个反直觉的伪概念，明明空穴什么都不是，怎么能动呢？其实物理上移动的依然是相邻共价键上的电子——电子为了填补空缺而跳跃，但在宏观上，这个“空槽”在向相反的方向不断漂移。将空穴视为一种带正电的“虚拟粒子”，能够极大地简化后续我们对电路电场的定性分析。</p>
+
+        <!-- Doping Simulator -->
+        <div class="sim-container">
+          <div class="sim-header">
+            <span class="sim-title">硅晶格掺杂与载流子漂移模拟器</span>
+            <div class="sim-controls">
+              <button id="dop-mode-int" class="sim-btn active">本征硅 (Si)</button>
+              <button id="dop-mode-n" class="sim-btn">N型 (掺磷 P)</button>
+              <button id="dop-mode-p" class="sim-btn">P型 (掺硼 B)</button>
+              <button id="dop-toggle-field" class="sim-btn" style="margin-left: 8px;">外加电场: OFF</button>
+            </div>
+          </div>
+          <div class="sim-viewport">
+            <svg id="dop-svg" class="sim-svg" viewBox="0 0 500 300">
+              <defs>
+                <marker id="arrow-right" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#859900" />
+                </marker>
+              </defs>
+              <!-- Bounds/Grid background -->
+              <rect width="100%" height="100%" fill="none" />
+              <!-- Covalent Bonds -->
+              <g id="dop-bonds"></g>
+              <!-- Atoms -->
+              <g id="dop-atoms"></g>
+              <!-- Carriers -->
+              <circle id="dop-electron" class="carrier-electron" cx="250" cy="150" r="7" display="none" />
+              <circle id="dop-hole" class="carrier-hole" cx="250" cy="150" r="7" display="none" />
+              <!-- E-Field indicators -->
+              <g id="dop-field-group" display="none">
+                <line x1="120" y1="25" x2="380" y2="25" stroke="#859900" stroke-width="3" stroke-dasharray="5,3" marker-end="url(#arrow-right)" />
+                <text x="250" y="16" class="svg-text svg-text-bold" fill="#859900" text-anchor="middle" font-size="10">电场方向 E (正极 + ──► 负极 -)</text>
+                <text x="35" y="150" class="svg-text svg-text-bold" fill="#859900" text-anchor="middle" font-size="14">+</text>
+                <text x="465" y="150" class="svg-text svg-text-bold" fill="#859900" text-anchor="middle" font-size="14">-</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <p style="font-size: 13px; color: var(--muted); margin-top: -12px; margin-bottom: 24px;">提示：开启外加电场后，可以观察带负电的电子向正极（左）漂移，而带正电的空穴向负极（右）漂移的过程。</p>
+
+        <h2>2. 晶体管即开关（MOSFETs）：电场的双重协奏</h2>
+        <p>让掺杂半导体真正发挥魔力的是<strong>MOSFET（金属-氧化物-半导体场效应晶体管）</strong>，它是现代集成电路最基础的电压控制开关。</p>
+        <p>一个 MOSFET 拥有三个极：<strong>源极 (Source)</strong>、<strong>漏极 (Drain)</strong> 和<strong>栅极 (Gate)</strong>。根据工作机制，它分为两种基本类型：</p>
+        <ul>
+          <li><strong>NMOS：</strong>建立在 P 型衬底上，源极和漏极是两个分离的 N 型区。当栅极电压为 <strong>HIGH (1)</strong> 时，垂直电场将衬底中的电子吸附到表面，在源漏之间形成一条电子通道（沟道），开关导通。</li>
+          <li><strong>PMOS：</strong>建立在 N 型衬底上，源极和漏极是两个分离的 P 型区。当栅极电压为 <strong>LOW (0)</strong> 时，衬底表面的空穴聚集形成空穴沟道，开关导通。</li>
+        </ul>
+
+        <p><strong>物理细节探究一：双重电场机制 (Dual-Field Mechanism)</strong></p>
+        <p>要想晶体管工作，实际上有两个电场在协同起作用：</p>
+        <ol>
+          <li><strong>纵向栅极电场：</strong>负责“建路”。在栅极和衬底之间形成。例如在 NMOS 中，栅极加正高压吸引负电子向上贴紧二氧化硅绝缘层，从而在 P 型衬底表面反型出一层极薄的 N 型沟道。</li>
+          <li><strong>横向源漏电场：</strong>负责“通车”。在源极和漏极之间形成电压差，驱动沟道内的载流子沿着管道定向漂移。</li>
+        </ol>
+
+        <p><strong>物理细节探究二：PN结的“表面抹平” (Junction Penetration)</strong></p>
+        <p>在学习时，我产生过一个疑问：源漏两端的 N+ 区和衬底的 P 区之间明明天然存在反向偏置的 PN 结（耗尽层屏障），电子是怎么从源极跑去漏极的？</p>
+        <p>仔细研读了器件物理才明白：<strong>栅极极板在物理制造上会微微重叠（overlap）源极和漏极的边缘</strong>。当栅极高电平激活时，纵向电场直接将这部分重叠区域下方的衬底表面强行电反型为 N 型。由于这层超薄的表面沟道与源漏区的 N+ 掺杂性质完全一致，表面的 PN 结壁垒直接被“抹平”消除了。电子得以在表面畅通无阻，从而绕过了衬底深处的反向结屏障。</p>
+
+        <!-- MOSFET Simulator -->
+        <div class="sim-container">
+          <div class="sim-header">
+            <span class="sim-title">MOSFET 场效应管静态电场与载流子漂移模拟</span>
+            <div class="sim-controls">
+              <button id="mos-type-nmos" class="sim-btn active">NMOS 晶体管</button>
+              <button id="mos-type-pmos" class="sim-btn">PMOS 晶体管</button>
+              <button id="mos-toggle-gate" class="sim-btn" style="margin-left: 8px;">Gate 栅极输入: LOW (0)</button>
+            </div>
+          </div>
+          <div class="sim-viewport">
+            <svg id="mos-svg" class="sim-svg" viewBox="0 0 500 300">
+              <defs>
+                <marker id="arrow-down" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+                  <path d="M 0 0 L 5 10 L 10 0 z" fill="#6c71c4" />
+                </marker>
+                <marker id="arrow-up" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+                  <path d="M 5 0 L 0 10 L 10 10 z" fill="#6c71c4" />
+                </marker>
+              </defs>
+              <!-- Substrate Body -->
+              <rect x="50" y="110" width="400" height="130" rx="8" id="mos-substrate" class="region-p" />
+              <text x="250" y="225" id="mos-sub-label" class="svg-text svg-text-bold" fill="#586e75" font-size="11" text-anchor="middle">p-type Substrate (Holes)</text>
+
+              <!-- Source & Drain Wells -->
+              <rect x="80" y="110" width="80" height="50" rx="4" id="mos-source-well" class="region-n" />
+              <text x="120" y="142" id="mos-source-label" class="svg-text svg-text-bold" font-size="14" text-anchor="middle">n+</text>
+              <text x="120" y="100" class="svg-text svg-text-bold" font-size="10" text-anchor="middle">Source (源)</text>
+
+              <rect x="340" y="110" width="80" height="50" rx="4" id="mos-drain-well" class="region-n" />
+              <text x="380" y="142" id="mos-drain-label" class="svg-text svg-text-bold" font-size="14" text-anchor="middle">n+</text>
+              <text x="380" y="100" class="svg-text svg-text-bold" font-size="10" text-anchor="middle">Drain (漏)</text>
+
+              <!-- Insulating Dielectric (SiO2) -->
+              <rect x="160" y="98" width="180" height="12" rx="2" class="region-oxide" />
+              <text x="250" y="107" class="svg-text" font-size="8" fill="#586e75" text-anchor="middle">Oxide Layer (SiO₂)</text>
+
+              <!-- Gate Electrode -->
+              <rect x="180" y="60" width="140" height="38" rx="4" class="region-gate" />
+              <text x="250" y="84" class="svg-text svg-text-bold" fill="#fff" font-size="12" text-anchor="middle">Gate (栅)</text>
+
+              <!-- Contacts -->
+              <rect x="110" y="106" width="20" height="4" fill="#93a1a1" />
+              <rect x="370" y="106" width="20" height="4" fill="#93a1a1" />
+
+              <!-- External wires -->
+              <path d="M 80 40 L 120 40 L 120 106" stroke="#586e75" stroke-width="2" fill="none" />
+              <circle cx="80" cy="40" r="5" id="mos-wire-s-dot" fill="#dc322f" />
+              <text x="80" y="28" id="mos-wire-s-txt" class="svg-text svg-text-bold" font-size="9" text-anchor="middle">Vs = 0V (GND)</text>
+
+              <path d="M 250 40 L 250 60" stroke="#586e75" stroke-width="2" fill="none" />
+              <circle cx="250" cy="40" r="5" id="mos-wire-g-dot" fill="#dc322f" />
+              <text x="250" y="28" id="mos-wire-g-txt" class="svg-text svg-text-bold" font-size="9" text-anchor="middle">Vg = 0V (LOW)</text>
+
+              <path d="M 420 40 L 380 40 L 380 106" stroke="#586e75" stroke-width="2" fill="none" />
+              <circle cx="420" cy="40" r="5" id="mos-wire-d-dot" fill="#859900" />
+              <text x="420" y="28" id="mos-wire-d-txt" class="svg-text svg-text-bold" font-size="9" text-anchor="middle">Vd = 5V (VDD)</text>
+
+              <!-- Gate Electric Field Lines -->
+              <g id="mos-efield-lines"></g>
+
+              <!-- Induced Channel -->
+              <rect x="160" y="110" width="180" height="12" id="mos-channel" fill="none" opacity="0" />
+
+              <!-- Carrier particles -->
+              <g id="mos-particles"></g>
+            </svg>
+          </div>
+        </div>
+
+        <h2>3. CMOS 互补之美与 NAND 万物起源（CMOS & NAND Logic）</h2>
+        <p>早期的芯片为了省事只使用单一类型的晶体管（如纯 NMOS）搭配被动的上拉电阻。但这种电路在输出低电平时，上拉电阻会一直有电流直通 Ground，静止状态下会疯狂白白烧电。为了解决这个致命缺点，集成电路进入了 <strong>CMOS（互补型金属氧化物半导体）</strong>时代。</p>
+        <p>CMOS 的核心逻辑极其优雅：<strong>上拉网络（Pull-up network）全部使用 PMOS 晶体管将输出连接至 VDD（电源）；下拉网络（Pull-down network）全部使用 NMOS 晶体管将输出连接至 GND（地）。</strong></p>
+        <p>因为 PMOS 和 NMOS 在相反的栅极电平信号下导通，所以在任何时刻，这两个网络中<strong>必定有一个断开，另一个接通</strong>。VDD 到 GND 之间永远不会存在直通路径。这就保证了 CMOS 电路在静止状态下几乎零功耗，<strong>只有在状态翻转、充电放电的一瞬间才会产生动态功耗</strong>。这也是现代芯片能塞入几十亿晶体管而不被瞬间烧毁的基础。</p>
+
+        <p><strong>为什么 NAND 是真正的 Universal Gate（万能逻辑门）？</strong></p>
+        <p>我们在软件课上学逻辑，最先接触的是 AND（与）和 OR（或）。但到了晶体管物理层面，AND/OR 反而是奢侈品。</p>
+        <p>由于 CMOS 电路输出端通常在上下拉网络交接处，它天生是反相的：一个 NAND（与非门）或者 NOR（或非门）只需要 4 个晶体管。如果你非要做一个 AND 门，你必须先用 4 个晶体管做出 NAND 门，然后再屁股后面接一个由 2 个晶体管组成的 NOT 反相器，总共需要 6 个晶体管！</p>
+        <p>多两个晶体管意味着多 50% 的面积和功耗。因此，在物理硬件的构建中，NAND/NOR 才是真正的一等公民和万物基石。通过把 NAND 门交错组合，我们可以低成本地搭出任何逻辑门，乃至于构建出完整的中央处理器。</p>
+
+        <!-- CMOS Schematic Viewer -->
+        <div class="sim-container">
+          <div class="sim-header">
+            <span class="sim-title">CMOS 逻辑门级晶体管级电路图交互模拟</span>
+            <div class="sim-controls">
+              <button id="gate-type-not" class="sim-btn">NOT 反相器</button>
+              <button id="gate-type-nand" class="sim-btn active">NAND 与非门</button>
+              <button id="gate-type-nor" class="sim-btn">NOR 或非门</button>
+              <div style="flex-grow: 1;"></div>
+              <button id="gate-toggle-a" class="sim-btn">输入 A: 0</button>
+              <button id="gate-toggle-b" class="sim-btn">输入 B: 0</button>
+            </div>
+          </div>
+          <div class="sim-viewport">
+            <div id="gate-sim-viewport" style="width:100%; height:100%;"></div>
+          </div>
+        </div>
+
+        <p style="font-size: 13px; color: var(--muted); margin-top: -12px; margin-bottom: 24px;">提示：点击左侧按钮切换逻辑门，点击右上角或图中的圆形节点 A/B 可以改变输入值，绿线代表高电平 (1)，红线代表低电平 (0)。</p>
+
+        <h2>4. Lab 1 实践：仅使用 NAND 组装万物</h2>
+        <p>理解了理论后，Lab 1 要求我们做一件很硬核的事：除了一个基本的 <code>nand(a, b)</code> 原语，<strong>禁用所有 Python 自带的逻辑操作符</strong>（如 <code>and</code>, <code>or</code>, <code>not</code>, <code>^</code>），手造出 NOT、AND、OR、XOR 门以及 2选1 多路复用器（MUX）。</p>
+        <p>这里面蕴含的逻辑证明推导非常有意思：</p>
+
+        <h3>1. NOT 门：信号自我复制</h3>
+        <p>NOT 门最简单，把 NAND 门的两个输入端绑定即可。当输入为 A 时，<code>nand(A, A)</code> 即相当于 <code>NOT (A AND A) = NOT A</code>。</p>
+        <pre><code class="language-python">def not_gate(a):
+    return nand(a, a)</code></pre>
+
+        <h3>2. AND 门：双重否定即肯定</h3>
+        <p>NAND 是“与非”，那么把 NAND 的输出再取反，不就是 AND 了吗？</p>
+        <pre><code class="language-python">def and_gate(a, b):
+    n = nand(a, b)
+    return nand(n, n)  # 相当于 not_gate(nand(a, b))</code></pre>
+
+        <h3>3. OR 门：德·摩根定律（De Morgan's Laws）</h3>
+        <p>如何用“与”逻辑拼出“或”？根据德·摩根定律：<code>A OR B = NOT (NOT A AND NOT B)</code>。利用 NAND 代替外层的 <code>NOT AND</code> 关系，直接得到 <code>OR(A, B) = NAND(NOT A, NOT B)</code>：</p>
+        <pre><code class="language-python">def or_gate(a, b):
+    not_a = nand(a, a)
+    not_b = nand(b, b)
+    return nand(not_a, not_b)</code></pre>
+
+        <h3>4. XOR 门：守卫与过滤器架构（Watchdog & Filters）</h3>
+        <p>异或门（XOR）稍微复杂一些，它要求输入不同才输出 1。最经典的实现仅需 4 个 NAND 门。我们可以将其拆解为一个极具物理直觉的“两级过滤”架构：</p>
+        <ul>
+          <li><strong>Gate 1（守卫/Watchdog）：</strong> 计算 <code>N1 = NAND(A, B)</code>。它的作用是防守：当且仅当 A 和 B 同时为 1 时输出 0（报警）。</li>
+          <li><strong>Gate 2 & 3（过滤器/Filters）：</strong> 分别计算 <code>N2 = NAND(A, N1)</code> 和 <code>N3 = NAND(B, N1)</code>。如果守卫报警输出为 0，这两个过滤器会被强行关停（都输出 1）。否则，它们起到“信号筛选”作用。</li>
+          <li><strong>Gate 4（裁决者/Decision Maker）：</strong> 计算 <code>NAND(N2, N3)</code>。它决定了最终的异或输出。</li>
+        </ul>
+        <pre><code class="language-python">def xor_gate(a, b):
+    n1 = nand(a, b)      # 守卫检测
+    n2 = nand(a, n1)     # 过滤器 A
+    n3 = nand(b, n1)     # 过滤器 B
+    return nand(n2, n3)  # 最终裁决</code></pre>
+
+        <h3>5. MUX 门：2选1选择器</h3>
+        <p>多路复用器（MUX）通过一个选择信号 Sel 来路由数据：如果 Sel=0，输出 A；如果 Sel=1，输出 B。逻辑表达式为 <code>(A AND NOT Sel) OR (B AND Sel)</code>。</p>
+        <p>再次利用德·摩根定律双重否定展开，化简为 NAND 门的嵌套形式：</p>
+        <pre><code class="language-python">def mux(a, b, sel):
+    not_sel = nand(sel, sel)
+    n1 = nand(a, not_sel)  # 通道 A 选通
+    n2 = nand(b, sel)      # 通道 B 选通
+    return nand(n1, n2)    # 混合汇总</code></pre>
+
+        <p>在本地终端运行 <code>python3 labs/lab1_nand_logic.py</code>，随着五个单元测试全部亮起绿色 <code>✅ PASSED</code>，再到最后的 <code>🎉 Congratulations! All Lab 1 logic gates passed successfully!</code>，那种亲手用最小的沙粒垒起高楼的快乐，是调库调包绝对无法给予的。</p>
+
+        <h2>结语</h2>
+        <p>从纯净无瑕的硅原子，到通过掺杂引入自由电子和空穴，再到通过电场控制结壁垒消除形成导电沟道——晶体管这种微小的物理开关，本质上是在用量子和电磁规律控制电流的形态。而当我们将 PMOS 与 NMOS 互补地编在一起，就建立起了一个不会空转漏电的稳定逻辑世界。在这个世界上，仅仅靠着一扇简单的“与非门”，就能衍生出繁衍出万物的逻辑算术体系。</p>
+        <p>第一模块虽然基础，但帮我彻底打破了晶体管黑盒，重塑了物理直觉。下一模块将进入 <strong>Arithmetic & ALUs</strong>，开始研究如何用这些纯物理逻辑门去搭出半加器、全加器，以及 CPU 的计算大脑——算术逻辑单元（ALU）。</p>
+        <p>期待下一次在逻辑层上的相遇！</p>
+      </div>
+      <!-- /til:body -->
+    </div>
+  </section>
+</main>
+
+<site-footer></site-footer>
+
+<!-- Embedded Interactive Scripts -->
+<script>
+  // ---------------------------------------------------- Doping Simulator JS
+  (function() {
+    const state = {
+      mode: 'intrinsic', // 'intrinsic', 'n-type', 'p-type'
+      fieldOn: false
+    };
+
+    const svg = document.getElementById('dop-svg');
+    const atomsGroup = document.getElementById('dop-atoms');
+    const bondsGroup = document.getElementById('dop-bonds');
+    const electron = document.getElementById('dop-electron');
+    const hole = document.getElementById('dop-hole');
+    const fieldGroup = document.getElementById('dop-field-group');
+
+    // Layout configuration
+    const spacingX = 130;
+    const spacingY = 100;
+    const originX = 120;
+    const originY = 50;
+
+    const atoms = [];
+    const bonds = [];
+
+    // Create 3x3 Grid of Atoms
+    for (let row = 0; row < 3; row++) {
+      for (let col = 0; col < 3; col++) {
+        const x = originX + col * spacingX;
+        const y = originY + row * spacingY;
+        const isCenter = (row === 1 && col === 1);
+        atoms.push({ x, y, isCenter });
+      }
+    }
+
+    // Render static atoms & bonds
+    function renderLattice() {
+      atomsGroup.innerHTML = '';
+      bondsGroup.innerHTML = '';
+
+      // Render Bonds first (so they draw underneath atoms)
+      for (let i = 0; i < atoms.length; i++) {
+        const a1 = atoms[i];
+        for (let j = i + 1; j < atoms.length; j++) {
+          const a2 = atoms[j];
+          const dx = Math.abs(a1.x - a2.x);
+          const dy = Math.abs(a1.y - a2.y);
+          if ((dx === spacingX && dy === 0) || (dx === 0 && dy === spacingY)) {
+            const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', a1.x);
+            line.setAttribute('y1', a1.y);
+            line.setAttribute('x2', a2.x);
+            line.setAttribute('y2', a2.y);
+            line.setAttribute('class', 'lattice-bond');
+            bondsGroup.appendChild(line);
+            bonds.push({ element: line, p1: a1, p2: a2 });
+          }
+        }
+      }
+
+      // Render Atoms
+      atoms.forEach(atom => {
+        const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        circle.setAttribute('cx', atom.x);
+        circle.setAttribute('cy', atom.y);
+        circle.setAttribute('r', atom.isCenter ? 24 : 18);
+        circle.setAttribute('class', 'atom-silicon');
+        if (atom.isCenter) circle.setAttribute('id', 'dop-center-atom');
+        g.appendChild(circle);
+
+        const txt = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        txt.setAttribute('x', atom.x);
+        txt.setAttribute('y', atom.y + 4);
+        txt.setAttribute('text-anchor', 'middle');
+        txt.setAttribute('class', 'svg-text svg-text-bold');
+        txt.setAttribute('font-size', atom.isCenter ? '12px' : '10px');
+        txt.textContent = 'Si';
+        if (atom.isCenter) txt.setAttribute('id', 'dop-center-label');
+        g.appendChild(txt);
+
+        atomsGroup.appendChild(g);
+      });
+    }
+
+    renderLattice();
+
+    const centerAtom = document.getElementById('dop-center-atom');
+    const centerLabel = document.getElementById('dop-center-label');
+
+    // Controls listeners
+    document.getElementById('dop-mode-int').onclick = function() {
+      setMode('intrinsic');
+    };
+    document.getElementById('dop-mode-n').onclick = function() {
+      setMode('n-type');
+    };
+    document.getElementById('dop-mode-p').onclick = function() {
+      setMode('p-type');
+    };
+    const toggleFieldBtn = document.getElementById('dop-toggle-field');
+    toggleFieldBtn.onclick = function() {
+      state.fieldOn = !state.fieldOn;
+      updateField();
+    };
+
+    function setMode(mode) {
+      state.mode = mode;
+      document.getElementById('dop-mode-int').classList.toggle('active', mode === 'intrinsic');
+      document.getElementById('dop-mode-n').classList.toggle('active', mode === 'n-type');
+      document.getElementById('dop-mode-p').classList.toggle('active', mode === 'p-type');
+
+      if (mode === 'intrinsic') {
+        centerAtom.className.baseVal = 'atom-silicon';
+        centerLabel.textContent = 'Si';
+        electron.setAttribute('display', 'none');
+        hole.setAttribute('display', 'none');
+      } else if (mode === 'n-type') {
+        centerAtom.className.baseVal = 'atom-dopant-n';
+        centerLabel.textContent = 'P';
+        electron.setAttribute('display', 'block');
+        hole.setAttribute('display', 'none');
+        carrierX = 250 + 40;
+        carrierY = 150;
+      } else if (mode === 'p-type') {
+        centerAtom.className.baseVal = 'atom-dopant-p';
+        centerLabel.textContent = 'B';
+        electron.setAttribute('display', 'none');
+        hole.setAttribute('display', 'block');
+        carrierX = 250 - 40;
+        carrierY = 150;
+      }
+    }
+
+    function updateField() {
+      toggleFieldBtn.classList.toggle('active', state.fieldOn);
+      toggleFieldBtn.textContent = '外加电场: ' + (state.fieldOn ? 'ON' : 'OFF');
+      fieldGroup.setAttribute('display', state.fieldOn ? 'block' : 'none');
+
+      // Highlight horizontal bonds
+      bonds.forEach(b => {
+        const isHorizontal = Math.abs(b.p1.y - b.p2.y) < 1;
+        if (state.fieldOn && isHorizontal) {
+          b.element.style.stroke = '#859900';
+          b.element.style.opacity = '0.8';
+          b.element.style.strokeWidth = '2px';
+        } else {
+          b.element.style.stroke = '';
+          b.element.style.opacity = '';
+          b.element.style.strokeWidth = '';
+        }
+      });
+    }
+
+    // Animation Loop for Carrier
+    let carrierX = 290;
+    let carrierY = 150;
+    let time = 0;
+
+    function animateDoping() {
+      time += 0.04;
+      if (state.mode === 'n-type') {
+        if (state.fieldOn) {
+          // Electron drifts left (against field)
+          carrierX -= 1.8;
+          carrierY = 150 + Math.sin(time * 3) * 10;
+          if (carrierX < 20) carrierX = 480;
+        } else {
+          // Electron orbits Phosphorus atom
+          carrierX = 250 + Math.cos(time * 1.5) * 45;
+          carrierY = 150 + Math.sin(time * 1.5) * 45;
+        }
+        electron.setAttribute('cx', carrierX);
+        electron.setAttribute('cy', carrierY);
+      } else if (state.mode === 'p-type') {
+        if (state.fieldOn) {
+          // Hole drifts right (along field)
+          carrierX += 1.5;
+          carrierY = 150 + Math.sin(time * 2.5) * 8;
+          if (carrierX > 480) carrierX = 20;
+        } else {
+          // Hole orbits Boron atom
+          carrierX = 250 + Math.cos(-time * 1.2) * 42;
+          carrierY = 150 + Math.sin(-time * 1.2) * 42;
+        }
+        hole.setAttribute('cx', carrierX);
+        hole.setAttribute('cy', carrierY);
+      }
+      requestAnimationFrame(animateDoping);
+    }
+    animateDoping();
+  })();
+
+  // ---------------------------------------------------- MOSFET Simulator JS
+  (function() {
+    const state = {
+      type: 'nmos', // 'nmos', 'pmos'
+      gateHigh: false
+    };
+
+    const gateBtn = document.getElementById('mos-toggle-gate');
+    const nmosBtn = document.getElementById('mos-type-nmos');
+    const pmosBtn = document.getElementById('mos-type-pmos');
+
+    const substrate = document.getElementById('mos-substrate');
+    const subLabel = document.getElementById('mos-sub-label');
+    const sourceWell = document.getElementById('mos-source-well');
+    const sourceLabel = document.getElementById('mos-source-label');
+    const drainWell = document.getElementById('mos-drain-well');
+    const drainLabel = document.getElementById('mos-drain-label');
+
+    const sDot = document.getElementById('mos-wire-s-dot');
+    const sTxt = document.getElementById('mos-wire-s-txt');
+    const gDot = document.getElementById('mos-wire-g-dot');
+    const gTxt = document.getElementById('mos-wire-g-txt');
+    const dDot = document.getElementById('mos-wire-d-dot');
+    const dTxt = document.getElementById('mos-wire-d-txt');
+
+    const channel = document.getElementById('mos-channel');
+    const fieldLinesGroup = document.getElementById('mos-efield-lines');
+    const particlesGroup = document.getElementById('mos-particles');
+
+    const particles = [];
+    for (let i = 0; i < 15; i++) {
+      particles.push({
+        x: 160 + Math.random() * 180,
+        y: 112 + Math.random() * 8,
+        speed: 0.8 + Math.random() * 1.2
+      });
+    }
+
+    nmosBtn.onclick = () => { state.type = 'nmos'; update(); };
+    pmosBtn.onclick = () => { state.type = 'pmos'; update(); };
+    gateBtn.onclick = () => { state.gateHigh = !state.gateHigh; update(); };
+
+    function update() {
+      nmosBtn.classList.toggle('active', state.type === 'nmos');
+      pmosBtn.classList.toggle('active', state.type === 'pmos');
+      gateBtn.classList.toggle('active', state.gateHigh);
+      gateBtn.textContent = 'Gate 栅极输入: ' + (state.gateHigh ? 'HIGH (1)' : 'LOW (0)');
+
+      const isConducting = (state.type === 'nmos' && state.gateHigh) || (state.type === 'pmos' && !state.gateHigh);
+
+      if (state.type === 'nmos') {
+        substrate.className.baseVal = 'region-p';
+        subLabel.textContent = 'p-type Substrate (Holes / 空穴)';
+        sourceWell.className.baseVal = 'region-n';
+        sourceLabel.textContent = 'n+';
+        drainWell.className.baseVal = 'region-n';
+        drainLabel.textContent = 'n+';
+
+        sDot.setAttribute('fill', '#dc322f'); // 0V Ground Red
+        sTxt.textContent = 'Vs = 0V (GND)';
+        dDot.setAttribute('fill', '#859900'); // 5V Power Green
+        dTxt.textContent = 'Vd = 5V (VDD)';
+
+        gDot.setAttribute('fill', state.gateHigh ? '#859900' : '#dc322f');
+        gTxt.textContent = 'Vg = ' + (state.gateHigh ? '5V (HIGH)' : '0V (LOW)');
+
+        channel.setAttribute('fill', '#268bd2');
+        channel.setAttribute('class', 'channel-n');
+      } else {
+        substrate.className.baseVal = 'region-n';
+        subLabel.textContent = 'n-type Substrate (Electrons / 电子)';
+        sourceWell.className.baseVal = 'region-p';
+        sourceLabel.textContent = 'p+';
+        drainWell.className.baseVal = 'region-p';
+        drainLabel.textContent = 'p+';
+
+        sDot.setAttribute('fill', '#859900'); // PMOS source at 5V
+        sTxt.textContent = 'Vs = 5V (VDD)';
+        dDot.setAttribute('fill', '#dc322f'); // PMOS drain at 0V
+        dTxt.textContent = 'Vd = 0V (GND)';
+
+        gDot.setAttribute('fill', state.gateHigh ? '#859900' : '#dc322f');
+        gTxt.textContent = 'Vg = ' + (state.gateHigh ? '5V (HIGH)' : '0V (LOW)');
+
+        channel.setAttribute('fill', '#dc322f');
+        channel.setAttribute('class', 'channel-p');
+      }
+
+      channel.setAttribute('opacity', isConducting ? '1' : '0');
+
+      // Update vertical E-field lines
+      fieldLinesGroup.innerHTML = '';
+      if (isConducting) {
+        const xCoords = [200, 225, 250, 275, 300];
+        xCoords.forEach(x => {
+          const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+          line.setAttribute('x1', x);
+          line.setAttribute('y1', state.type === 'nmos' ? '92' : '108');
+          line.setAttribute('x2', x);
+          line.setAttribute('y2', state.type === 'nmos' ? '106' : '94');
+          line.setAttribute('stroke', '#6c71c4');
+          line.setAttribute('stroke-width', '1.5');
+          line.setAttribute('stroke-dasharray', '2,2');
+          line.setAttribute('marker-end', state.type === 'nmos' ? 'url(#arrow-down)' : 'url(#arrow-up)');
+          fieldLinesGroup.appendChild(line);
+        });
+      }
+    }
+
+    function animateMOSFET() {
+      const isConducting = (state.type === 'nmos' && state.gateHigh) || (state.type === 'pmos' && !state.gateHigh);
+
+      particlesGroup.innerHTML = '';
+      if (isConducting) {
+        particles.forEach(p => {
+          p.x += p.speed;
+          if (p.x > 340) {
+            p.x = 160;
+          }
+          const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          circle.setAttribute('cx', p.x);
+          circle.setAttribute('cy', p.y);
+          circle.setAttribute('r', '3');
+          circle.setAttribute('fill', state.type === 'nmos' ? '#268bd2' : '#dc322f');
+          circle.setAttribute('filter', 'drop-shadow(0 0 2px ' + (state.type === 'nmos' ? '#268bd2' : '#dc322f') + ')');
+          particlesGroup.appendChild(circle);
+        });
+      }
+      requestAnimationFrame(animateMOSFET);
+    }
+
+    update();
+    animateMOSFET();
+  })();
+
+  // ---------------------------------------------------- CMOS Circuits Simulator JS
+  (function() {
+    const state = {
+      gateType: 'nand', // 'not', 'nand', 'nor'
+      inputA: 0,
+      inputB: 0
+    };
+
+    const viewport = document.getElementById('gate-sim-viewport');
+    const notBtn = document.getElementById('gate-type-not');
+    const nandBtn = document.getElementById('gate-type-nand');
+    const norBtn = document.getElementById('gate-type-nor');
+    const toggleABtn = document.getElementById('gate-toggle-a');
+    const toggleBBtn = document.getElementById('gate-toggle-b');
+
+    notBtn.onclick = () => { state.gateType = 'not'; update(); };
+    nandBtn.onclick = () => { state.gateType = 'nand'; update(); };
+    norBtn.onclick = () => { state.gateType = 'nor'; update(); };
+
+    toggleABtn.onclick = () => { state.inputA = state.inputA ? 0 : 1; update(); };
+    toggleBBtn.onclick = () => { state.inputB = state.inputB ? 0 : 1; update(); };
+
+    function update() {
+      notBtn.classList.toggle('active', state.gateType === 'not');
+      nandBtn.classList.toggle('active', state.gateType === 'nand');
+      norBtn.classList.toggle('active', state.gateType === 'nor');
+
+      toggleABtn.textContent = '输入 A: ' + state.inputA;
+      toggleABtn.classList.toggle('active', state.inputA === 1);
+
+      if (state.gateType === 'not') {
+        toggleBBtn.style.display = 'none';
+      } else {
+        toggleBBtn.style.display = '';
+        toggleBBtn.textContent = '输入 B: ' + state.inputB;
+        toggleBBtn.classList.toggle('active', state.inputB === 1);
+      }
+
+      renderSVG();
+    }
+
+    function renderSVG() {
+      const width = 500;
+      const height = 400;
+
+      let svgHTML = `
+        <svg class="sim-svg" viewBox="0 0 ${width} ${height}">
+          <rect width="100%" height="100%" fill="none" />
+      `;
+
+      if (state.gateType === 'not') {
+        svgHTML += getNOTSVG();
+      } else if (state.gateType === 'nand') {
+        svgHTML += getNANDSVG();
+      } else if (state.gateType === 'nor') {
+        svgHTML += getNORSVG();
+      }
+
+      svgHTML += `</svg>`;
+      viewport.innerHTML = svgHTML;
+
+      // Set up click handlers on SVG nodes
+      const nodeA = document.getElementById('node-a');
+      if (nodeA) nodeA.onclick = () => { state.inputA = state.inputA ? 0 : 1; update(); };
+
+      const nodeB = document.getElementById('node-b');
+      if (nodeB) nodeB.onclick = () => { state.inputB = state.inputB ? 0 : 1; update(); };
+    }
+
+    function getNOTSVG() {
+      const outY = state.inputA ? 0 : 1;
+      const pmosConducts = !state.inputA;
+      const nmosConducts = !!state.inputA;
+
+      const classA = state.inputA ? 'high' : 'low';
+      const classY = outY ? 'high' : 'low';
+
+      const wireAClass = `svg-wire ${classA}`;
+      const wireVddClass = 'svg-wire high';
+      const wireGndClass = 'svg-wire low';
+
+      const wirePmosOut = pmosConducts ? 'svg-wire high' : 'svg-wire';
+      const wireNmosIn = nmosConducts ? 'svg-wire low' : 'svg-wire';
+      const wireYClass = outY ? 'svg-wire high' : 'svg-wire low';
+
+      return `
+        <!-- Power and Ground -->
+        <path d="M 100 50 L 400 50" class="svg-wire high" />
+        <text x="250" y="40" class="svg-text svg-text-bold" fill="#859900" text-anchor="middle">VDD (电源 5V/1)</text>
+
+        <path d="M 100 350 L 400 350" class="svg-wire low" />
+        <text x="250" y="372" class="svg-text svg-text-bold" fill="#dc322f" text-anchor="middle">GND (地 0V/0)</text>
+
+        <!-- Input A -->
+        <circle cx="60" cy="200" r="16" class="svg-node ${classA}" id="node-a" />
+        <text x="60" y="204" class="svg-text svg-text-bold" fill="#fff" text-anchor="middle" font-size="12">A</text>
+        <path d="M 76 200 L 160 200 L 160 110 L 222 110 M 160 200 L 160 265 L 230 265" class="${wireAClass}" />
+
+        <!-- PMOS Transistor -->
+        <rect x="230" y="80" width="40" height="60" rx="5" class="svg-gate ${pmosConducts ? 'active' : ''}" id="pmos-a" />
+        <circle cx="226" cy="110" r="4" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--ink);" />
+        <text x="250" y="114" class="svg-text" font-size="8" text-anchor="middle">PMOS</text>
+
+        <!-- NMOS Transistor -->
+        <rect x="230" y="240" width="40" height="50" rx="5" class="svg-gate ${nmosConducts ? 'active' : ''}" id="nmos-a" />
+        <text x="250" y="269" class="svg-text" font-size="8" text-anchor="middle">NMOS</text>
+
+        <!-- Connections -->
+        <path d="M 250 50 L 250 80" class="${wireVddClass}" />
+        <path d="M 250 140 L 250 200" class="${wirePmosOut}" />
+        <path d="M 250 200 L 250 240" class="${wireNmosIn}" />
+        <path d="M 250 290 L 250 350" class="${wireGndClass}" />
+
+        <!-- Output Y -->
+        <path d="M 250 200 L 414 200" class="${wireYClass}" />
+        <circle cx="430" cy="200" r="18" class="svg-node ${classY}" />
+        <text x="430" y="204" class="svg-text svg-text-bold" fill="#fff" text-anchor="middle" font-size="12">Y</text>
+        <text x="430" y="174" class="svg-text svg-text-bold" text-anchor="middle">输出 (NOT)</text>
+      `;
+    }
+
+    function getNANDSVG() {
+      const outY = (state.inputA && state.inputB) ? 0 : 1;
+
+      const pmosAConducts = !state.inputA;
+      const pmosBConducts = !state.inputB;
+      const nmosAConducts = !!state.inputA;
+      const nmosBConducts = !!state.inputB;
+
+      const classA = state.inputA ? 'high' : 'low';
+      const classB = state.inputB ? 'high' : 'low';
+      const classY = outY ? 'high' : 'low';
+
+      const wireAClass = `svg-wire ${classA}`;
+      const wireBClass = `svg-wire ${classB}`;
+
+      const wireVddPmosa = 'svg-wire high';
+      const wireVddPmosb = 'svg-wire high';
+
+      const wirePmosJoin = (pmosAConducts || pmosBConducts) ? 'svg-wire high' : 'svg-wire';
+      const wireJoinNmosa = (nmosAConducts && nmosBConducts) ? 'svg-wire low' : (pmosAConducts || pmosBConducts ? 'svg-wire high' : 'svg-wire');
+      const wireNmosaNmosb = nmosBConducts ? 'svg-wire low' : 'svg-wire';
+      const wireNmosbGnd = 'svg-wire low';
+      const wireOutput = outY ? 'svg-wire high' : 'svg-wire low';
+
+      return `
+        <!-- Power and Ground -->
+        <path d="M 100 50 L 400 50" class="svg-wire high" />
+        <text x="250" y="40" class="svg-text svg-text-bold" fill="#859900" text-anchor="middle">VDD (电源 5V/1)</text>
+
+        <path d="M 100 350 L 400 350" class="svg-wire low" />
+        <text x="250" y="372" class="svg-text svg-text-bold" fill="#dc322f" text-anchor="middle">GND (地 0V/0)</text>
+
+        <!-- Input A -->
+        <circle cx="60" cy="130" r="16" class="svg-node ${classA}" id="node-a" />
+        <text x="60" y="134" class="svg-text svg-text-bold" fill="#fff" text-anchor="middle" font-size="12">A</text>
+        <path d="M 76 130 L 130 130 L 130 110 L 172 110 M 130 130 L 130 205 L 230 205" class="${wireAClass}" />
+
+        <!-- Input B -->
+        <circle cx="60" cy="250" r="16" class="svg-node ${classB}" id="node-b" />
+        <text x="60" y="254" class="svg-text svg-text-bold" fill="#fff" text-anchor="middle" font-size="12">B</text>
+        <path d="M 76 250 L 95 250 L 95 285 L 230 285 M 95 250 L 95 70 L 260 70 L 260 110 L 272 110" class="${wireBClass}" />
+
+        <!-- PMOS Transistors (Parallel) -->
+        <rect x="180" y="80" width="40" height="60" rx="5" class="svg-gate ${pmosAConducts ? 'active' : ''}" id="pmos-a" />
+        <circle cx="176" cy="110" r="4" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--ink);" />
+        <text x="200" y="114" class="svg-text" font-size="8" text-anchor="middle">PMOS A</text>
+
+        <rect x="280" y="80" width="40" height="60" rx="5" class="svg-gate ${pmosBConducts ? 'active' : ''}" id="pmos-b" />
+        <circle cx="276" cy="110" r="4" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--ink);" />
+        <text x="300" y="114" class="svg-text" font-size="8" text-anchor="middle">PMOS B</text>
+
+        <!-- NMOS Transistors (Series) -->
+        <rect x="230" y="180" width="40" height="50" rx="5" class="svg-gate ${nmosAConducts ? 'active' : ''}" id="nmos-a" />
+        <text x="250" y="209" class="svg-text" font-size="8" text-anchor="middle">NMOS A</text>
+
+        <rect x="230" y="260" width="40" height="50" rx="5" class="svg-gate ${nmosBConducts ? 'active' : ''}" id="nmos-b" />
+        <text x="250" y="289" class="svg-text" font-size="8" text-anchor="middle">NMOS B</text>
+
+        <!-- Connections -->
+        <path d="M 200 50 L 200 80" class="${wireVddPmosa}" />
+        <path d="M 300 50 L 300 80" class="${wireVddPmosb}" />
+        <path d="M 200 140 L 200 160 L 300 160 L 300 140" class="${wirePmosJoin}" />
+        <path d="M 250 160 L 250 180" class="${wireJoinNmosa}" />
+        <path d="M 250 230 L 250 260" class="${wireNmosaNmosb}" />
+        <path d="M 250 310 L 250 350" class="${wireNmosbGnd}" />
+
+        <!-- Output Y -->
+        <path d="M 250 160 L 412 160" class="${wireOutput}" />
+        <circle cx="430" cy="160" r="18" class="svg-node ${classY}" />
+        <text x="430" y="164" class="svg-text svg-text-bold" fill="#fff" text-anchor="middle" font-size="12">Y</text>
+        <text x="430" y="134" class="svg-text svg-text-bold" text-anchor="middle">输出 (NAND)</text>
+      `;
+    }
+
+    function getNORSVG() {
+      const outY = (state.inputA || state.inputB) ? 0 : 1;
+
+      const pmosAConducts = !state.inputA;
+      const pmosBConducts = !state.inputB;
+      const nmosAConducts = !!state.inputA;
+      const nmosBConducts = !!state.inputB;
+
+      const classA = state.inputA ? 'high' : 'low';
+      const classB = state.inputB ? 'high' : 'low';
+      const classY = outY ? 'high' : 'low';
+
+      const wireAClass = `svg-wire ${classA}`;
+      const wireBClass = `svg-wire ${classB}`;
+
+      const wireVdd = 'svg-wire high';
+      const wirePmosAToB = pmosAConducts ? 'svg-wire high' : 'svg-wire';
+      const wirePmosBToY = (pmosAConducts && pmosBConducts) ? 'svg-wire high' : 'svg-wire';
+
+      const wireYToNmosJoin = outY ? 'svg-wire high' : 'svg-wire low';
+      const wireGndClass = 'svg-wire low';
+
+      return `
+        <!-- Power and Ground -->
+        <path d="M 100 50 L 400 50" class="svg-wire high" />
+        <text x="250" y="40" class="svg-text svg-text-bold" fill="#859900" text-anchor="middle">VDD (电源 5V/1)</text>
+
+        <path d="M 100 350 L 400 350" class="svg-wire low" />
+        <text x="250" y="372" class="svg-text svg-text-bold" fill="#dc322f" text-anchor="middle">GND (地 0V/0)</text>
+
+        <!-- Input A -->
+        <circle cx="60" cy="120" r="16" class="svg-node ${classA}" id="node-a" />
+        <text x="60" y="124" class="svg-text svg-text-bold" fill="#fff" text-anchor="middle" font-size="12">A</text>
+        <path d="M 76 120 L 130 120 L 130 105 L 222 105 M 130 120 L 130 275 L 180 275" class="${wireAClass}" />
+
+        <!-- Input B -->
+        <circle cx="60" cy="220" r="16" class="svg-node ${classB}" id="node-b" />
+        <text x="60" y="224" class="svg-text svg-text-bold" fill="#fff" text-anchor="middle" font-size="12">B</text>
+        <path d="M 76 220 L 110 220 L 110 185 L 222 185 M 110 220 L 110 275 L 280 275" class="${wireBClass}" />
+
+        <!-- PMOS Transistors (Series) -->
+        <rect x="230" y="80" width="40" height="50" rx="5" class="svg-gate ${pmosAConducts ? 'active' : ''}" id="pmos-a" />
+        <circle cx="226" cy="105" r="4" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--ink);" />
+        <text x="250" y="109" class="svg-text" font-size="8" text-anchor="middle">PMOS A</text>
+
+        <rect x="230" y="160" width="40" height="50" rx="5" class="svg-gate ${pmosBConducts ? 'active' : ''}" id="pmos-b" />
+        <circle cx="226" cy="185" r="4" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--ink);" />
+        <text x="250" y="189" class="svg-text" font-size="8" text-anchor="middle">PMOS B</text>
+
+        <!-- NMOS Transistors (Parallel) -->
+        <rect x="180" y="250" width="40" height="50" rx="5" class="svg-gate ${nmosAConducts ? 'active' : ''}" id="nmos-a" />
+        <text x="200" y="279" class="svg-text" font-size="8" text-anchor="middle">NMOS A</text>
+
+        <rect x="280" y="250" width="40" height="50" rx="5" class="svg-gate ${nmosBConducts ? 'active' : ''}" id="nmos-b" />
+        <text x="300" y="279" class="svg-text" font-size="8" text-anchor="middle">NMOS B</text>
+
+        <!-- Connections -->
+        <path d="M 250 50 L 250 80" class="${wireVdd}" />
+        <path d="M 250 130 L 250 160" class="${wirePmosAToB}" />
+        <path d="M 250 210 L 250 230" class="${wirePmosBToY}" />
+
+        <path d="M 250 230 L 200 230 L 200 250" class="${wireYToNmosJoin}" />
+        <path d="M 250 230 L 300 230 L 300 250" class="${wireYToNmosJoin}" />
+
+        <path d="M 200 300 L 200 320 L 300 320 L 300 300" class="${nmosAConducts || nmosBConducts ? 'svg-wire low' : 'svg-wire'}" />
+        <path d="M 250 320 L 250 350" class="${wireGndClass}" />
+
+        <!-- Output Y -->
+        <path d="M 250 230 L 412 230" class="${outY ? 'svg-wire high' : 'svg-wire low'}" />
+        <circle cx="430" cy="230" r="18" class="svg-node ${classY}" />
+        <text x="430" y="234" class="svg-text svg-text-bold" fill="#fff" text-anchor="middle" font-size="12">Y</text>
+        <text x="430" y="204" class="svg-text svg-text-bold" text-anchor="middle">输出 (NOR)</text>
+      `;
+    }
+
+    update();
+  })();
+</script>
+</body>
+</html>
