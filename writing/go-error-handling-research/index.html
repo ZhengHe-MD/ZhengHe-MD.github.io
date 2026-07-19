@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>如何在 Golang 项目中处理好错误 · 郑鹤</title>
+<meta name="date" content="2020-10-05">
+<meta name="category" content="实践">
+<meta name="summary" content="造一辆能跑在路上的车并非难事，但要这辆车能在各种路况、气候和突发事件下安全行驶，事情就不再简单。如果把写程序比喻成造车，构建程序的主要功能就是让车跑起来，而处理好错误就是让车安全地跑。 错误是程序的重要组成部分，能否在程序中处理好错误决定了软件的质量上限 。在这篇博客中，我将介绍个人在 Golang 项目中错误处理的思考。">
+<meta name="legacy" content="/blog/2020/10/05/Go-Error-Handling-Research/">
+<meta name="description" content="造一辆能跑在路上的车并非难事，但要这辆车能在各种路况、气候和突发事件下安全行驶，事情就不再简单。如果把写程序比喻成造车，构建程序的主要功能就是让车跑起来，而处理好错误就是让车安全地跑。 错误是程序的重要组成部分，能否在程序中处理好错误决定了软件的质量上限 。在这篇博客中，我将介绍个人在 Golang 项目中错误处理的思考。">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="alternate" type="application/atom+xml" title="郑鹤 · ZhengHe" href="/feed.xml">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/assets/js/site.js"></script>
+</head>
+<body>
+<site-nav active="writing"></site-nav>
+
+<main class="container">
+  <article class="post">
+    <a class="back" href="/writing/">← 写作</a>
+    <div class="meta-line">
+      <a class="chip cat" href="/categories/%E5%AE%9E%E8%B7%B5/">实践</a>
+      <span class="when">2020-10-05</span>
+    </div>
+    <h1 class="title">如何在 Golang 项目中处理好错误</h1>
+    <div class="prose">
+<p>造一辆能跑在路上的车并非难事，但要这辆车能在各种路况、气候和突发事件下安全行驶，事情就不再简单。如果把写程序比喻成造车，构建程序的主要功能就是让车跑起来，而处理好错误就是让车安全地跑。<strong>错误是程序的重要组成部分，能否在程序中处理好错误决定了软件的质量上限</strong>。在这篇博客中，我将介绍个人在 Golang 项目中错误处理的思考。</p>
+<h2>谁在消费错误</h2>
+<blockquote>
+<p>The tricky part about errors is that they need to be different things to different consumers of them。 --- Ben Johnson</p>
+</blockquote>
+<p>要妥善地处理好程序中的错误，首先应想清楚这些错误的消费者是谁。boltdb 的作者 Ben Johnson 在<a href="https://middlemost.com/failure-is-your-domain/">这篇博客</a>里总结了他的思考：<strong>有三种角色在消费错误，它们分别是用户 (end user)、程序 (application) 和运维 (operator)</strong>。</p>
+<h3>消费者 1：用户</h3>
+<p>当服务遇到错误，无法完成用户的请求时，我们需要告诉用户「是什么」和「怎么做」，比如：</p>
+<ul>
+<li>您的权限不足，请联系 xxx 开启</li>
+<li>系统临时故障，请稍后重试</li>
+</ul>
+<p>这里的「是什么」并非越具体越好，一般告诉用户错误的大类即可：是参数错误、还是权限问题、亦或是服务端超载。许多工程师会本能地把原本应该打印在日志里的信息告诉用户，这么做背后隐藏着有两个目的：</p>
+<ul>
+<li>如果用户有技术背景知识足够，能理解根因</li>
+<li>用户反馈时会把错误信息带上，能加速定位</li>
+</ul>
+<p>但仔细一想，这些目的经不起推敲。首先，用户根本不关心背后的细节和实现，即便这些用户是软件工程师这个断言也没问题；其次，暴露过多的信息可能给恶意攻击者留下线索，降低系统的安全性；最后，问题定位是低频场景，通过日志查询详细的信息即便速度慢一些，但并非无法接受。</p>
+<h3>消费者 2：程序</h3>
+<p>许多时候，程序需要根据错误的类型来精细地控制逻辑。比如，当 X 服务发送请求给 Y 服务，Y 服务无法满足该请求，便返回错误。此时，X 服务是否应该重试？这取决于返回的错误是临时性的还是不可恢复的；当 X 服务的 DAL (Data Access Layer) 发送请求到数据库，后者返回错误时，X 服务应该给用户返回什么信息？这取决于数据库返回的错误是什么类型，是数据找不到？还是数据库表满了？还是别的原因？</p>
+<p>这错误的类型定义方面，业界已经有许多成型的实践：</p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status">HTTP</a>：400、401、403、404、429、500、502、503...</li>
+<li><a href="https://grpc.github.io/grpc/core/md_doc_statuscodes.html">gRPC</a>：INVALID_ARGUMENT, DEADLINE_EXCEEDED, NOT_FOUND, ALREADY_EXISTS, ...</li>
+<li><a href="https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html">MySQL</a>：1040、1045、1046、1064、1114...</li>
+</ul>
+<p>它们都经过了无数项目的考验，非必要不重复造轮子。</p>
+<h3>消费者 3：运维</h3>
+<p>用户遇到无法解决的问题时，最终会来到运维的手上。服务日志是运维定位问题的利器。将错误及错误发生的背景信息打印到日志里，将极大地方便故障排查。要想定位快，细节就要越丰富，这些细节可能包括错误发生时的：</p>
+<ul>
+<li>一句话描述</li>
+<li>函数调用栈</li>
+<li>请求上下文 (request_id、user_id、device_id)</li>
+</ul>
+<p>其中「一句话描述」与「函数调用栈」就可能来自于错误。</p>
+<h2>&quot;Errors are values&quot;</h2>
+<blockquote>
+<p>Values can be programmed, and since errors are values, errors can be programmed...The key lesson, however, is that errors are values and the full power of the Go programming language is available for processing them. --- Rob Pike</p>
+</blockquote>
+<p>2015 年 1 月，<a href="https://en.wikipedia.org/wiki/Rob_Pike">Rob Pike</a> 在 The Go Blog 上发表了题为 &quot;Errors are values&quot; 的<a href="https://go.dev/blog/errors-are-values">文章</a>，并在当年的 Gopherfest <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c&amp;t=973s">演讲</a> &quot;Go Proverbs&quot; 中将这句话列在 19 个 proverbs 之中。它是每位 Golang 工程师应该铭记的一句话。</p>
+<h3>错误只是一个普通值</h3>
+<h4>The error interface</h4>
+<p>在 Golang 中，任意实现了 error interface 的数据类型都被认为是错误：</p>
+<pre><code class="language-go">type error interface {
+	Error() string
+}
+</code></pre>
+<p>它甚至可以只是一个字符串：</p>
+<pre><code class="language-go">type err string
+
+func (e err) Error() string {
+	return e
+}
+</code></pre>
+<blockquote>
+<p>💁‍♂️ Golang 中没有 implement 关键词，只要实现了 interface，就等价于 implement。</p>
+</blockquote>
+<h4>作为返回值</h4>
+<p>既然错误只是一个普通值，这个值就可以被作为函数的入参和出参。如果一个函数的执行过程中可能出现错误，那么 error 约定俗成地会作为最后一个返回值，举例如下：</p>
+<pre><code class="language-go">// example 1:
+res, err := http.Get(&quot;http://localhost:8080&quot;)
+// example 2:
+if u, err := url.Parse(&quot;invalid-url&quot;); err != nil {
+	// handle sad path
+} else {
+	// handle happy path
+}
+</code></pre>
+<h3>与使用 Exception 的区别</h3>
+<p>在许多当下流行的编程语言中，基于 Exception 的错误处理占主流地位，比如 C++、Java 和 Python。对于从这些语言转到 Golang 的工程师而言，&quot;errors are values&quot; 的观点相当激进，难以适应。Stackoverflow 的前 CEO Joel Spolsky 在 2003 年发表过一篇<a href="https://www.joelonsoftware.com/2003/10/13/13/">博客</a>，在其中他讨论了用 Exceptions 处理错误带来的问题：</p>
+<blockquote>
+<p>I consider exceptions to be no better than &quot;goto's&quot;, <a href="http://www.acm.org/classics/oct95/">considered harmful</a> since the 1960s, in that they create an abrupt jump from one point of code to another. --- Joel Spolsky</p>
+</blockquote>
+<p>Joel 认为更好的方式是将错误当作普通的返回值，而程序应该在拿到返回值时立即处理它，尽管这会让程序变得更啰嗦，但啰嗦总比牺牲软件的质量好一些。</p>
+<blockquote>
+<p>💁‍♂️ 本节并非想说明语言设计的优劣，只是想介绍一下 Golang 的错误处理设计理念的由来。</p>
+</blockquote>
+<h3>若干 error interface 的实现</h3>
+<p>既然 &quot;errors are values&quot;，我们就可以利用 Golang 赋予的所有逻辑表达能力处理错误，为不同项目、场景定制化设计。无论是标准库还是社区中都有许多相关实践，这里分别举几个例子：</p>
+<h4>标准库</h4>
+<p><strong>1. errorString</strong></p>
+<pre><code class="language-go">// src/errors/errors.go
+func New(text string) error {
+	return &amp;errorString{text}
+}
+
+type errorString struct {
+	s string
+}
+
+func (e *errorString) Error() string {
+	return e.s
+}
+</code></pre>
+<p>利用 <code>errors.New</code> 创建的错误实际上就是这里的 <code>errorString</code>。</p>
+<p><strong>2. joinError</strong></p>
+<pre><code class="language-go">// src/errors/join.go
+type joinError struct {
+	errs []error
+}
+
+func (e *joinError) Error() string {
+	var b []byte
+	for i, err := range e.errs {
+		if i &gt; 0 {
+			b = append(b, '\n')
+		}
+		b = append(b, err.Error()...)
+	}
+	return string(b)
+}
+</code></pre>
+<p>一些场景里，我们希望合并多个错误，同时保留这些错误的原始信息，这时可以用 <code>errors.Join</code>，后者就会创建一个 <code>joinError</code>。</p>
+<p><strong>3. os.PathError</strong></p>
+<pre><code class="language-go">// src/io/fs/fs.go
+// PathError records an error and the operation and file path that caused it.
+type PathError struct {
+	Op   string
+	Path string
+	Err  error
+}
+
+func (e *PathError) Error() string { return e.Op + &quot; &quot; + e.Path + &quot;: &quot; + e.Err.Error() }
+func (e *PathError) Unwrap() error { return e.Err }
+</code></pre>
+<p>在执行文件操作遇到错误时，除了记录错误本身，保留操作类型、文件路径信息能帮助我们更快地定位问题，这里的 <code>PathError</code> 就干了这么一件事。</p>
+<h4>社区</h4>
+<p>许多团队为了方便在自己的项目中处理错误，定制化开发了许多 Golang packages，然后开源出来造福社区。以下列举一些项目供读者进一步了解，这里不再赘述：</p>
+<ul>
+<li><a href="https://github.com/uber-go/multierr">GitHub - uber-go/multierr</a></li>
+<li><a href="https://github.com/juju/errors">GitHub - juju/errors</a></li>
+<li><a href="https://github.com/go-errors/errors">GitHub - go-errors/errors</a></li>
+<li><a href="https://github.com/cockroachdb/errors">GitHub - cockroachdb/errors</a></li>
+<li><a href="https://github.com/pkg/errors">GitHub - pkg/errors</a></li>
+<li><a href="https://github.com/pingcap/errors">GitHub - pingcap/errors</a></li>
+</ul>
+<h2>标准库的演进</h2>
+<p>Golang 对于语法和功能的添加十分克制，因此 errors 标准库迭代之路可谓是小心翼翼。</p>
+<h3>&lt;1.13: 点</h3>
+<p>在 Go1.13 之前，每个错误都是一个「点」，错误之间无法建立联系。我们可以用 <code>errors.New</code> 和 <code>fmt.Errorf</code> 这两种方法创建一个新的错误：</p>
+<pre><code class="language-go">// create an error
+var RecordNotFoundErr = errors.New(&quot;DB: record not found&quot;)
+var UserNotFoundErr = fmt.Errorf(&quot;user not found: %v&quot;, RecordNotFoundErr)
+</code></pre>
+<p>如果要在程序中消费它，可以通过检查值或类型是否相等来控制程序逻辑：</p>
+<pre><code class="language-go">// check identity
+if err == RecordNotFoundErr {
+	// case 1
+} else {
+	// case 2
+}
+// check type
+if nerr, ok := err.(net.Error) {
+	// case 1
+} else {
+	// case 2
+}
+</code></pre>
+<p>这时有一个常见的问题：当我们想给错误补充一些信息时，错误之间的血缘关系会消失，比如：</p>
+<pre><code class="language-go">var RecordNotFoundErr := errors.New(&quot;DB: record not found&quot;)
+var UserNotFoundErr = fmt.Errorf(&quot;user not found: %v&quot;, RecordNotFoundErr)
+</code></pre>
+<p>程序拿到 <code>UserNotFoundErr</code> 时，它已经和 <code>RecordNotFoundErr</code> 没有任何关系，我们无法针对它做任何的值或类型的判断。</p>
+<h3>1.13-1.19: 链表</h3>
+<p>Go1.13 支持了错误的包装 (wrap)，于是错误之间可以形成「链表」。Golang 官方为此发布了一篇<a href="https://go.dev/blog/go1.13-errors">博客</a>，介绍相关的最佳实践。具体地说，<code>fmt.Errorf</code> 新增了一个格式标记「%w」，开发者可以用它包装错误：</p>
+<pre><code class="language-go">var RecordNotFoundErr = errors.New(&quot;DB: record not found&quot;)
+var UserNotFoundErr = fmt.Errorf(&quot;user not found: %w&quot;, RecordNotFoundErr)
+</code></pre>
+<p>与「%v」不同，「%w」会在创建新错误的同时，保留对下层错误的引用。这时开发者可以通过 errors package 新增的两个方法来检查错误值或错误类型：</p>
+<pre><code class="language-go">// check error identity: errors.Is
+if errors.Is(err, RecordNotFoundErr) {}
+// check error type: errors.As
+var nerr *net.Error
+if errors.As(err, &amp;nerr) {}
+</code></pre>
+<p><code>errors.Is</code> 和 <code>errors.As</code> 都会递归地遍历整条错误链表，确认链表上是否存在相等的值或类型。除此以外，为了将这种递归的能力开放，Go1.13 还提供了 <code>errors.Unwrap</code> 方法，方便开发者获取链表上下一个错误节点：</p>
+<pre><code class="language-go">var recordNotFoundErr = errors.Unwrap(UserNotFoundErr)
+</code></pre>
+<h3>1.20: 树</h3>
+<p>Go1.20 在 Go1.13 的基础上更进一步，支持一次包装多个错误，于是错误之间可以建立「树」状关系。在使用层面的体现就是 <code>fmt.Errorf</code> 方法支持指定多个「%w」标记，即同时包装多个错误：</p>
+<pre><code class="language-go">var RecordNotFoundErr = errors.New(&quot;DB: record not found&quot;)
+var NotFoundErr = errors.New(&quot;NotFound&quot;)
+var UserNotFoundErr = fmt.Errorf(&quot;user not found: %w (%w)&quot;, RecordNotFoundErr, NotFoundErr)
+</code></pre>
+<p>相应地， <code>errors.Is</code> 与 <code>errors.As</code> 也从对链表遍历升级成了对树的遍历。</p>
+<h2>业务服务中的错误处理实战</h2>
+<blockquote>
+<p>📢 本小节为个人开发经验总结，存在一些观点倾向，请按需摄取。</p>
+</blockquote>
+<p>那么我们应该如何利用上述的思路和工具，在业务服务开发中合理地处理错误？我将解决方案概括成了四句话：</p>
+<ul>
+<li>定义通用错误</li>
+<li>底层转换标识</li>
+<li>中间填充信息</li>
+<li>上层统一判断</li>
+</ul>
+<p>下面就来分别解释它们的含义。</p>
+<h3>定义通用错误</h3>
+<p>如果你足够幸运能在标准化做得很强的公司工作，那么公司内部应该会有一套稳定通用错误标准定义，比如 <a href="https://cloud.google.com/apis/design/errors">Google Cloud</a>，直接使用这些标准错误来驱动服务内部的错误处理即可，你可以直接跳过此步骤；如果你的公司与我工作过的大多数公司一样，缺乏人人遵守的工程化标准，就需要定义服务内部或团队内部的通用错误。</p>
+<p>定义通用错误并不难，一般根据需要选择 HTTP 或 gRPC 的错误定义即可，比如：</p>
+<pre><code class="language-go">// pkg/errors.go
+var (
+	NotFound   = errors.New(&quot;NotFound&quot;)
+	BadRequest = errors.New(&quot;BadRequest&quot;)
+	Internal   = errors.New(&quot;InternalServerError&quot;)
+	//...
+)
+</code></pre>
+<p>这里的通用错误主要是提供给程序和运维消费，并非面向用户，粒度不必定义地特别细致。</p>
+<h3>底层转换标识</h3>
+<p>在跨进程调用处，无论是访问数据库、消息队列、配置中心，还是请求上游的微服务，一旦发生错误就立即包装成定义好的通用错误：</p>
+<pre><code class="language-go">// DAO
+func (mud *MySQLUserDAO) GetUser(ctx context.Context, id int64) (*User, error) {
+	user, err := mud.getUser(ctx, id)
+	return user, mud.wrapMySQLError(err)
+}
+
+func (mud *MySQLUserDAO) getUser(ctx context.Context, id int64) (*User, error) {
+	// call mysql driver
+}
+
+func (mud *MySQLUserDAO) wrapMySQLError(err error) error {
+	if err == nil {
+		return nil
+	}
+
+	switch err {
+		case MySQLAccessDenied:
+			return fmt.Errorf(&quot;MySQL access denied: %w&quot;, PermissionDenied)
+		// ... other cases
+		default:
+		return fmt.Errorf(&quot;MySQL error: %w&quot;, Internal)
+	}
+}
+</code></pre>
+<h3>中间填充信息</h3>
+<p>在上层与底层之间，难免会有一些中间层。业务越复杂，划分的层级越多，同层之间还可能存在相互依赖。结果就是函数调用栈变深。这里会出现两个问题：</p>
+<ol>
+<li>到达同一个底层方法的路径可能有多个，光看底层错误信息无法回溯问题触发过程</li>
+<li>不同层关心的内容不同，拥有的信息也不同，光看底层错误信息无法拿到完整信息</li>
+</ol>
+<p>因此需要在中间层填充必要的信息，比如在下面的例子中：</p>
+<pre><code class="language-go">func (dus *DefaultUserService) GetUser(ctx context.Context, id int64) (*User, error) {
+	user, err := dus.user.GetUser(ctx, id)
+	if err != nil {
+		return nil, fmt.Errorf(&quot;UserService gets user %d: %w&quot;, id, err)
+	}
+	return user, nil
+}
+</code></pre>
+<p>既明确了当前函数为 <code>UserService.GetUser</code>，也补充了查询的目标用户 <code>id</code>。</p>
+<h3>上层统一判断</h3>
+<p>当这些错误来到上层后，我们可以利用一个工具函数或 HTTP/gRPC middleware 来统一决定：</p>
+<ul>
+<li>返回的错误码</li>
+<li>返回的错误消息</li>
+<li>打印的日志</li>
+</ul>
+<pre><code class="language-go">func (rt *Router) handleError(w http.ResponseWriter, err error) {
+	if err == nil {
+		return
+	}
+
+	var status int
+	var message string
+
+	switch {
+	case errors.Is(err, InvalidArgument):
+		// ...
+	case errors.Is(err, NotFound):
+		// ...
+	case errors.Is(err, Internal):
+		// ...
+	default:
+		// ...
+	}
+
+	w.WriteHeader(status)
+	w.Write([]byte(message))
+}
+</code></pre>
+<h2>小结</h2>
+<ul>
+<li>错误的消费者：用户、程序、运维</li>
+<li>错误就是值：错误可以被编程</li>
+<li>标准库的演进：点 → 链表 → 树</li>
+<li>业务服务中的错误处理实战：定义通用错误、底层转换标识、中间填充信息、上层统一判断</li>
+</ul>
+<h2>参考</h2>
+<ul>
+<li><a href="https://middlemost.com/failure-is-your-domain/">MiddleMost: Failure is your Domain</a></li>
+<li><a href="https://blog.golang.org/error-handling-and-go">The Go Blog: Error handling and Go</a></li>
+<li><a href="https://blog.golang.org/errors-are-values">The Go Blog: Errors are values</a></li>
+<li><a href="https://www.joelonsoftware.com/2003/10/13/13/">Joel on Software: Exceptions</a></li>
+<li><a href="https://blog.golang.org/go1.13-errors">Working with Errors in Go 1.13</a></li>
+<li><a href="https://lukas.zapletalovi.com/posts/2022/wrapping-multiple-errors/">New in Go 1.20: wrapping multiple errors</a></li>
+</ul>
+    </div>
+  </article>
+  <div class="post-comments">
+    <div class="label">COMMENTS · GISCUS</div>
+    <div class="giscus-placeholder">giscus · GitHub Discussions</div>
+  </div>
+</main>
+
+<site-footer></site-footer>
+</body>
+</html>

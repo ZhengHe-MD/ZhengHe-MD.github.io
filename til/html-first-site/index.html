@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>meta refresh 可以当作客户端 301 用 · 郑鹤</title>
+<meta name="date" content="2026-07-19">
+<meta name="category" content="实践">
+<meta name="summary" content="GitHub Pages 做不了服务端 301，但 meta refresh 配上 canonical link，就能为所有旧链接生成转发桩。">
+<meta name="description" content="GitHub Pages 做不了服务端 301，但 meta refresh 配上 canonical link，就能为所有旧链接生成转发桩。">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="alternate" type="application/atom+xml" title="郑鹤 · ZhengHe" href="/feed.xml">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/assets/js/site.js"></script>
+</head>
+<body>
+<site-nav></site-nav>
+
+<main class="container">
+  <section class="til-single">
+    <a class="back mono" href="/til/" style="font-size:12px;color:var(--muted);">← TIL</a>
+    <div class="date">2026-07-19</div>
+    <div class="til-card">
+      <h3>meta refresh 可以当作客户端 301 用</h3>
+      <!-- til:body -->
+      <div class="body">
+        <p>把博客从 <code>/blog/YYYY/MM/DD/slug/</code> 迁到 <code>/writing/slug/</code> 时，旧链接不能就这么断掉。GitHub Pages 是纯静态托管，给不了服务端 301，但 <code>meta refresh</code> 加上 <code>canonical</code> 就够用了：浏览器立刻跳转，搜索引擎则顺着 canonical 把权重归到新地址。</p>
+        <p>转发桩由索引器从每个页面自带的 <code>legacy</code> 元数据自动生成，49 篇一个不落，不用手写。</p>
+        <pre><code>&lt;meta http-equiv="refresh" content="0; url=/writing/go-project-layout/"&gt;
+&lt;link rel="canonical" href="https://zhenghe-md.github.io/writing/go-project-layout/"&gt;</code></pre>
+      </div>
+      <!-- /til:body -->
+    </div>
+  </section>
+</main>
+
+<site-footer></site-footer>
+</body>
+</html>

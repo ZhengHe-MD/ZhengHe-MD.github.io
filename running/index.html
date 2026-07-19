@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>跑步 · 郑鹤</title>
+<meta name="description" content="用双脚绕地球一圈：在 2048 年前累计跑完 40,075 公里。">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="alternate" type="application/atom+xml" title="郑鹤 · ZhengHe" href="/feed.xml">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/assets/js/site.js"></script>
+</head>
+<body>
+<site-nav active="running"></site-nav>
+
+<main class="container">
+  <section class="page-head">
+    <div class="eyebrow">Running · 环游地球</div>
+    <h1>用双脚绕地球一圈</h1>
+    <p class="lede">目标：在 2048 年前累计跑完 40,075 公里——地球赤道的周长。</p>
+  </section>
+
+  <section class="run-hero" id="run-hero" hidden>
+    <div class="top">
+      <div>
+        <div class="big"><span id="rh-done">—</span> <span class="goal">/ 40,075 km</span></div>
+        <div class="sub">剩余 <span id="rh-remaining">—</span> km · 已完成 <span id="rh-pct">—</span></div>
+      </div>
+      <div class="facts">
+        <div>起点 <span id="rh-start">—</span></div>
+        <div>最近同步 <span id="rh-sync">—</span></div>
+      </div>
+    </div>
+    <div class="run-track">
+      <div class="fill" id="rh-fill"></div>
+      <span class="runner" id="rh-runner">🏃</span>
+      <span class="flag">🏁</span>
+      <span class="tick" style="left:25%"></span>
+      <span class="tick" style="left:50%"></span>
+      <span class="tick" style="left:75%"></span>
+    </div>
+    <div class="run-milestones" id="rh-milestones"></div>
+  </section>
+
+  <section class="year-grid" id="year-grid"></section>
+</main>
+
+<site-footer></site-footer>
+<script src="/assets/js/running.js" defer></script>
+</body>
+</html>

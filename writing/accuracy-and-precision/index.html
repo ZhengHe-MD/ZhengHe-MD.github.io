@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>捋一捋 Accuracy 与 Precision 间的区别和联系 · 郑鹤</title>
+<meta name="date" content="2022-05-23">
+<meta name="category" content="思考">
+<meta name="summary" content="Accuracy 和 Precision 是在科学技术领域中经常出现的两个概念，本文将通过一张图来捋一捋二者之间的区别与联系。">
+<meta name="legacy" content="/blog/2022/05/23/accuracy-and-precision/">
+<meta name="description" content="Accuracy 和 Precision 是在科学技术领域中经常出现的两个概念，本文将通过一张图来捋一捋二者之间的区别与联系。">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="alternate" type="application/atom+xml" title="郑鹤 · ZhengHe" href="/feed.xml">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<script src="/assets/js/site.js"></script>
+</head>
+<body>
+<site-nav active="writing"></site-nav>
+
+<main class="container">
+  <article class="post">
+    <a class="back" href="/writing/">← 写作</a>
+    <div class="meta-line">
+      <a class="chip cat" href="/categories/%E6%80%9D%E8%80%83/">思考</a>
+      <span class="when">2022-05-23</span>
+    </div>
+    <h1 class="title">捋一捋 Accuracy 与 Precision 间的区别和联系</h1>
+    <div class="prose">
+<p>Accuracy 和 Precision 是在科学技术领域中经常出现的两个概念，本文将通过一张图来捋一捋二者之间的区别与联系。</p>
+<h2>为什么容易混淆</h2>
+<p>以百度翻译为例，我将 accuracy 和 precision 分别作为关键词搜索，得到的结果如下：</p>
+<p><img src="./translation-accuracy.png" alt="translation-accuracy"></p>
+<p><img src="./translation-precision.png" alt="translation-precision"></p>
+<p>两个词的翻译结果中都出现了精确、准确的字样。接着，继续以准确和精确分别作为关键词搜索：</p>
+<p><img src="./zhunque.png" alt="zhunque"></p>
+<p><img src="./jingque.png" alt="jingque"></p>
+<p>从精确的释义中我们看到了「准确」字样，这也难怪有些文献会把 accuracy 翻译成「准确度」，而有些文献翻译成「精确度」。这样，我们基本可以得到一个结论：<strong>中文不存在和 accuracy、precision 含义一一对应的词语</strong>。</p>
+<h2>一图中的</h2>
+<p><img src="./accuracy-and-precision.png" alt="accuracy-vs-precision"></p>
+<p>图中有四张靶纸：</p>
+<table>
+<thead>
+<tr>
+<th>靶纸位置</th>
+<th>Accurate</th>
+<th>Precise</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左上</td>
+<td>✅</td>
+<td>✅</td>
+<td>全部命中靶心附近且命中点集中</td>
+</tr>
+<tr>
+<td>右上</td>
+<td>✅</td>
+<td>❌</td>
+<td>命中点的统计中心与靶心较近</td>
+</tr>
+<tr>
+<td>左下</td>
+<td>❌</td>
+<td>✅</td>
+<td>全部偏出靶心，命中点集中，命中点的统计中心与靶心较远</td>
+</tr>
+<tr>
+<td>右下</td>
+<td>❌</td>
+<td>❌</td>
+<td>全部偏出靶心，命中点分散，且命中点统计中心与靶心较远</td>
+</tr>
+</tbody>
+</table>
+<p>如果将一次射击理解为一次对射手射击水平的测量，那么 accuracy 衡量的是测量值的中心 (如均值) 离真实值的距离，是绝对关系；而 precision 衡量的是多次测量值之间的距离，是相对关系。如果你不排斥概率密度图，可以参考下面这张图：</p>
+<p><img src="./accuracy-vs-precision-wikipedia.png" alt="accuracy-vs-precision-wikipedia"></p>
+<h2>隐喻</h2>
+<p>我个人对这四张图有另一种理解 —— 这四张图分别对应着学习的四种状态：</p>
+<table>
+<thead>
+<tr>
+<th>靶纸位置</th>
+<th>学习状态</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左上</td>
+<td>出类拔萃</td>
+<td>掌握核心思想、基本功扎实、拥有丰富且有效的实践经验</td>
+</tr>
+<tr>
+<td>右上</td>
+<td>学有所成</td>
+<td>掌握核心思想、基本功扎实，但需要更多的实践锻炼让输出更稳定</td>
+</tr>
+<tr>
+<td>左下</td>
+<td>误入歧途</td>
+<td>理解粗浅、基本功薄弱，但参与了很多实践项目<br />强化了错误的认知和实践方式，可塑性低</td>
+</tr>
+<tr>
+<td>右下</td>
+<td>初出茅庐</td>
+<td>一张白纸，尚没有相关知识和实践经验，具有较高的可塑性</td>
+</tr>
+</tbody>
+</table>
+<p>无论在哪个领域学习，一条高效、系统的学习路径应该是「初出茅庐 → 学有所成 → 出类拔萃」，是否达到出类拔萃取决于你的天赋、热爱和持续投入的程度。但对于像我这样的普通人，只要有热爱，并能持续付出努力，在目标领域达到学有所成并非难事。但如果在学习过程中缺乏对目标领域的敬畏之心，学到一点皮毛便骄傲自满、急于表现，丧失了钻研精神，就容易误入歧途。</p>
+<h2>例外</h2>
+<p>在信息检索领域和机器学习的分类问题中，有一种衡量算法性能的指标被命名为 precision。需要格外注意的是，在这两个领域中，precision 的定义与我们上文提到的并不相同，其定义更接近 accuracy，如果你在这个领域深耕多年，希望这篇文章不会扰乱你已经建立好的思维模型 : )。</p>
+<p><em>感谢何希僖帮忙审校</em></p>
+    </div>
+  </article>
+  <div class="post-comments">
+    <div class="label">COMMENTS · GISCUS</div>
+    <div class="giscus-placeholder">giscus · GitHub Discussions</div>
+  </div>
+</main>
+
+<site-footer></site-footer>
+</body>
+</html>
