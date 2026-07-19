@@ -135,14 +135,12 @@ function postRow(p) {
 }
 
 function tilStreamEntry(t) {
-  const bodyMatch = t.html.match(/<!-- til:body -->([\s\S]*?)<!-- \/til:body -->/);
-  const body = bodyMatch ? bodyMatch[1].trim() : `<p class="body">${esc(t.summary)}</p>`;
   return `<div class="til-entry">
   <span class="dot"></span>
   <div class="date">${esc(t.date)}</div>
   <div class="til-card">
     <h3><a href="${t.url}">${esc(t.title)}</a></h3>
-    ${body}
+    <div class="body"><p>${esc(t.summary)}</p></div>
   </div>
 </div>`;
 }
