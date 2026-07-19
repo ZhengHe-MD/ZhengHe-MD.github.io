@@ -293,17 +293,27 @@ const talksCount = countCards('talks', 'talk-card');
   fs.writeFileSync(path.join(OUT, 'feed.xml'), atomFeed(items));
 }
 
-// old-link forwarder stubs (from each page's own legacy meta)
+// old-link forwarder stubs (from each page's own legacy meta), plus the old
+// blog's own landing pages. These only take effect once the ZhengHe-MD/blog
+// project site stops shadowing /blog/ — see README.
 {
   let stubs = 0;
-  for (const item of [...writing, ...til]) {
-    if (!item.legacy) continue;
-    const rel = item.legacy.replace(/^\//, '').replace(/\/$/, '');
+  const writeStub = (oldPath, newUrl) => {
+    const rel = oldPath.replace(/^\//, '').replace(/\/$/, '');
     const dir = path.join(OUT, rel);
     fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, 'index.html'), forwarderStub(item.legacy, item.url));
+    fs.writeFileSync(path.join(dir, 'index.html'), forwarderStub(oldPath, newUrl));
     stubs += 1;
+  };
+
+  for (const item of [...writing, ...til]) {
+    if (item.legacy) writeStub(item.legacy, item.url);
   }
+  writeStub('/blog/', '/writing/');
+  writeStub('/blog/about/', '/about/');
+  writeStub('/blog/categories/', '/writing/');
+  writeStub('/blog/tags/', '/writing/');
+
   console.log(`stubs: ${stubs}`);
 }
 

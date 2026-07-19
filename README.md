@@ -55,6 +55,18 @@ TIL 页面同理，另外把正文包在 `<!-- til:body -->` / `<!-- /til:body -
 `running_page` 已发布的 `activities.json` 拉取并过滤（跑步、≥3 km、配速 ≤8 min/km、按日去重）。
 全程无需任何凭据，不触碰上游的 Keep 登录。
 
+## 旧链接转发
+
+`/blog/...` 的 53 个转发桩由索引器自动生成（49 篇文章 + 首页/关于/分类/标签）。
+
+**目前它们还没有生效**：`ZhengHe-MD/blog` 仓库自己发布了一个 GitHub Pages
+project site 占用 `zhenghe-md.github.io/blog/`，而 project site 的路由优先级
+高于 user site，因此旧链接仍然落在旧的 Hexo 博客上。
+
+解决方式：到 `ZhengHe-MD/blog` 的 **Settings → Pages → Unpublish site**
+取消发布（REST API 的 `DELETE /repos/:owner/:repo/pages` 会返回 422，只能在界面操作）。
+取消后本仓库的转发桩立即接管，无需再改动代码。
+
 ## 待办（需作者补充）
 
 - `about/index.html` — 工作经历与教育背景（旧 resume 仓库不在本地，已留占位注释）
