@@ -26,9 +26,21 @@ docs/                 设计文档与迁移类目映射表
 
 ## 本地构建与预览
 
+**开发预览（推荐，支持热重载 Auto-Reload）：**
+
 ```bash
-node scripts/build.mjs        # 生成 _site/
-cd _site && python3 -m http.server 8901
+npm run dev
+# 或: node scripts/dev.mjs
+# 或: node scripts/build.mjs --watch
+```
+
+运行后访问 `http://localhost:8901/`。修改任何源文件（内容、样式、脚本等）时，脚本会自动重新构建 `_site/` 并联动浏览器刷新页面。
+
+**单次构建静态产物：**
+
+```bash
+npm run build
+# 或: node scripts/build.mjs
 ```
 
 `_site/` 不提交进仓库；GitHub Action 在每次推送 main 时构建并部署。

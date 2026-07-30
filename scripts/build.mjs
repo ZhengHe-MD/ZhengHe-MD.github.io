@@ -218,102 +218,117 @@ ${entries}
 
 // ---------------------------------------------------------------- build
 
-copySite();
+export function build(opts = {}) {
+  const verbose = opts.verbose ?? true;
 
-const writing = scanCollection('writing');
-const til = scanCollection('til');
+  copySite();
 
-// counts for home tiles
-let runningKm = '—';
-const dataPath = path.join(ROOT, 'running', 'data.json');
-if (fs.existsSync(dataPath)) {
-  const activities = JSON.parse(read(dataPath));
-  const total = activities.reduce((s, a) => s + (a.distance || 0), 0);
-  runningKm = Math.round(total).toLocaleString('en-US');
-}
-// Count cards in the curated galleries. Comments are stripped first so the
-// commented-out "copy me" card templates don't inflate the counts.
-function countCards(file, cls) {
-  const p = path.join(ROOT, file, 'index.html');
-  if (!fs.existsSync(p)) return 0;
-  const live = read(p).replace(/<!--[\s\S]*?-->/g, '');
-  return (live.match(new RegExp(`class="${cls}"`, 'g')) || []).length;
-}
-const projectsCount = countCards('projects', 'project-card');
-const talksCount = countCards('talks', 'talk-card');
+  const writing = scanCollection('writing');
+  const til = scanCollection('til');
 
-// home
-{
-  let home = read(path.join(ROOT, 'index.html'));
-  const latest = [...writing, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
-  home = replaceRegion(home, 'latest', latest.map(latestRow).join('\n'));
-  home = replaceRegion(home, 'count:writing', `${writing.length} posts`);
-  home = replaceRegion(home, 'count:til', `${til.length} notes`);
-  home = replaceRegion(home, 'count:projects', `${projectsCount} works`);
-  home = replaceRegion(home, 'count:talks', `${talksCount} talks`);
-  home = replaceRegion(home, 'count:running', `${runningKm} km`);
-  fs.writeFileSync(path.join(OUT, 'index.html'), home);
-}
-
-// writing index
-{
-  let page = read(path.join(ROOT, 'writing', 'index.html'));
-  page = replaceRegion(page, 'writing-list', writing.map(postRow).join('\n'));
-  fs.writeFileSync(path.join(OUT, 'writing', 'index.html'), page);
-}
-
-// til stream
-{
-  let page = read(path.join(ROOT, 'til', 'index.html'));
-  page = replaceRegion(page, 'til-stream', til.map(tilStreamEntry).join('\n'));
-  fs.writeFileSync(path.join(OUT, 'til', 'index.html'), page);
-}
-
-// category pages (site-wide taxonomy: 思考 / 实践)
-{
-  const byCat = new Map();
-  for (const item of [...writing, ...til]) {
-    if (!item.category) continue;
-    if (!byCat.has(item.category)) byCat.set(item.category, []);
-    byCat.get(item.category).push(item);
+  // counts for home tiles
+  let runningKm = '—';
+  const dataPath = path.join(ROOT, 'running', 'data.json');
+  if (fs.existsSync(dataPath)) {
+    const activities = JSON.parse(read(dataPath));
+    const total = activities.reduce((s, a) => s + (a.distance || 0), 0);
+    runningKm = Math.round(total).toLocaleString('en-US');
   }
-  for (const [name, items] of byCat) {
-    items.sort((a, b) => b.date.localeCompare(a.date));
-    const dir = path.join(OUT, 'categories', name);
-    fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, 'index.html'), categoryPage(name, items));
+  // Count cards in the curated galleries. Comments are stripped first so the
+  // commented-out "copy me" card templates don't inflate the counts.
+  function countCards(file, cls) {
+    const p = path.join(ROOT, file, 'index.html');
+    if (!fs.existsSync(p)) return 0;
+    const live = read(p).replace(/<!--[\s\S]*?-->/g, '');
+    return (live.match(new RegExp(`class="${cls}"`, 'g')) || []).length;
+  }
+  const projectsCount = countCards('projects', 'project-card');
+  const talksCount = countCards('talks', 'talk-card');
+
+  // home
+  {
+    let home = read(path.join(ROOT, 'index.html'));
+    const latest = [...writing, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
+    home = replaceRegion(home, 'latest', latest.map(latestRow).join('\n'));
+    home = replaceRegion(home, 'count:writing', `${writing.length} posts`);
+    home = replaceRegion(home, 'count:til', `${til.length} notes`);
+    home = replaceRegion(home, 'count:projects', `${projectsCount} works`);
+    home = replaceRegion(home, 'count:talks', `${talksCount} talks`);
+    home = replaceRegion(home, 'count:running', `${runningKm} km`);
+    fs.writeFileSync(path.join(OUT, 'index.html'), home);
+  }
+
+  // writing index
+  {
+    let page = read(path.join(ROOT, 'writing', 'index.html'));
+    page = replaceRegion(page, 'writing-list', writing.map(postRow).join('\n'));
+    fs.writeFileSync(path.join(OUT, 'writing', 'index.html'), page);
+  }
+
+  // til stream
+  {
+    let page = read(path.join(ROOT, 'til', 'index.html'));
+    page = replaceRegion(page, 'til-stream', til.map(tilStreamEntry).join('\n'));
+    fs.writeFileSync(path.join(OUT, 'til', 'index.html'), page);
+  }
+
+  // category pages (site-wide taxonomy: 思考 / 实践)
+  {
+    const byCat = new Map();
+    for (const item of [...writing, ...til]) {
+      if (!item.category) continue;
+      if (!byCat.has(item.category)) byCat.set(item.category, []);
+      byCat.get(item.category).push(item);
+    }
+    for (const [name, items] of byCat) {
+      items.sort((a, b) => b.date.localeCompare(a.date));
+      const dir = path.join(OUT, 'categories', name);
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(path.join(dir, 'index.html'), categoryPage(name, items));
+    }
+  }
+
+  // atom feed
+  {
+    const items = [...writing, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 20);
+    fs.writeFileSync(path.join(OUT, 'feed.xml'), atomFeed(items));
+  }
+
+  // old-link forwarder stubs (from each page's own legacy meta), plus the old
+  // blog's own landing pages. These only take effect once the ZhengHe-MD/blog
+  // project site stops shadowing /blog/ — see README.
+  {
+    let stubs = 0;
+    const writeStub = (oldPath, newUrl) => {
+      const rel = oldPath.replace(/^\//, '').replace(/\/$/, '');
+      const dir = path.join(OUT, rel);
+      fs.mkdirSync(dir, { recursive: true });
+      fs.writeFileSync(path.join(dir, 'index.html'), forwarderStub(oldPath, newUrl));
+      stubs += 1;
+    };
+
+    for (const item of [...writing, ...til]) {
+      if (item.legacy) writeStub(item.legacy, item.url);
+    }
+    writeStub('/blog/', '/writing/');
+    writeStub('/blog/about/', '/about/');
+    writeStub('/blog/categories/', '/writing/');
+    writeStub('/blog/tags/', '/writing/');
+
+    if (verbose) console.log(`stubs: ${stubs}`);
+  }
+
+  if (verbose) {
+    console.log(`writing: ${writing.length}, til: ${til.length}, projects: ${projectsCount}, talks: ${talksCount}, running: ${runningKm} km`);
+    console.log(`built → ${OUT}`);
   }
 }
 
-// atom feed
-{
-  const items = [...writing, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 20);
-  fs.writeFileSync(path.join(OUT, 'feed.xml'), atomFeed(items));
-}
-
-// old-link forwarder stubs (from each page's own legacy meta), plus the old
-// blog's own landing pages. These only take effect once the ZhengHe-MD/blog
-// project site stops shadowing /blog/ — see README.
-{
-  let stubs = 0;
-  const writeStub = (oldPath, newUrl) => {
-    const rel = oldPath.replace(/^\//, '').replace(/\/$/, '');
-    const dir = path.join(OUT, rel);
-    fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, 'index.html'), forwarderStub(oldPath, newUrl));
-    stubs += 1;
-  };
-
-  for (const item of [...writing, ...til]) {
-    if (item.legacy) writeStub(item.legacy, item.url);
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  if (process.argv.includes('--watch') || process.argv.includes('-w')) {
+    import('./dev.mjs');
+  } else {
+    build();
   }
-  writeStub('/blog/', '/writing/');
-  writeStub('/blog/about/', '/about/');
-  writeStub('/blog/categories/', '/writing/');
-  writeStub('/blog/tags/', '/writing/');
-
-  console.log(`stubs: ${stubs}`);
 }
 
-console.log(`writing: ${writing.length}, til: ${til.length}, projects: ${projectsCount}, talks: ${talksCount}, running: ${runningKm} km`);
-console.log(`built → ${OUT}`);
