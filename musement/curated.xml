@@ -5,8 +5,49 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>On-demand AI-curated reading encounters from Musement</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 14:36:37 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 14:52:26 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/curated.xml" rel="self" type="application/rss+xml"/>
-
+    <item>
+      <title>AlphaGo as a worked example of learning agents</title>
+      <link>https://www.dwarkesh.com/p/eric-jang</link>
+      <guid isPermaLink="false">musement:curated:b07c40b66bbd269d</guid>
+      <pubDate>Sun, 09 Aug 2026 14:49:26 GMT</pubDate>
+      <description><![CDATA[<p><strong>AlphaGo as a worked example of learning agents</strong></p>
+<p>Eric Jang reconstructs AlphaGo with modern AI tools, using search, self-play, value estimation and credit assignment to illuminate both current LLM reinforcement learning and automated AI research. The comparison exposes why trajectory-level rewards give language agents much weaker learning signals than move-by-move search.</p>
+<blockquote><em>Why selected:</em> This is the strongest technical bridge between established reinforcement-learning machinery and today’s AI-assisted development. It offers reusable design intuitions rather than another model announcement, while also examining which parts of experimental research agents can and cannot yet automate.</blockquote>
+<p><strong>Evidence Status:</strong> High confidence that the material is technically substantive: the supplied synopsis and chapter sequence specify concrete algorithms and limitations. Claims about superior RL approaches and automated researchers remain the guest’s analysis and were not independently verified here.</p>
+<p><strong>Source:</strong> Dwarkesh Podcast (podcast) | <strong>Author:</strong> Dwarkesh Patel</p>
+<p><strong>Estimated Reading Time:</strong> 24 min</p>
+<hr/>
+<p><a href="https://www.dwarkesh.com/p/eric-jang">👉 Open Source Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a&amp;body=Item%3A%20%22AlphaGo%20as%20a%20worked%20example%20of%20learning%20agents%22%0AFingerprint%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>Effective learning begins by noticing confusion</title>
+      <link>https://www.dwarkesh.com/p/andy-matuschak</link>
+      <guid isPermaLink="false">musement:curated:7cfff5e17b14cbc6</guid>
+      <pubDate>Sun, 09 Aug 2026 14:49:26 GMT</pubDate>
+      <description><![CDATA[<p><strong>Effective learning begins by noticing confusion</strong></p>
+<p>Andy Matuschak demonstrates an unusually deliberate approach to reading and self-teaching: slow interrogation of confusion, active memory practice and repeated reconstruction of ideas. The discussion connects these techniques to intellectual stamina, explanatory media, spaced repetition and tool design.</p>
+<blockquote><em>Why selected:</em> This directly serves the user’s enduring interest in cognition while remaining actionable for learning fast-moving technical subjects. Its key challenge—that understanding depends partly on effortful retrieval and precise diagnosis of confusion—also provides a useful corrective to frictionless AI summaries.</blockquote>
+<p><strong>Evidence Status:</strong> The material offers unusually inspectable practitioner methods and an observed learning session, but it is not presented as a controlled review of cognitive-science evidence. Treat broad claims about why learning tools fail as informed hypotheses rather than settled findings.</p>
+<p><strong>Source:</strong> Dwarkesh Podcast (podcast) | <strong>Author:</strong> Dwarkesh Patel</p>
+<p><strong>Estimated Reading Time:</strong> 38 min</p>
+<hr/>
+<p><a href="https://www.dwarkesh.com/p/andy-matuschak">👉 Open Source Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2&amp;body=Item%3A%20%22Effective%20learning%20begins%20by%20noticing%20confusion%22%0AFingerprint%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>The Renaissance as a chain of unintended consequences</title>
+      <link>https://www.dwarkesh.com/p/ada-palmer</link>
+      <guid isPermaLink="false">musement:curated:14ea6dc063863ea9</guid>
+      <pubDate>Sun, 09 Aug 2026 14:49:26 GMT</pubDate>
+      <description><![CDATA[<p><strong>The Renaissance as a chain of unintended consequences</strong></p>
+<p>Ada Palmer reframes the Renaissance through the economics and distribution infrastructure of printing, the institutional behavior of censorship, and reformers whose projects produced effects opposite to their intentions. Gutenberg’s commercial failure, pamphlet networks and Petrarch’s indirect path to later science become a study of how technologies actually propagate through institutions.</p>
+<blockquote><em>Why selected:</em> This is the wildcard selection: rich history that yields transferable models of technological diffusion, censorship and second-order effects. It challenges clean innovation narratives and offers useful analogies for reasoning about how AI may be shaped by distribution channels and institutions rather than inventors’ intentions.</blockquote>
+<p><strong>Evidence Status:</strong> The supplied excerpt contains extensive concrete historical argument and causal interpretation. Confidence is high that the episode is substantive, but individual quantitative claims and Palmer’s revisionist framing were not independently checked against primary scholarship.</p>
+<p><strong>Source:</strong> Dwarkesh Podcast (podcast) | <strong>Author:</strong> Dwarkesh Patel</p>
+<p><strong>Estimated Reading Time:</strong> 30 min</p>
+<hr/>
+<p><a href="https://www.dwarkesh.com/p/ada-palmer">👉 Open Source Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00&amp;body=Item%3A%20%22The%20Renaissance%20as%20a%20chain%20of%20unintended%20consequences%22%0AFingerprint%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
   </channel>
 </rss>
