@@ -1,0 +1,85 @@
+name: Musement Read Callback
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  record-read:
+    if: startsWith(github.event.issue.title, 'Musement Read:')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Record Exposure in exposures.json
+        id: record
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            
+            const title = context.payload.issue.title;
+            const match = title.match(/Musement Read:\s*([a-zA-Z0-9_-]+)/);
+            if (!match) {
+              core.setFailed('Invalid Musement Read issue title format');
+              return;
+            }
+            const fingerprint = match[1].trim();
+            const now = new Date().toISOString();
+
+            const dir = path.join(process.env.GITHUB_WORKSPACE, 'musement');
+            if (!fs.existsSync(dir)) {
+              fs.mkdirSync(dir, { recursive: true });
+            }
+            const exposuresPath = path.join(dir, 'exposures.json');
+            
+            let exposures = [];
+            if (fs.existsSync(exposuresPath)) {
+              try {
+                const data = JSON.parse(fs.readFileSync(exposuresPath, 'utf8'));
+                if (Array.isArray(data)) exposures = data;
+              } catch (e) {
+                console.error('Failed to parse existing exposures.json', e);
+              }
+            }
+
+            if (!exposures.some(e => e.fingerprint === fingerprint)) {
+              exposures.push({ fingerprint, exposed_at: now });
+              fs.writeFileSync(exposuresPath, JSON.stringify(exposures, null, 2) + '\n', 'utf8');
+              core.setOutput('updated', 'true');
+            } else {
+              core.setOutput('updated', 'false');
+            }
+            core.setOutput('fingerprint', fingerprint);
+
+      - name: Commit and Push Exposure
+        if: steps.record.outputs.updated == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add musement/exposures.json
+          git commit -m "chore(musement): record read exposure ${{ steps.record.outputs.fingerprint }} [skip ci]"
+          git push
+
+      - name: Close Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ Marked material with fingerprint \`${{ steps.record.outputs.fingerprint }}\` as read in Musement.`
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed'
+            });

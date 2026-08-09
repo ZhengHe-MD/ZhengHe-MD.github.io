@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Musement Curated Encounters</title>
+    <link>https://zhenghe-md.github.io/musement</link>
+    <description>On-demand AI-curated reading encounters from Musement</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Aug 2026 14:36:37 GMT</lastBuildDate>
+    <atom:link href="https://zhenghe-md.github.io/musement/curated.xml" rel="self" type="application/rss+xml"/>
+
+  </channel>
+</rss>
