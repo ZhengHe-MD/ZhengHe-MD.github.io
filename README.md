@@ -16,6 +16,7 @@
 ```
 index.html            首页
 writing/<slug>/       长文（49 篇已从 Hexo 迁移）
+courses/<slug>/       交互式课程（由 Course Studio 导出）
 til/<slug>/           TIL 短文
 projects/ talks/ about/ running/
 assets/               css / js / fonts / img / vendor
@@ -60,6 +61,19 @@ npm run build
 正文放进 `<div class="prose">`。图片与本页放在同一目录，用相对路径引用。
 TIL 页面同理，另外把正文包在 `<!-- til:body -->` / `<!-- /til:body -->` 之间，
 `/til/` 流会直接内联这段内容。
+
+## 发布一门交互式课程
+
+在 [Course Studio](../interactive-course) 中完成课程共创后，点击工具栏中的 **Export** 导出独立 HTML。
+将导出的文件保存至 `courses/<course-slug>/index.html`，页面包含以下元数据：
+
+```html
+<meta name="date" content="2026-08-11">
+<meta name="category" content="实践">        <!-- 思考 或 实践，可省略 -->
+<meta name="summary" content="课程一句话主题与摘要。">
+```
+
+运行 `npm run build` 即可自动聚合至首页 Tile、最新动态、`/courses/` 课程广场与 RSS 订阅源中。
 
 ## 跑步数据
 
