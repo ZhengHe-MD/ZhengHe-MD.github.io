@@ -172,7 +172,7 @@ site-footer { display: block; }
   .hero h1 { font-size: 34px; }
 }
 
-.tiles { padding: 24px 0 8px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.tiles { padding: 24px 0 8px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
 .tile {
   cursor: pointer; background: var(--surface); border: 1px solid var(--line);
   border-radius: 14px; padding: 20px 18px; display: flex; flex-direction: column;
@@ -183,7 +183,7 @@ site-footer { display: block; }
 .tile .glyph { font-size: 22px; }
 .tile .zh { font-family: 'Noto Serif SC', serif; font-size: 19px; font-weight: 600; }
 .tile .meta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--faint); letter-spacing: .5px; margin-top: 2px; }
-@media (max-width: 900px) { .tiles { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 960px) { .tiles { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 600px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
 
 .latest { padding: 44px 0 90px; }
@@ -319,6 +319,52 @@ site-footer { display: block; }
 /* single TIL page reuses .til-card at article width */
 .til-single { max-width: 720px; margin: 0 auto; padding: 64px 0 90px; animation: floatIn .4s ease both; }
 .til-single .date { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--faint); margin: 26px 0 10px; }
+
+/* ---------- courses ---------- */
+.courses-grid { padding: 0 0 90px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.course-card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+  overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column;
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+  color: var(--ink);
+}
+.course-card:hover { text-decoration: none; border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow); }
+.course-card .head-bar {
+  padding: 20px 24px 0; display: flex; justify-content: space-between; align-items: center; gap: 12px;
+}
+.course-card .head-bar .sessions-badge {
+  font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--faint); letter-spacing: .5px;
+}
+.course-card .body { padding: 14px 24px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.course-card h3 { font-family: 'Noto Serif SC', serif; font-size: 22px; font-weight: 600; margin: 0; color: var(--ink); }
+.course-card:hover h3 { color: var(--accent-ink); }
+.course-card .desc { color: var(--muted); font-size: 14.5px; line-height: 1.65; margin: 0; flex: 1; }
+.course-card .meta-foot {
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid var(--line); margin-top: 6px; padding: 14px 24px 16px;
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--faint);
+}
+.course-card .meta-foot .action {
+  font-family: 'Noto Sans SC', sans-serif; font-weight: 600; font-size: 13px; color: var(--accent-ink);
+}
+@media (max-width: 800px) { .courses-grid { grid-template-columns: 1fr; } }
+
+/* ---------- course player & standalone shell dark-mode theme overrides ---------- */
+.cs-export-shell { min-height: calc(100vh - 66px); }
+[data-theme="dark"] .cs-export-shell {
+  --paper: var(--bg);
+  --panel: var(--surface);
+  --ink: oklch(0.93 0.006 80);
+  --muted: oklch(0.68 0.008 70);
+  --line: oklch(0.31 0.008 60);
+  --accent: oklch(0.7 0.15 42);
+}
+[data-theme="dark"] .cs-export-header { background: color-mix(in oklab, var(--surface) 82%, transparent) !important; }
+[data-theme="dark"] .cs-companion-drawer { background: var(--surface) !important; color: var(--ink) !important; }
+[data-theme="dark"] .cs-companion-header { background: var(--surface-2) !important; }
+[data-theme="dark"] .cs-turn-user { background: var(--surface-2) !important; color: var(--ink) !important; border-color: var(--line) !important; }
+[data-theme="dark"] .cs-turn-agent { background: var(--surface) !important; color: var(--ink) !important; border-color: var(--line) !important; }
+[data-theme="dark"] .cs-export-reader iframe { background: var(--surface-2) !important; border-color: var(--line) !important; }
 
 /* ---------- projects ---------- */
 .projects-grid { padding: 0 0 90px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }

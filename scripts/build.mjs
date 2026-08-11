@@ -60,6 +60,14 @@ function readMinutes(html) {
   return Math.max(1, Math.round((cjk + words) / 400));
 }
 
+function sessionCount(html) {
+  const metaSessions = meta(html, 'sessions');
+  if (metaSessions) return Number(metaSessions);
+  const matches = [...html.matchAll(/"path"\s*:\s*"[^"]+\.html"/g)];
+  if (matches.length > 0) return matches.length;
+  return null;
+}
+
 // ---------------------------------------------------------------- scan
 
 function scanCollection(dir) {
@@ -81,6 +89,7 @@ function scanCollection(dir) {
       summary: meta(html, 'summary') || '',
       legacy: meta(html, 'legacy'),
       minutes: readMinutes(html),
+      sessions: sessionCount(html),
       html,
     });
   }
@@ -106,8 +115,8 @@ function copySite() {
 // ---------------------------------------------------------------- renderers
 
 function latestRow(item) {
-  const typeLabel = { writing: '写作', til: 'TIL', projects: '项目', talks: '演讲' }[item.collection] || item.collection;
-  const sub = item.collection === 'writing' && item.category
+  const typeLabel = { writing: '写作', courses: '课程', til: 'TIL', projects: '项目', talks: '演讲' }[item.collection] || item.collection;
+  const sub = (item.collection === 'writing' || item.collection === 'courses') && item.category
     ? `${item.category} · ${item.summary}` : item.summary;
   return `<a class="latest-item" href="${item.url}">
   <span class="chip">${esc(typeLabel)}</span>
@@ -130,6 +139,27 @@ function postRow(p) {
     <div class="meta-line">${cat}<span class="read-time">${p.minutes} min</span></div>
     <h3>${esc(p.title)}</h3>
     <p>${esc(p.summary)}</p>
+  </div>
+</a>`;
+}
+
+function courseCard(c) {
+  const cat = c.category
+    ? `<span class="chip cat">${esc(c.category)}</span>`
+    : `<span class="chip">课程</span>`;
+  const sessionsText = c.sessions ? `${c.sessions} 课时` : '';
+  return `<a class="course-card" href="${c.url}">
+  <div class="head-bar">
+    ${cat}
+    ${sessionsText ? `<span class="sessions-badge">${esc(sessionsText)}</span>` : ''}
+  </div>
+  <div class="body">
+    <h3>${esc(c.title)}</h3>
+    <p class="desc">${esc(c.summary)}</p>
+  </div>
+  <div class="meta-foot">
+    <span>${esc(c.date)}</span>
+    <span class="action">进入课程 →</span>
   </div>
 </a>`;
 }
@@ -224,6 +254,7 @@ export function build(opts = {}) {
   copySite();
 
   const writing = scanCollection('writing');
+  const courses = scanCollection('courses');
   const til = scanCollection('til');
 
   // counts for home tiles
@@ -248,9 +279,10 @@ export function build(opts = {}) {
   // home
   {
     let home = read(path.join(ROOT, 'index.html'));
-    const latest = [...writing, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
+    const latest = [...writing, ...courses, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
     home = replaceRegion(home, 'latest', latest.map(latestRow).join('\n'));
     home = replaceRegion(home, 'count:writing', `${writing.length} posts`);
+    home = replaceRegion(home, 'count:courses', `${courses.length} courses`);
     home = replaceRegion(home, 'count:til', `${til.length} notes`);
     home = replaceRegion(home, 'count:projects', `${projectsCount} works`);
     home = replaceRegion(home, 'count:talks', `${talksCount} talks`);
@@ -265,6 +297,16 @@ export function build(opts = {}) {
     fs.writeFileSync(path.join(OUT, 'writing', 'index.html'), page);
   }
 
+  // courses index
+  {
+    let page = read(path.join(ROOT, 'courses', 'index.html'));
+    const cards = courses.length
+      ? courses.map(courseCard).join('\n')
+      : '<p style="color:var(--muted);grid-column:1/-1;padding:20px 0;">课程正在编排中，敬请期待。</p>';
+    page = replaceRegion(page, 'courses-list', cards);
+    fs.writeFileSync(path.join(OUT, 'courses', 'index.html'), page);
+  }
+
   // til stream
   {
     let page = read(path.join(ROOT, 'til', 'index.html'));
@@ -275,7 +317,7 @@ export function build(opts = {}) {
   // category pages (site-wide taxonomy: 思考 / 实践)
   {
     const byCat = new Map();
-    for (const item of [...writing, ...til]) {
+    for (const item of [...writing, ...courses, ...til]) {
       if (!item.category) continue;
       if (!byCat.has(item.category)) byCat.set(item.category, []);
       byCat.get(item.category).push(item);
@@ -290,7 +332,7 @@ export function build(opts = {}) {
 
   // atom feed
   {
-    const items = [...writing, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 20);
+    const items = [...writing, ...courses, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 20);
     fs.writeFileSync(path.join(OUT, 'feed.xml'), atomFeed(items));
   }
 
@@ -307,7 +349,7 @@ export function build(opts = {}) {
       stubs += 1;
     };
 
-    for (const item of [...writing, ...til]) {
+    for (const item of [...writing, ...courses, ...til]) {
       if (item.legacy) writeStub(item.legacy, item.url);
     }
     writeStub('/blog/', '/writing/');
@@ -319,7 +361,7 @@ export function build(opts = {}) {
   }
 
   if (verbose) {
-    console.log(`writing: ${writing.length}, til: ${til.length}, projects: ${projectsCount}, talks: ${talksCount}, running: ${runningKm} km`);
+    console.log(`writing: ${writing.length}, courses: ${courses.length}, til: ${til.length}, projects: ${projectsCount}, talks: ${talksCount}, running: ${runningKm} km`);
     console.log(`built → ${OUT}`);
   }
 }
