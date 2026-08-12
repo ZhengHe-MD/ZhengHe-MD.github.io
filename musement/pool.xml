@@ -5,7 +5,7 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>Unexposed candidate materials collected from configured sources</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 14:58:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 01:02:04 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/pool.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[Hacker News] OpenAI&apos;s Only Ethicist Reportedly Left Last Month</title>
@@ -565,7 +565,7 @@
       <guid isPermaLink="false">musement:pool:3aee5302ea2eb4b663e9545104a761207c09c111810704fc21a2041ad3d7941c</guid>
       <pubDate>Thu, 30 Jul 2026 10:17:45 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
 <p>I think I figured out a way to plan any size of work with an agent. The existing planning tools that I was using and playing around with, even ones that I&amp;#39;ve created, felt too constrained, too tied to a single session. I felt like I wasn&amp;#39;t able to be ambitious enough. And because of that, I was kind of constraining the stuff I was building to fit AI, which doesn&amp;#39;t feel right. This new approach doesn&amp;#39;t have that limit. You can plan enormous chunks of work and it will orchestrate t</p>
 <p><strong>Estimated Time:</strong> 15 min (video)</p>
 <hr/>
@@ -649,7 +649,7 @@
       <guid isPermaLink="false">musement:pool:eaf0497aaae8223fd47672cbcda671b9d30f205b08d582c6321c82de90d468e4</guid>
       <pubDate>Tue, 21 Jul 2026 10:00:13 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
 <p>Everyone always asks me what is the difference between greenfield and brownfield? Will your skills work on brownfield or will they only work on greenfield? And let me tell you something. Greenfield and brownfield are basically the same thing. Whatever you&amp;#39;re building, you are building for the real world. And in the real world, there is really no such thing as a greenfield. You are always working around external constraints, working to integrate with existing software, working to, you know, s</p>
 <p><strong>Estimated Time:</strong> 1 min (video)</p>
 <hr/>
@@ -661,7 +661,7 @@
       <guid isPermaLink="false">musement:pool:f3a19aaeb8efbd016149cd51d88f751fc92f063fef9788301d1b1665cf3ea7ea</guid>
       <pubDate>Mon, 20 Jul 2026 10:26:34 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
 <p>Someone messaged me the other week and told me they were using Grill me in a way that I had never considered before and I think it&amp;#39;s actually kind of genius. They were using it for technical interviews. So they would interview people, they would have them on a video call. They would get them to use Grill me in their Claude instance and basically get them to add a feature to a code base. The thing about Grill me is that it asks a lot of you, right? It asks you to clearly describe where you&amp;#3</p>
 <p><strong>Estimated Time:</strong> 1 min (video)</p>
 <hr/>
@@ -745,7 +745,7 @@
       <guid isPermaLink="false">musement:pool:c7c8f1158d5ed22113b8f1626bd59f372f649bb39effa2ce413fea836ae75fd4</guid>
       <pubDate>Thu, 16 Jul 2026 12:14:54 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
 <p>Do software fundamentals still matter? Or is the programmer just dead as a profession? Should we just ignore the code and just focused on the outputs of what the AI is producing? Just let it be a black box. Well, I&amp;#39;ve got an idea for you, which is that the code is the environment the agent operates in and the quality of the environment influences the output of the agent working in that code base. So, if you have a garbage code base, then the agent is going to produce garbage. And the thing a</p>
 <p><strong>Estimated Time:</strong> 2 min (video)</p>
 <hr/>
@@ -937,7 +937,7 @@
       <guid isPermaLink="false">musement:pool:f7fdaaddfd60ef2910ac02c261004b7d7e0ea90db415dcb51140cbefd694e8a2</guid>
       <pubDate>Mon, 22 Jun 2026 14:40:50 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Veritasium | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
 <p>(dramatic music) - A man has been found lying dead at the side of the road with oozing, elongated wounds to his back. To solve the murder, a local official calls all the farmers in the village and demands they all bring their tools to the main square. In the square, each man is set to lay down his sickle. And then something curious starts to happen. In the rising heat of the morning, flies begin to descend, all landing on a single sickle. Its owner buckles, falling to his knees and admits to mur</p>
 <p><strong>Estimated Time:</strong> 23 min (video)</p>
 <hr/>
@@ -1093,7 +1093,7 @@
       <guid isPermaLink="false">musement:pool:ede8dc266b3e1b7bd029d8c5fff558740bb7be505a2c4a1c4a176db913bbcea3</guid>
       <pubDate>Fri, 29 May 2026 16:22:02 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Lex Fridman Podcast | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
 <p>Don Lincoln is a particle physicist at Fermilab who has spent decades working at the frontiers of high energy physics. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep497-sc See below for timestamps, and to give feedback, submit questions, contact Lex, etc. CONTACT LEX: Feedback &amp;#8211; give feedback to Lex: https://lexfridman.com/survey AMA &amp;#8211; submit questions, videos or call-in: https://lexfridman.com/ama Hiring &amp;#8211; join our team: https://lexfridman</p>
 <p><strong>Estimated Time:</strong> 182 min (podcast)</p>
 <hr/>
@@ -1165,7 +1165,7 @@
       <guid isPermaLink="false">musement:pool:3221a8a238ec64432c7d1ee36d1c0c046fed6927516a3679c09bc7026d33e3d2</guid>
       <pubDate>Fri, 08 May 2026 16:38:22 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Dwarkesh Podcast | <strong>Author:</strong> Dwarkesh Patel</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
 <p>David Reich is back. He and collaborator Ali Akbari just published a paper that overturns a long-standing consensus about human evolution — that natural selection has been dormant in our species since the agricultural revolution. By scaling ancient DNA sequencing and developing a new statistical method, they found that selection has actually sped up. Selection went especially bonkers during the Bronze Age (around 3,000 years ago). That’s when gene frequencies for everything from immune function </p>
 <p><strong>Estimated Time:</strong> 133 min (podcast)</p>
 <hr/>
@@ -1177,7 +1177,7 @@
       <guid isPermaLink="false">musement:pool:76d6e0719265e0c1a143616bd51ceb20dafc6e62e05f57a1400e301523dbd04a</guid>
       <pubDate>Wed, 06 May 2026 22:06:47 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Lex Fridman Podcast | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
 <p>Jean-Baptiste Kempf is lead developer of VLC and president of VideoLAN. Kieran Kunhya is a longtime FFmpeg contributor, codec engineer, and the person behind the now-infamous FFmpeg account on X. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep496-sc See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. Transcript: https://lexfridman.com/ffmpeg-transcript CONTACT LEX: Feedback &amp;#8211; give feedback to Lex: https://lexf</p>
 <p><strong>Estimated Time:</strong> 264 min (podcast)</p>
 <hr/>

@@ -5,7 +5,7 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>Fast-moving ambient updates, current events, and tangents</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 14:58:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 01:02:04 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/pool-horizon.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[Hacker News] OpenAI&apos;s Only Ethicist Reportedly Left Last Month</title>
@@ -308,18 +308,6 @@
 <p><a href="https://meshdiff.com/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20a513210dec1776dc2fabfbce02826cfd6520b2db89f4adb42c08c66d095bf4b6&amp;body=Item%3A%20%22Meshdiff%20%E2%80%93%20visually%20compare%20two%20STL%20versions%20in%20the%20browser%2C%20client-side%22%0AFingerprint%3A%20a513210dec1776dc2fabfbce02826cfd6520b2db89f4adb42c08c66d095bf4b6%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Matt Pocock] /wayfinder: Nothing is too big to plan anymore</title>
-      <link>https://www.youtube.com/watch?v=F3lL98Pj90o</link>
-      <guid isPermaLink="false">musement:pool:3aee5302ea2eb4b663e9545104a761207c09c111810704fc21a2041ad3d7941c</guid>
-      <pubDate>Thu, 30 Jul 2026 10:17:45 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>I think I figured out a way to plan any size of work with an agent. The existing planning tools that I was using and playing around with, even ones that I&amp;#39;ve created, felt too constrained, too tied to a single session. I felt like I wasn&amp;#39;t able to be ambitious enough. And because of that, I was kind of constraining the stuff I was building to fit AI, which doesn&amp;#39;t feel right. This new approach doesn&amp;#39;t have that limit. You can plan enormous chunks of work and it will orchestrate t</p>
-<p><strong>Estimated Time:</strong> 15 min (video)</p>
-<hr/>
-<p><a href="https://www.youtube.com/watch?v=F3lL98Pj90o">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%203aee5302ea2eb4b663e9545104a761207c09c111810704fc21a2041ad3d7941c&amp;body=Item%3A%20%22%2Fwayfinder%3A%20Nothing%20is%20too%20big%20to%20plan%20anymore%22%0AFingerprint%3A%203aee5302ea2eb4b663e9545104a761207c09c111810704fc21a2041ad3d7941c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[小Lin说] 特朗普收入曝光，一年狂揽$22亿，竟然是靠…</title>
       <link>https://www.youtube.com/watch?v=fKoWrF49Qo8</link>
       <guid isPermaLink="false">musement:pool:5c2998929624bfcbd456170dd0192d0807606cfeae3cf61229575c45fa9769eb</guid>
@@ -330,6 +318,18 @@
 <p><strong>Estimated Time:</strong> 21 min (video)</p>
 <hr/>
 <p><a href="https://www.youtube.com/watch?v=fKoWrF49Qo8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%205c2998929624bfcbd456170dd0192d0807606cfeae3cf61229575c45fa9769eb&amp;body=Item%3A%20%22%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%B6%E5%85%A5%E6%9B%9D%E5%85%89%EF%BC%8C%E4%B8%80%E5%B9%B4%E7%8B%82%E6%8F%BD%2422%E4%BA%BF%EF%BC%8C%E7%AB%9F%E7%84%B6%E6%98%AF%E9%9D%A0%E2%80%A6%22%0AFingerprint%3A%205c2998929624bfcbd456170dd0192d0807606cfeae3cf61229575c45fa9769eb%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Matt Pocock] Using /grill-me for interviews?!</title>
+      <link>https://www.youtube.com/shorts/5hYsBUMmr-I</link>
+      <guid isPermaLink="false">musement:pool:f3a19aaeb8efbd016149cd51d88f751fc92f063fef9788301d1b1665cf3ea7ea</guid>
+      <pubDate>Mon, 20 Jul 2026 10:26:34 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Someone messaged me the other week and told me they were using Grill me in a way that I had never considered before and I think it&amp;#39;s actually kind of genius. They were using it for technical interviews. So they would interview people, they would have them on a video call. They would get them to use Grill me in their Claude instance and basically get them to add a feature to a code base. The thing about Grill me is that it asks a lot of you, right? It asks you to clearly describe where you&amp;#3</p>
+<p><strong>Estimated Time:</strong> 1 min (video)</p>
+<hr/>
+<p><a href="https://www.youtube.com/shorts/5hYsBUMmr-I">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20f3a19aaeb8efbd016149cd51d88f751fc92f063fef9788301d1b1665cf3ea7ea&amp;body=Item%3A%20%22Using%20%2Fgrill-me%20for%20interviews%3F!%22%0AFingerprint%3A%20f3a19aaeb8efbd016149cd51d88f751fc92f063fef9788301d1b1665cf3ea7ea%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Matt Pocock] This change makes /grill-me SO MUCH BETTER</title>
@@ -452,30 +452,6 @@
 <p><a href="https://www.youtube.com/watch?v=HeVuAKDtWX8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d47538f2aa4d4fb0bf2a6c12b29d7e2e9693f4bf8327f2e5fc95fce0cf843937&amp;body=Item%3A%20%22%E4%BC%8A%E6%9C%97%E6%88%98%E4%BA%89%EF%BC%8C%E5%92%8C%E5%85%A8%E7%90%83%E8%83%BD%E6%BA%90%E6%A0%BC%E5%B1%80%22%0AFingerprint%3A%20d47538f2aa4d4fb0bf2a6c12b29d7e2e9693f4bf8327f2e5fc95fce0cf843937%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Lex Fridman Podcast] #494 – Jensen Huang: NVIDIA &amp;#8211; The $4 Trillion Company &amp;#038; the AI Revolution</title>
-      <link>https://lexfridman.com/jensen-huang/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=jensen-huang</link>
-      <guid isPermaLink="false">musement:pool:d625a48e613741114a5bb9f3b45d41eb8b822682a13f435364c8d336cb1e174e</guid>
-      <pubDate>Mon, 23 Mar 2026 16:28:42 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Lex Fridman Podcast | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Jensen Huang is the co-founder and CEO of NVIDIA, the world&amp;#8217;s most valuable company and the engine powering the AI computing revolution. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep494-sc See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. Transcript: https://lexfridman.com/jensen-huang-transcript CONTACT LEX: Feedback &amp;#8211; give feedback to Lex: https://lexfridman.com/survey AMA &amp;#8211; submit questions,</p>
-<p><strong>Estimated Time:</strong> 2 min (podcast)</p>
-<hr/>
-<p><a href="https://lexfridman.com/jensen-huang/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=jensen-huang">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d625a48e613741114a5bb9f3b45d41eb8b822682a13f435364c8d336cb1e174e&amp;body=Item%3A%20%22%23494%20%E2%80%93%20Jensen%20Huang%3A%20NVIDIA%20%26%238211%3B%20The%20%244%20Trillion%20Company%20%26%23038%3B%20the%20AI%20Revolution%22%0AFingerprint%3A%20d625a48e613741114a5bb9f3b45d41eb8b822682a13f435364c8d336cb1e174e%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Lex Fridman Podcast] #493 – Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming</title>
-      <link>https://lexfridman.com/jeff-kaplan/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=jeff-kaplan</link>
-      <guid isPermaLink="false">musement:pool:d0ab17380a45022c23e1cb0660aa65dbe7fb219a8169bc0d2218771cf5e704f5</guid>
-      <pubDate>Wed, 11 Mar 2026 20:37:33 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Lex Fridman Podcast | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Jeff Kaplan is a legendary Blizzard game designer of World of Warcraft and Overwatch, now preparing to launch a new game, The Legend of California, from his new studio Kintsugiyama &amp;#8211; available to wishlist on Steam today, with alpha later in March. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep493-sc See below for timestamps, and to give feedback, submit questions, contact Lex, etc. CONTACT LEX: Feedback &amp;#8211; give feedback to Lex: https://lexfridman.</p>
-<p><strong>Estimated Time:</strong> 2 min (podcast)</p>
-<hr/>
-<p><a href="https://lexfridman.com/jeff-kaplan/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=jeff-kaplan">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d0ab17380a45022c23e1cb0660aa65dbe7fb219a8169bc0d2218771cf5e704f5&amp;body=Item%3A%20%22%23493%20%E2%80%93%20Jeff%20Kaplan%3A%20World%20of%20Warcraft%2C%20Overwatch%2C%20Blizzard%2C%20and%20Future%20of%20Gaming%22%0AFingerprint%3A%20d0ab17380a45022c23e1cb0660aa65dbe7fb219a8169bc0d2218771cf5e704f5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[小Lin说] 黄金白银大崩盘，谁是幕后推手？</title>
       <link>https://www.youtube.com/watch?v=mU_jDXfjYTA</link>
       <guid isPermaLink="false">musement:pool:2d41a00953f1556f71fa1d506b3404ba467f64a95fb35ed7f0907501ccc21307</guid>
@@ -500,16 +476,16 @@
 <p><a href="https://lexfridman.com/peter-steinberger/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=peter-steinberger">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20b8a6a2871215c1f453e119c1280d423531f5fdb70475d2016bb24cf48584cac2&amp;body=Item%3A%20%22%23491%20%E2%80%93%20OpenClaw%3A%20The%20Viral%20AI%20Agent%20that%20Broke%20the%20Internet%20%26%238211%3B%20Peter%20Steinberger%22%0AFingerprint%3A%20b8a6a2871215c1f453e119c1280d423531f5fdb70475d2016bb24cf48584cac2%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Lex Fridman Podcast] #490 – State of AI in 2026: LLMs, Coding, Scaling Laws, China, Agents, GPUs, AGI</title>
-      <link>https://lexfridman.com/ai-sota-2026/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=ai-sota-2026</link>
-      <guid isPermaLink="false">musement:pool:83e382b882ce8da03c8b2e1ab54e9bdbf96d26157911a60df0834c2d87923121</guid>
-      <pubDate>Sun, 01 Feb 2026 02:46:43 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Lex Fridman Podcast | <strong>Author:</strong> Unknown</p>
+      <title>[Dwarkesh Podcast] Elon Musk — &quot;In 36 months, the cheapest place to put AI will be space”</title>
+      <link>https://www.dwarkesh.com/p/elon-musk</link>
+      <guid isPermaLink="false">musement:pool:cf5b04b93d9b9b2d9f2007a43c48fed4b1b89923de689c33d29743b90d9faf52</guid>
+      <pubDate>Thu, 05 Feb 2026 16:45:08 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Dwarkesh Podcast | <strong>Author:</strong> Dwarkesh Patel</p>
 <p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Nathan Lambert and Sebastian Raschka are machine learning researchers, engineers, and educators. Nathan is the post-training lead at the Allen Institute for AI (Ai2) and the author of The RLHF Book. Sebastian Raschka is the author of Build a Large Language Model (From Scratch) and Build a Reasoning Model (From Scratch). Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep490-sc See below for timestamps, transcript, and to give feedback, submit questions, contact L</p>
-<p><strong>Estimated Time:</strong> 2 min (podcast)</p>
+<p>In this episode, John and I got to do a real deep-dive with Elon. We discuss the economics of orbital data centers, the difficulties of scaling power on Earth, what it would take to manufacture humanoids at high-volume in America, xAI’s business and alignment plans, DOGE, and much more. Watch on YouTube ; read the transcript . Sponsors * Mercury just started offering personal banking! I’m already banking with Mercury for business purposes, so getting to bank with them for my personal life makes </p>
+<p><strong>Estimated Time:</strong> 170 min (podcast)</p>
 <hr/>
-<p><a href="https://lexfridman.com/ai-sota-2026/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=ai-sota-2026">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2083e382b882ce8da03c8b2e1ab54e9bdbf96d26157911a60df0834c2d87923121&amp;body=Item%3A%20%22%23490%20%E2%80%93%20State%20of%20AI%20in%202026%3A%20LLMs%2C%20Coding%2C%20Scaling%20Laws%2C%20China%2C%20Agents%2C%20GPUs%2C%20AGI%22%0AFingerprint%3A%2083e382b882ce8da03c8b2e1ab54e9bdbf96d26157911a60df0834c2d87923121%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+<p><a href="https://www.dwarkesh.com/p/elon-musk">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20cf5b04b93d9b9b2d9f2007a43c48fed4b1b89923de689c33d29743b90d9faf52&amp;body=Item%3A%20%22Elon%20Musk%20%E2%80%94%20%22In%2036%20months%2C%20the%20cheapest%20place%20to%20put%20AI%20will%20be%20space%E2%80%9D%22%0AFingerprint%3A%20cf5b04b93d9b9b2d9f2007a43c48fed4b1b89923de689c33d29743b90d9faf52%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Dwarkesh Podcast] Thoughts on AI progress (Dec 2025)</title>
@@ -536,16 +512,16 @@
 <p><a href="https://www.youtube.com/shorts/Q5w61PXKuTM">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20bab8499f69d55316417e72af0fce960074ccf3653285db7a0d3045c5aaaaff31&amp;body=Item%3A%20%22CUDA%20out%20of%20memory%20%E6%98%AF%E5%BF%83%E7%A2%8E%E7%9A%84%E8%81%B2%E9%9F%B3%22%0AFingerprint%3A%20bab8499f69d55316417e72af0fce960074ccf3653285db7a0d3045c5aaaaff31%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Dwarkesh Podcast] Some thoughts on the Sutton interview</title>
-      <link>https://www.dwarkesh.com/p/thoughts-on-sutton</link>
-      <guid isPermaLink="false">musement:pool:16f24a65fa65174ab50afd7b0d731f70816bacee2210805fbc2a26d521bb739c</guid>
-      <pubDate>Sat, 04 Oct 2025 17:45:00 GMT</pubDate>
+      <title>[Dwarkesh Podcast] Satya Nadella — How Microsoft is preparing for AGI</title>
+      <link>https://www.dwarkesh.com/p/satya-nadella-2</link>
+      <guid isPermaLink="false">musement:pool:bcfb5b2d70f6b731d3bcd498517854f55d379a63955a4e204b10f8dd13e98325</guid>
+      <pubDate>Wed, 12 Nov 2025 17:03:08 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Dwarkesh Podcast | <strong>Author:</strong> Dwarkesh Patel</p>
 <p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>I have a much better understanding of Sutton’s perspective now. I wanted to reflect on it a bit. (00:00:00) - The steelman (00:02:42) - TLDR of my current thoughts (00:03:22) - Imitation learning is continuous with and complementary to RL (00:08:26) - Continual learning (00:10:31) - Concluding thoughts Get full access to Dwarkesh Podcast at www.dwarkesh.com/subscribe</p>
-<p><strong>Estimated Time:</strong> 12 min (podcast)</p>
+<p>As part of this interview, Satya Nadella gave Dylan Patel (founder of SemiAnalysis ) and me an exclusive first-look at their brand-new Fairwater 2 datacenter. Microsoft is building multiple Fairwaters, each of which has hundreds of thousands of GB200s &amp; GB300s. Between all these interconnected buildings, they’ll have over 2 GW of total capacity. Just to give a frame of reference, even a single one of these Fairwater buildings is more powerful than any other AI datacenter that currently exists. S</p>
+<p><strong>Estimated Time:</strong> 88 min (podcast)</p>
 <hr/>
-<p><a href="https://www.dwarkesh.com/p/thoughts-on-sutton">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2016f24a65fa65174ab50afd7b0d731f70816bacee2210805fbc2a26d521bb739c&amp;body=Item%3A%20%22Some%20thoughts%20on%20the%20Sutton%20interview%22%0AFingerprint%3A%2016f24a65fa65174ab50afd7b0d731f70816bacee2210805fbc2a26d521bb739c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+<p><a href="https://www.dwarkesh.com/p/satya-nadella-2">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20bcfb5b2d70f6b731d3bcd498517854f55d379a63955a4e204b10f8dd13e98325&amp;body=Item%3A%20%22Satya%20Nadella%20%E2%80%94%20How%20Microsoft%20is%20preparing%20for%20AGI%22%0AFingerprint%3A%20bcfb5b2d70f6b731d3bcd498517854f55d379a63955a4e204b10f8dd13e98325%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Dwarkesh Podcast] Why I don’t think AGI is right around the corner</title>
@@ -572,18 +548,6 @@
 <p><a href="https://lexfridman.com/iran-war-debate/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=iran-war-debate">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%203dbad7f49feb43d6a510d3aef7b5779c31b78a106ef74d4d4549281b57f89806&amp;body=Item%3A%20%22%23473%20%E2%80%93%20Iran%20War%20Debate%3A%20Nuclear%20Weapons%2C%20Trump%2C%20Peace%2C%20Power%20%26%23038%3B%20the%20Middle%20East%22%0AFingerprint%3A%203dbad7f49feb43d6a510d3aef7b5779c31b78a106ef74d4d4549281b57f89806%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Lex Fridman Podcast] #467 – Tim Sweeney: Fortnite, Unreal Engine, and the Future of Gaming</title>
-      <link>https://lexfridman.com/tim-sweeney/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=tim-sweeney</link>
-      <guid isPermaLink="false">musement:pool:6d5c029d8196d68e2238a921825c5167c6358503547d806535bebda59ef349f3</guid>
-      <pubDate>Wed, 30 Apr 2025 21:53:41 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Lex Fridman Podcast | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Tim Sweeney is a legendary video game programmer, founder and CEO of Epic Games that created the Unreal Engine, Fortnite, Gears of War, Unreal Tournament, and many other groundbreaking and influential video games. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep467-sc See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. Transcript: https://lexfridman.com/tim-sweeney-transcript CONTACT LEX: Feedback &amp;#8211; give feedba</p>
-<p><strong>Estimated Time:</strong> 2 min (podcast)</p>
-<hr/>
-<p><a href="https://lexfridman.com/tim-sweeney/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=tim-sweeney">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%206d5c029d8196d68e2238a921825c5167c6358503547d806535bebda59ef349f3&amp;body=Item%3A%20%22%23467%20%E2%80%93%20Tim%20Sweeney%3A%20Fortnite%2C%20Unreal%20Engine%2C%20and%20the%20Future%20of%20Gaming%22%0AFingerprint%3A%206d5c029d8196d68e2238a921825c5167c6358503547d806535bebda59ef349f3%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Dwarkesh Podcast] Mark Zuckerberg — AI will write most Meta code in 18 months</title>
       <link>https://www.dwarkesh.com/p/mark-zuckerberg-2</link>
       <guid isPermaLink="false">musement:pool:20be1a742e48970cbf7d8116d60a7351ba4758f6d7c566d9f74bee962df224c2</guid>
@@ -606,6 +570,42 @@
 <p><strong>Estimated Time:</strong> 207 min (podcast)</p>
 <hr/>
 <p><a href="https://lexfridman.com/dave-smith/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=dave-smith">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20bf2616527c8da6a3f86b7410ec055dc9eba4720b6ad425d9d5bb6e5ab8f96b9e&amp;body=Item%3A%20%22%23464%20%E2%80%93%20Dave%20Smith%3A%20Israel%2C%20Ukraine%2C%20Epstein%2C%20Mossad%2C%20Conspiracies%20%26%23038%3B%20Antisemitism%22%0AFingerprint%3A%20bf2616527c8da6a3f86b7410ec055dc9eba4720b6ad425d9d5bb6e5ab8f96b9e%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Dwarkesh Podcast] AI 2027: month-by-month model of intelligence explosion — Scott Alexander &amp; Daniel Kokotajlo</title>
+      <link>https://www.dwarkesh.com/p/scott-daniel</link>
+      <guid isPermaLink="false">musement:pool:03e87671f1761e2491464af9b2d122077127c13150fcf6f798e3e6556f49994b</guid>
+      <pubDate>Thu, 03 Apr 2025 15:05:11 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Dwarkesh Podcast | <strong>Author:</strong> Dwarkesh Patel</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Scott and Daniel break down every month from now until the 2027 intelligence explosion. Scott Alexander is author of the highly influential blogs Slate Star Codex and Astral Codex Ten . Daniel Kokotajlo resigned from OpenAI in 2024, rejecting a non-disparagement clause and risking millions in equity to speak out about AI safety. We discuss misaligned hive minds, Xi and Trump waking up, and automated Ilyas researching AI progress. I came in skeptical, but I learned a tremendous amount by bouncing</p>
+<p><strong>Estimated Time:</strong> 184 min (podcast)</p>
+<hr/>
+<p><a href="https://www.dwarkesh.com/p/scott-daniel">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2003e87671f1761e2491464af9b2d122077127c13150fcf6f798e3e6556f49994b&amp;body=Item%3A%20%22AI%202027%3A%20month-by-month%20model%20of%20intelligence%20explosion%20%E2%80%94%20Scott%20Alexander%20%26%20Daniel%20Kokotajlo%22%0AFingerprint%3A%2003e87671f1761e2491464af9b2d122077127c13150fcf6f798e3e6556f49994b%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Lex Fridman Podcast] #463 – Douglas Murray: Putin, Zelenskyy, Trump, Israel, Netanyahu, Hamas &amp;#038; Gaza</title>
+      <link>https://lexfridman.com/douglas-murray-2/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=douglas-murray-2</link>
+      <guid isPermaLink="false">musement:pool:495e7602ac889812cf8a3bf15fed1f535336996deb87cfdfe18bda071a0351c0</guid>
+      <pubDate>Sun, 30 Mar 2025 21:07:22 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Lex Fridman Podcast | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Douglas Murray is the author of On Democracies and Death Cults, The War on The West, and The Madness of Crowds. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep463-sc See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. Transcript: https://lexfridman.com/douglas-murray-2-transcript CONTACT LEX: Feedback &amp;#8211; give feedback to Lex: https://lexfridman.com/survey AMA &amp;#8211; submit questions, videos or call-in: https:/</p>
+<p><strong>Estimated Time:</strong> 196 min (podcast)</p>
+<hr/>
+<p><a href="https://lexfridman.com/douglas-murray-2/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=douglas-murray-2">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20495e7602ac889812cf8a3bf15fed1f535336996deb87cfdfe18bda071a0351c0&amp;body=Item%3A%20%22%23463%20%E2%80%93%20Douglas%20Murray%3A%20Putin%2C%20Zelenskyy%2C%20Trump%2C%20Israel%2C%20Netanyahu%2C%20Hamas%20%26%23038%3B%20Gaza%22%0AFingerprint%3A%20495e7602ac889812cf8a3bf15fed1f535336996deb87cfdfe18bda071a0351c0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Lex Fridman Podcast] #462 – Ezra Klein and Derek Thompson: Politics, Trump, AOC, Elon &amp;#038; DOGE</title>
+      <link>https://lexfridman.com/ezra-klein-and-derek-thompson/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=ezra-klein-and-derek-thompson</link>
+      <guid isPermaLink="false">musement:pool:0f39b4b8aeb6a87998fc405ff6eeb2720aaa2784856591b980e8562e2c2aa06a</guid>
+      <pubDate>Wed, 26 Mar 2025 08:59:23 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Lex Fridman Podcast | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Ezra Klein is one of the most influential voices representing the left-wing of American politics. He is a columnist for the NY Times and host of The Ezra Klein Show. Derek Thompson is a writer at The Atlantic and host of the Plain English podcast. Together they have written a new book titled Abundance that lays out a set of ideas for the future of the Democratic party. Thank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep462-sc See below for timestamps, transcript,</p>
+<p><strong>Estimated Time:</strong> 2 min (podcast)</p>
+<hr/>
+<p><a href="https://lexfridman.com/ezra-klein-and-derek-thompson/?utm_source=rss&amp;#038;utm_medium=rss&amp;#038;utm_campaign=ezra-klein-and-derek-thompson">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%200f39b4b8aeb6a87998fc405ff6eeb2720aaa2784856591b980e8562e2c2aa06a&amp;body=Item%3A%20%22%23462%20%E2%80%93%20Ezra%20Klein%20and%20Derek%20Thompson%3A%20Politics%2C%20Trump%2C%20AOC%2C%20Elon%20%26%23038%3B%20DOGE%22%0AFingerprint%3A%200f39b4b8aeb6a87998fc405ff6eeb2720aaa2784856591b980e8562e2c2aa06a%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
   </channel>
 </rss>
