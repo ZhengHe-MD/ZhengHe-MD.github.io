@@ -1,6 +1,6 @@
 # 类目映射表（迁移评审用）
 
-> 49 篇旧博文从 6 个旧类目归入统一的 思考 / 实践 二类体系（design brief §6）。
+> 51 篇博文从旧类目归入统一的 思考 / 实践 二类体系（design brief §6）。
 > 每篇均基于内容判断（build/do → 实践；read/reflect/analyze → 思考），非按旧标签盲目合并。
 > **请作者评审此表；改动某篇的类目 = 直接修改对应 writing/<slug>/index.html 里的 <meta name="category">。**
 
@@ -15,6 +15,7 @@
 | Cache-Policies | 缓存管理策略综述 | 系统设计 | **思考** | 对各类 Cache Policy/一致性协议做的理论综述，非动手构建 |
 | compound-interest-in-life | 复利的隐喻 | 思考 | **思考** | 以复利概念隐喻人生坚持的个人感悟随笔 |
 | Consistent-Hashing-and-Random-Trees-1997 | Consistent Hashing and Random Trees (1997) | 论文 | **思考** | 论文内容的复述与分析总结 |
+| confucius-reconsidered | 孔子眼里的和谐社会，是如何形成的？ | （原 TIL） | **思考** | 重读孔子的伦理与政治哲学，探讨修身、齐家、治国的道德选择与思考 |
 | danger-thoughts | Software Engineering at Google - 阻碍工程师成长的几种想法 | 读书 | **思考** | 读书笔记，结合自身经历反思工程师常见思维误区 |
 | Dapper-a-Large-Scale-Distributed-Systems-Tracing-Infrastructure-2010 | Dapper, a Large-Scale Distributed Systems Tracing Infrastructure (2010) | 论文 | **思考** | 对 Dapper 论文设计思路的重述与分析 |
 | design-dimensions-of-tracing-systems | 调用链追踪系统的设计维度 | 系统设计 | **思考** | 提出分析框架并用其解构调用链追踪系统，属于概念性综述 |
@@ -37,6 +38,7 @@
 | my-takes-on-interviews | 面试官毁掉技术面试的三大法宝 | 思考 | **思考** | 基于面试经历的观点性分析与思考 |
 | no-admin-ui | 面向工程师的内部系统需要 Web 界面吗？ | （无） | **思考** | 关于内部系统设计方案的思辨性观点文章 |
 | On-Let-s-Build-A-Simple-Interpreter | 从头开始构建一个 Pascal 的解释器 | 实践 | **实践** | 作者跟随教程用 Go 动手实现了 Pascal 解释器并开源 |
+| physics-and-gates | 从硅沙到逻辑门：重拾我的晶体管与逻辑门物理直觉 | （原 TIL） | **实践** | 动手推导物理机制、开发交互式 SVG 模拟器并编写 Python NAND 逻辑代码 |
 | pythagorean-ankle | 用勾股定理画脚踝 | 思考 | **思考** | 由 AI 对话引发的关于 AI 认知能力的思考随笔 |
 | quick-translate | 翻译能有多快？在 Mac 上实现一键翻译 | 实践 | **实践** | 作者动手用 Automator/Keyboard 工具搭建一键翻译方案的实践记录 |
 | relationship | 猫和女儿教会我的道理 | 思考 | **思考** | 个人生活感悟与反思性随笔 |
@@ -56,4 +58,4 @@
 | What-s-Really-New-with-NewSQL-2016 | What's Really New with NewSQL (2016) | 论文 | **思考** | 论文的翻译与解读 |
 | x-and-y-sounds-in-language | 我明明是福建人，为什么别人以为我是胡建人？ | 思考 | **思考** | 由《Fluent Forever》一书引发的语言现象观察与思考 |
 
-统计：思考 35 篇 · 实践 14 篇 · 共 49 篇
+统计：思考 36 篇 · 实践 15 篇 · 共 51 篇

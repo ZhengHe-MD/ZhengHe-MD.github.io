@@ -172,7 +172,7 @@ site-footer { display: block; }
   .hero h1 { font-size: 34px; }
 }
 
-.tiles { padding: 24px 0 8px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+.tiles { padding: 24px 0 8px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
 .tile {
   cursor: pointer; background: var(--surface); border: 1px solid var(--line);
   border-radius: 14px; padding: 20px 18px; display: flex; flex-direction: column;
@@ -290,35 +290,6 @@ site-footer { display: block; }
   background: repeating-linear-gradient(45deg, transparent, transparent 9px, var(--surface-2) 9px, var(--surface-2) 10px);
   font-family: 'IBM Plex Mono', monospace; font-size: 12px;
 }
-
-/* ---------- TIL ---------- */
-.til-stream { padding: 14px 0 90px; position: relative; }
-.til-stream::before { content: ""; position: absolute; left: 7px; top: 0; bottom: 80px; width: 2px; background: var(--line); }
-.til-entry { position: relative; padding: 0 0 30px 40px; }
-.til-entry .dot {
-  position: absolute; left: 0; top: 6px; width: 16px; height: 16px;
-  border-radius: 50%; background: var(--bg); border: 3px solid var(--accent);
-}
-.til-entry .date { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--faint); margin-bottom: 6px; }
-.til-card {
-  background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
-  padding: 20px 22px; box-shadow: var(--shadow);
-}
-.til-card h3 { font-family: 'Noto Serif SC', serif; font-size: 19px; font-weight: 600; margin: 0 0 8px; }
-.til-card h3 a { color: inherit; }
-.til-card .body { color: var(--muted); font-size: 14.5px; line-height: 1.7; margin: 0; }
-.til-card .body p { margin: 0 0 10px; }
-.til-card .body p:last-child { margin: 0; }
-.til-card pre {
-  font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; background: var(--surface-2);
-  border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px;
-  margin: 14px 0 0; overflow: auto; color: var(--ink);
-}
-.til-card code { font-family: 'IBM Plex Mono', monospace; }
-
-/* single TIL page reuses .til-card at article width */
-.til-single { max-width: 720px; margin: 0 auto; padding: 64px 0 90px; animation: floatIn .4s ease both; }
-.til-single .date { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--faint); margin: 26px 0 10px; }
 
 /* ---------- courses ---------- */
 .courses-grid { padding: 0 0 90px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }

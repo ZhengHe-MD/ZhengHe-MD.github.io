@@ -1,6 +1,6 @@
 # zhenghe-md.github.io
 
-郑鹤的个人网站 — 写作、项目、跑步、演讲、TIL。
+郑鹤的个人网站 — 写作、项目、跑步、演讲。
 
 线上地址：<https://zhenghe-md.github.io/>
 
@@ -15,9 +15,8 @@
 
 ```
 index.html            首页
-writing/<slug>/       长文（49 篇已从 Hexo 迁移）
+writing/<slug>/       长文写作
 courses/<slug>/       交互式课程（由 Course Studio 导出）
-til/<slug>/           TIL 短文
 projects/ talks/ about/ running/
 assets/               css / js / fonts / img / vendor
 scripts/build.mjs     内容索引器（唯一的构建步骤）
@@ -59,8 +58,6 @@ npm run build
 ```
 
 正文放进 `<div class="prose">`。图片与本页放在同一目录，用相对路径引用。
-TIL 页面同理，另外把正文包在 `<!-- til:body -->` / `<!-- /til:body -->` 之间，
-`/til/` 流会直接内联这段内容。
 
 ## 发布一门交互式课程
 
@@ -97,5 +94,5 @@ project site 占用 `zhenghe-md.github.io/blog/`，而 project site 的路由优
 
 - `about/index.html` — 工作经历与教育背景（旧 resume 仓库不在本地，已留占位注释）
 - `talks/index.html` — 演讲列表（标题/场合/日期/视频/幻灯片）
-- `docs/category-mapping.md` — 49 篇文章的 思考/实践 归类，请评审
-- Giscus 评论 — 需先在仓库开启 Discussions 并安装 giscus app，再填入 repo/category ID
+- `docs/category-mapping.md` — 51 篇文章的 思考/实践 归类，请评审
+- Giscus 评论 — 已在 `assets/js/site.js` 配置（基于 `Announcements` 分类）；若首次加载提示授权，请在仓库安装 [giscus app](https://github.com/apps/giscus)

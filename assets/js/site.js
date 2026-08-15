@@ -16,6 +16,13 @@
     document.querySelectorAll('.theme-toggle').forEach(function (btn) {
       btn.textContent = next === 'dark' ? '☀' : '☾';
     });
+    var iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe && iframe.contentWindow) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: next === 'dark' ? 'dark' : 'light' } } },
+        'https://giscus.app'
+      );
+    }
   }
   window.__toggleTheme = function () { setTheme(theme === 'dark' ? 'light' : 'dark'); };
 
@@ -90,11 +97,11 @@
     }
 
     // Code highlighting (self-hosted highlight.js, loaded only when needed)
-    if (document.querySelector('.prose pre code, .til-card pre code')) {
+    if (document.querySelector('.prose pre code')) {
       var hl = document.createElement('script');
       hl.src = '/assets/vendor/highlight/highlight.min.js';
       hl.onload = function () {
-        document.querySelectorAll('.prose pre code, .til-card pre code').forEach(function (block) {
+        document.querySelectorAll('.prose pre code').forEach(function (block) {
           try { window.hljs.highlightElement(block); } catch (e) {}
         });
       };
@@ -131,8 +138,37 @@
       });
     });
 
-    // Giscus (placeholder until Discussions + giscus app are configured).
-    // When ready: replace the placeholder block by wiring data-repo-id/category-id here.
+    // Giscus Comments
+    var commentsContainer = document.querySelector('.post-comments');
+    if (commentsContainer) {
+      var placeholder = commentsContainer.querySelector('.giscus-placeholder');
+      if (placeholder) {
+        placeholder.remove();
+      }
+      var giscusDiv = commentsContainer.querySelector('.giscus');
+      if (!giscusDiv) {
+        giscusDiv = document.createElement('div');
+        giscusDiv.className = 'giscus';
+        commentsContainer.appendChild(giscusDiv);
+      }
+      var giscusScript = document.createElement('script');
+      giscusScript.src = 'https://giscus.app/client.js';
+      giscusScript.setAttribute('data-repo', 'ZhengHe-MD/ZhengHe-MD.github.io');
+      giscusScript.setAttribute('data-repo-id', 'R_kgDOTciXlw');
+      giscusScript.setAttribute('data-category', 'Announcements');
+      giscusScript.setAttribute('data-category-id', 'DIC_kwDOTciXl84DBjLK');
+      giscusScript.setAttribute('data-mapping', 'pathname');
+      giscusScript.setAttribute('data-strict', '0');
+      giscusScript.setAttribute('data-reactions-enabled', '1');
+      giscusScript.setAttribute('data-emit-metadata', '0');
+      giscusScript.setAttribute('data-input-position', 'top');
+      giscusScript.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'light');
+      giscusScript.setAttribute('data-lang', 'zh-CN');
+      giscusScript.setAttribute('data-loading', 'lazy');
+      giscusScript.crossOrigin = 'anonymous';
+      giscusScript.async = true;
+      commentsContainer.appendChild(giscusScript);
+    }
   });
 
   // ---------- Cloudflare Web Analytics (site's only third-party request) ----------

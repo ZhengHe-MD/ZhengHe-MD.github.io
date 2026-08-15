@@ -9,7 +9,7 @@
 
 ## 1. Goal & audience
 
-Upgrade a Chinese-language Hexo/NexT **blog** into a unified, HTML-native **personal website** — one place for everything ZhengHe publishes: writing, projects, running, talks, TIL, and more later (e.g. photography).
+Upgrade a Chinese-language Hexo/NexT **blog** into a unified, HTML-native **personal website** — one place for everything ZhengHe publishes: writing, courses, projects, running, talks, and more later (e.g. photography).
 
 - **Primary language:** Chinese (zh-CN). Some Latin text (slugs, code, tech names) throughout.
 - **Tone:** identity-first — the site should read as "who I am and what I do," not "a blog." It replaces / absorbs today's scattered properties: the blog, `equator` (running), `resume`, `machine-talk-slides`.
@@ -28,19 +28,19 @@ HTML (not Markdown) is the **primary source format for every piece of content**,
 
 ## 4. Information architecture
 
-**Primary nav (by content *type*):** Writing · Projects · Running · Talks · About
-**Home** is a hub (see §5). **TIL** is its own collection, surfaced on Home but not (yet) in the top nav. **Photography** is deferred until there's content.
+**Primary nav (by content *type*):** Writing · Courses · Projects · Running · Talks · About
+**Home** is a hub (see §5). **Photography** is deferred until there's content.
 
 ## 5. Sections — content models & behavior
 
 ### Home  (`/`)
-Identity-first landing: avatar, one-line bio, links, and a row of section tiles (Writing / Projects / Running / Talks / TIL). Below that, an auto-generated **"latest" strip** pulling the newest few items across *all* collections (built by the indexer).
+Identity-first landing: avatar, one-line bio, links, and a row of section tiles (Writing / Courses / Projects / Running / Talks). Below that, an auto-generated **"latest" strip** pulling the newest few items across *all* collections (built by the indexer).
 
 ### Writing  (`/writing/`, posts at `/writing/<slug>/`)
-Long-form essays (the 49 migrated posts + new ones). Each post: title, date, one category, a `summary` (from the old `<!--more-->` cut), body. Index is a chronological list with a simple category filter. Math via a per-page `mathjax` flag.
+Long-form essays (migrated posts + new ones, including former TIL notes). Each post: title, date, one category, a `summary` (from the old `<!--more-->` cut), body. Index is a chronological list with a simple category filter. Math via a per-page `mathjax` flag.
 
-### TIL  (`/til/`)
-"Today I learned" — short, frequent entries. **Each TIL is its own page** (shareable URL, and free to contain a code snippet / small diagram / interactive widget). The `/til/` index auto-composes them into a **newest-first stream** showing each entry's title, date, and body. Distinct visual treatment from long-form Writing.
+### Courses  (`/courses/`, courses at `/courses/<slug>/`)
+Interactive multi-session courses exported from Course Studio.
 
 ### Projects  (`/projects/`)
 **Curated showcase** (hand-picked, NOT auto-listed from GitHub). Each project is a rich card: poster/screenshot, title, one-line description, tech tags, links (live demo / repo / related writeup or talk). **Detail / case-study pages are optional per project** — flagship work gets one; smaller things are just a card that links out.
@@ -59,9 +59,9 @@ See §6.
 
 ## 6. Site-wide taxonomy — categories only
 
-One **shared, site-wide category system** applies to **all** collections (a Writing post, a TIL, and a Project can all be filed under the same category). **Tags are dropped entirely.** Category is **optional** per item, drawn from a **small controlled list**.
+One **shared, site-wide category system** applies to **all** collections (a Writing post and a Course can all be filed under the same category). **Tags are dropped entirely.** Category is **optional** per item, drawn from a **small controlled list**.
 
-**Resolved (2026-07-19):** the controlled list is exactly **思考 / 实践**. Today's blog carries 6 legacy categories (论文 11 · 系统设计 10 · 实践 10 · 思考 8 · 编程 5 · 读书 4, plus 1 uncategorized) that mixed two axes (intent vs. subject). All 49 posts are **reclassified into 思考 / 实践** at migration by reading each piece (build/do → 实践; read/reflect/analyze → 思考), **not** by a blind label merge. The author reviews the full per-post mapping table before it is baked in.
+**Resolved (2026-07-19):** the controlled list is exactly **思考 / 实践**. Today's blog carries 6 legacy categories (论文 11 · 系统设计 10 · 实践 10 · 思考 8 · 编程 5 · 读书 4, plus 1 uncategorized) that mixed two axes (intent vs. subject). All posts are **reclassified into 思考 / 实践** at migration by reading each piece (build/do → 实践; read/reflect/analyze → 思考), **not** by a blind label merge. The author reviews the full per-post mapping table before it is baked in.
 
 This adds a **topic axis orthogonal to the type-based nav**: the indexer generates **cross-collection `/categories/<name>/` pages** aggregating every item under a category regardless of which collection it lives in.
 
@@ -71,7 +71,7 @@ This adds a **topic axis orthogonal to the type-based nav**: the indexer generat
 |---|---|
 | `/` | Home |
 | `/writing/` · `/writing/<slug>/` | Writing index · post |
-| `/til/` | TIL stream (individual entry pages under it) |
+| `/courses/` · `/courses/<slug>/` | Courses plaza · interactive course |
 | `/projects/` | Projects gallery (optional detail pages) |
 | `/running/` | Running dashboard |
 | `/talks/` | Talks |
@@ -101,7 +101,7 @@ These were intentionally left open for the design phase. They are now **resolved
 2. **Typography** — Chinese + Latin pairing, hierarchy, reading measure for long-form essays.
 3. **Layout & spacing system** — grid, content width, rhythm.
 4. **The identity/Home treatment** — how the "who I am" landing feels.
-5. **Per-collection visual voice** — especially how TIL (short/stream) and Projects (gallery) differ from Writing (long-form), while staying one coherent system.
+5. **Per-collection visual voice** — especially how Courses (card plaza) and Projects (gallery) differ from Writing (long-form), while staying one coherent system.
 6. **The shared chrome** — nav (incl. mobile) and footer as web components.
 7. **Component-level feel** — cards (project/talk/latest), category chips, code blocks, the running dashboard widgets.
 
@@ -119,7 +119,7 @@ Absorbed from `equator`. **Goal:** run 40,075 km (Earth's circumference) by ~204
 
 1. **Home** (identity + latest strip)
 2. **A Writing post** + the Writing index
-3. **TIL stream**
+3. **Courses plaza** (+ course reader)
 4. **Projects gallery** (+ one detail page)
 5. **Running dashboard**
 6. Talks, About, a category page
@@ -146,7 +146,7 @@ The approved **standalone mockup** (`ZhengHe Site (standalone).html`) is the vis
 - **Dark tokens:** `--bg` `oklch(0.19 0.008 60)` · `--surface` `oklch(0.225 0.008 60)` · `--surface-2` `oklch(0.26 0.009 60)` · `--ink` `oklch(0.93 0.006 80)` · `--muted` `oklch(0.68 0.008 70)` · `--faint` `oklch(0.52 0.008 60)` · `--line` `oklch(0.31 0.008 60)` · `--line-strong` `oklch(0.38 0.009 60)` · `--accent` `oklch(0.7 0.15 42)` · `--accent-ink` `oklch(0.78 0.14 45)` · `--accent-soft` `oklch(0.32 0.05 40)`.
 - **Typography:** `Noto Serif SC` (headings + long-form body, weights 600/700) · `Noto Sans SC` (UI text) · `IBM Plex Mono` (meta, labels, code). Latin nav/eyebrow labels are uppercase mono with letter-spacing.
 - **Layout:** centered container `max-width: 1120px`, padding `0 28px`; sticky blurred header (~66px); long-form reading measure ~`720px` (About ~`680px`, prose `line-height` ~1.95); card radii 12–18px; subtle `--shadow` tokens per theme.
-- **Per-collection voice (from mockup):** Writing = chronological rows (date · category chip · read-time · summary); TIL = vertical timeline of dot-marked cards; Projects = 2-col poster cards; Talks = wide media+text cards; Running = hero progress card + 3-col year cards.
+- **Per-collection voice (from mockup):** Writing = chronological rows (date · category chip · read-time · summary); Courses = 2-col cards (tag · title · summary · session count); Projects = 2-col poster cards; Talks = wide media+text cards; Running = hero progress card + 3-col year cards.
 
 ### 14.3 Fonts
 **Self-hosted, subsetted** `Noto Serif SC` / `Noto Sans SC` / `IBM Plex Mono` (no Google Fonts CDN). Subsetting must cover the migrated content's glyphs.

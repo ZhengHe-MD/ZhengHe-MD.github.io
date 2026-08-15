@@ -3,7 +3,7 @@
 //
 // Scans content folders, reads each page's embedded metadata, and generates
 // all aggregates into _site/: the Home latest strip and tile counts, the
-// Writing index list, the TIL stream, cross-collection category pages, the
+// Writing index list, cross-collection category pages, the
 // Atom feed, and old-link forwarder stubs. Content pages are copied verbatim;
 // this script never rewrites them in place (the folder is the source of truth).
 //
@@ -115,7 +115,7 @@ function copySite() {
 // ---------------------------------------------------------------- renderers
 
 function latestRow(item) {
-  const typeLabel = { writing: '写作', courses: '课程', til: 'TIL', projects: '项目', talks: '演讲' }[item.collection] || item.collection;
+  const typeLabel = { writing: '写作', courses: '课程', projects: '项目', talks: '演讲' }[item.collection] || item.collection;
   const sub = (item.collection === 'writing' || item.collection === 'courses') && item.category
     ? `${item.category} · ${item.summary}` : item.summary;
   return `<a class="latest-item" href="${item.url}">
@@ -162,17 +162,6 @@ function courseCard(c) {
     <span class="action">进入课程 →</span>
   </div>
 </a>`;
-}
-
-function tilStreamEntry(t) {
-  return `<div class="til-entry">
-  <span class="dot"></span>
-  <div class="date">${esc(t.date)}</div>
-  <div class="til-card">
-    <h3><a href="${t.url}">${esc(t.title)}</a></h3>
-    <div class="body"><p>${esc(t.summary)}</p></div>
-  </div>
-</div>`;
 }
 
 function categoryPage(name, items) {
@@ -255,7 +244,6 @@ export function build(opts = {}) {
 
   const writing = scanCollection('writing');
   const courses = scanCollection('courses');
-  const til = scanCollection('til');
 
   // counts for home tiles
   let runningKm = '—';
@@ -279,11 +267,10 @@ export function build(opts = {}) {
   // home
   {
     let home = read(path.join(ROOT, 'index.html'));
-    const latest = [...writing, ...courses, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
+    const latest = [...writing, ...courses].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 6);
     home = replaceRegion(home, 'latest', latest.map(latestRow).join('\n'));
     home = replaceRegion(home, 'count:writing', `${writing.length} posts`);
     home = replaceRegion(home, 'count:courses', `${courses.length} courses`);
-    home = replaceRegion(home, 'count:til', `${til.length} notes`);
     home = replaceRegion(home, 'count:projects', `${projectsCount} works`);
     home = replaceRegion(home, 'count:talks', `${talksCount} talks`);
     home = replaceRegion(home, 'count:running', `${runningKm} km`);
@@ -307,17 +294,10 @@ export function build(opts = {}) {
     fs.writeFileSync(path.join(OUT, 'courses', 'index.html'), page);
   }
 
-  // til stream
-  {
-    let page = read(path.join(ROOT, 'til', 'index.html'));
-    page = replaceRegion(page, 'til-stream', til.map(tilStreamEntry).join('\n'));
-    fs.writeFileSync(path.join(OUT, 'til', 'index.html'), page);
-  }
-
   // category pages (site-wide taxonomy: 思考 / 实践)
   {
     const byCat = new Map();
-    for (const item of [...writing, ...courses, ...til]) {
+    for (const item of [...writing, ...courses]) {
       if (!item.category) continue;
       if (!byCat.has(item.category)) byCat.set(item.category, []);
       byCat.get(item.category).push(item);
@@ -332,7 +312,7 @@ export function build(opts = {}) {
 
   // atom feed
   {
-    const items = [...writing, ...courses, ...til].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 20);
+    const items = [...writing, ...courses].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 20);
     fs.writeFileSync(path.join(OUT, 'feed.xml'), atomFeed(items));
   }
 
@@ -349,9 +329,10 @@ export function build(opts = {}) {
       stubs += 1;
     };
 
-    for (const item of [...writing, ...courses, ...til]) {
+    for (const item of [...writing, ...courses]) {
       if (item.legacy) writeStub(item.legacy, item.url);
     }
+    writeStub('/til/', '/writing/');
     writeStub('/blog/', '/writing/');
     writeStub('/blog/about/', '/about/');
     writeStub('/blog/categories/', '/writing/');
@@ -361,7 +342,7 @@ export function build(opts = {}) {
   }
 
   if (verbose) {
-    console.log(`writing: ${writing.length}, courses: ${courses.length}, til: ${til.length}, projects: ${projectsCount}, talks: ${talksCount}, running: ${runningKm} km`);
+    console.log(`writing: ${writing.length}, courses: ${courses.length}, projects: ${projectsCount}, talks: ${talksCount}, running: ${runningKm} km`);
     console.log(`built → ${OUT}`);
   }
 }
