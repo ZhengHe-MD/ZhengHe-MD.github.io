@@ -14,5 +14,12 @@
   {
     "fingerprint": "31c1533deb36f8353fb70c29f48fa48f58c2dcf5f8bb396915fc7cad27d50e1f",
     "exposed_at": "2026-08-12T05:24:27.650Z"
+  },
+  {
+    "fingerprint": "20be1a742e48970cbf7d8116d60a7351ba4758f6d7c566d9f74bee962df224c2",
+    "action": "skip",
+    "exposed_at": "2026-08-19T15:21:58.913Z",
+    "category": "other",
+    "reason": "The field is changing too fast. This is a few months ago, so I think what Mark Zuckerberg said, much of that has expired."
   }
 ]
