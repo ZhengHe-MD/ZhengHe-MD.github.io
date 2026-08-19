@@ -1,12 +1,12 @@
-name: Musement Read Callback
+name: Musement Interaction Callback
 
 on:
   issues:
     types: [opened]
 
 jobs:
-  record-read:
-    if: startsWith(github.event.issue.title, 'Musement Read:')
+  record-interaction:
+    if: startsWith(github.event.issue.title, 'Musement Read:') || startsWith(github.event.issue.title, 'Musement Skip:')
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -25,13 +25,35 @@ jobs:
             const path = require('path');
             
             const title = context.payload.issue.title;
-            const match = title.match(/Musement Read:\s*([a-zA-Z0-9_-]+)/);
+            const match = title.match(/Musement (Read|Skip):\s*([a-zA-Z0-9_-]+)/i);
             if (!match) {
-              core.setFailed('Invalid Musement Read issue title format');
+              core.setFailed('Invalid Musement issue title format');
               return;
             }
-            const fingerprint = match[1].trim();
+            const action = match[1].toLowerCase();
+            const fingerprint = match[2].trim();
             const now = new Date().toISOString();
+            const body = context.payload.issue.body || '';
+
+            let category = undefined;
+            if (action === 'skip') {
+              const catMatch = body.match(/Category:\s*([a-zA-Z0-9_-]+)/i);
+              if (catMatch) {
+                category = catMatch[1].trim();
+              } else {
+                const checkedMatch = body.match(/- \[[xX]\]\s*([a-zA-Z0-9_-]+)/);
+                category = checkedMatch ? checkedMatch[1].trim() : 'not_interested_in_topic';
+              }
+            }
+
+            let reason = undefined;
+            const notesMatch = body.match(/(?:### Notes \/ Reason \(Optional\)|### Notes|### Reason|Notes:)\s*\n*([\s\S]*?)(?:\n###|\n---|$)/i);
+            if (notesMatch) {
+              const cleaned = notesMatch[1].trim();
+              if (cleaned && !cleaned.startsWith('<') && !cleaned.includes('optional explanation')) {
+                reason = cleaned;
+              }
+            }
 
             const dir = path.join(process.env.GITHUB_WORKSPACE, 'musement');
             if (!fs.existsSync(dir)) {
@@ -49,13 +71,27 @@ jobs:
               }
             }
 
-            if (!exposures.some(e => e.fingerprint === fingerprint)) {
-              exposures.push({ fingerprint, exposed_at: now });
-              fs.writeFileSync(exposuresPath, JSON.stringify(exposures, null, 2) + '\n', 'utf8');
-              core.setOutput('updated', 'true');
+            const existingIdx = exposures.findIndex(e => e.fingerprint === fingerprint);
+            const record = {
+              fingerprint,
+              action,
+              exposed_at: now
+            };
+            if (category) record.category = category;
+            if (reason) record.reason = reason;
+
+            if (existingIdx >= 0) {
+              record.exposed_at = exposures[existingIdx].exposed_at || now;
+              record.updated_at = now;
+              exposures[existingIdx] = record;
             } else {
-              core.setOutput('updated', 'false');
+              exposures.push(record);
             }
+
+            fs.writeFileSync(exposuresPath, JSON.stringify(exposures, null, 2) + '\n', 'utf8');
+            core.setOutput('updated', 'true');
+            core.setOutput('action', action);
+            core.setOutput('category', category || '');
             core.setOutput('fingerprint', fingerprint);
 
       - name: Commit and Push Exposure
@@ -64,18 +100,25 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add musement/exposures.json
-          git commit -m "chore(musement): record read exposure ${{ steps.record.outputs.fingerprint }}"
+          git commit -m "chore(musement): record ${{ steps.record.outputs.action }} exposure ${{ steps.record.outputs.fingerprint }}"
           git push
 
       - name: Close Issue
         uses: actions/github-script@v7
         with:
           script: |
+            const action = '${{ steps.record.outputs.action }}';
+            const fingerprint = '${{ steps.record.outputs.fingerprint }}';
+            const category = '${{ steps.record.outputs.category }}';
+            const commentBody = action === 'skip'
+              ? `⏭️ Marked material with fingerprint \`${fingerprint}\` as skipped in Musement (Category: \`${category}\`).`
+              : `✅ Marked material with fingerprint \`${fingerprint}\` as read in Musement.`;
+
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `✅ Marked material with fingerprint \`${{ steps.record.outputs.fingerprint }}\` as read in Musement.`
+              body: commentBody
             });
             await github.rest.issues.update({
               owner: context.repo.owner,

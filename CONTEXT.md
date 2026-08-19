@@ -31,3 +31,19 @@ _Avoid_: Portfolio, works, apps
 **Activity**:
 A filtered GPS running record synchronized from fitness platforms.
 _Avoid_: Workout, track, run log
+
+**Musement**:
+AI-curated on-demand reading encounters and knowledge exploration feeds.
+_Avoid_: RSS aggregator, feed reader, newsletter
+
+**Encounter**:
+A single curated reading or media material presented within a Musement pool or curated feed.
+_Avoid_: Article, post, recommendation item
+
+**Exposure**:
+A recorded user interaction state (`read` or `skip`) keyed by item fingerprint and persisted in `musement/exposures.json`.
+_Avoid_: Impression, view log, history
+
+**Skip**:
+An explicit user signal marking an Encounter as discarded or deferred, categorized by reason (`not_interested_in_topic`, `already_seen`, `low_quality_or_clickbait`, `wrong_timing`, `other`) to guide future curation preference learning.
+_Avoid_: Delete, hide, reject, pass

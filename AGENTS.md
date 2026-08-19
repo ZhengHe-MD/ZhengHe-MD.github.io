@@ -7,6 +7,7 @@ Personal digital garden and publication system for essays, interactive courses, 
 - [CONTEXT.md](CONTEXT.md) — ubiquitous domain vocabulary and collection definitions. Consult before naming, classifying, or routing content.
 - [docs/design-brief.md](docs/design-brief.md) — visual design tokens, typography, component mockup specifications, and aesthetic voice.
 - [docs/adr/0001-interactive-courses-collection.md](docs/adr/0001-interactive-courses-collection.md) — architectural decision for the standalone interactive courses collection.
+- [docs/adr/0002-musement-interaction-feedback-loop.md](docs/adr/0002-musement-interaction-feedback-loop.md) — architectural decision for Musement skip tracking & interaction feedback loop.
 - [docs/category-mapping.md](docs/category-mapping.md) — site-wide taxonomy mapping (`思考` vs `实践`).
 
 ## Invariants

@@ -275,6 +275,47 @@
       padding: 3.5rem 1rem;
       color: var(--text-muted);
     }
+    .skip-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .skip-menu {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 6px);
+      right: 0;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 0.35rem 0;
+      min-width: 180px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      z-index: 50;
+    }
+    .skip-menu.open {
+      display: block;
+    }
+    .skip-menu a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.85rem;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.82rem;
+      white-space: nowrap;
+      transition: background 0.12s;
+    }
+    .skip-menu a:hover {
+      background: var(--quote-bg);
+      color: var(--accent);
+    }
+    .card.card-skipped {
+      opacity: 0.38;
+      filter: grayscale(0.7);
+      pointer-events: none;
+      transition: opacity 0.3s ease, filter 0.3s ease;
+    }
   </style>
 </head>
 <body>
@@ -319,6 +360,17 @@
               <span class="source-tag">Dwarkesh Podcast (podcast) · Dwarkesh Patel · 32 min</span>
               <div class="card-actions">
                 <a href="https://www.dwarkesh.com/p/adam-brown-gr" class="btn btn-outline" target="_blank" rel="noopener noreferrer">📖 Read</a>
+                
+                <div class="skip-dropdown">
+                  <button type="button" class="btn btn-outline" onclick="toggleSkipMenu(event, this)">⏭️ Skip ▾</button>
+                  <div class="skip-menu">
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c&amp;body=Item%3A%20%22General%20relativity%20through%20Einstein%E2%80%99s%20decisive%20conceptual%20move%22%0AFingerprint%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c%0AAction%3A%20skip%0ACategory%3A%20not_interested_in_topic%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">🎯 Not for me</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c&amp;body=Item%3A%20%22General%20relativity%20through%20Einstein%E2%80%99s%20decisive%20conceptual%20move%22%0AFingerprint%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c%0AAction%3A%20skip%0ACategory%3A%20already_seen%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">👀 Already seen</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c&amp;body=Item%3A%20%22General%20relativity%20through%20Einstein%E2%80%99s%20decisive%20conceptual%20move%22%0AFingerprint%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c%0AAction%3A%20skip%0ACategory%3A%20low_quality_or_clickbait%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">📉 Low depth</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c&amp;body=Item%3A%20%22General%20relativity%20through%20Einstein%E2%80%99s%20decisive%20conceptual%20move%22%0AFingerprint%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c%0AAction%3A%20skip%0ACategory%3A%20wrong_timing%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">⏳ Wrong timing</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c&amp;body=Item%3A%20%22General%20relativity%20through%20Einstein%E2%80%99s%20decisive%20conceptual%20move%22%0AFingerprint%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c%0AAction%3A%20skip%0ACategory%3A%20other%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">✍️ Other reason...</a>
+                  </div>
+                </div>
                 <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c&amp;body=Item%3A%20%22General%20relativity%20through%20Einstein%E2%80%99s%20decisive%20conceptual%20move%22%0AFingerprint%3A%203ee836a9713801b5a017476b29c61dd16fee2b1d6c04b9866183c07f4d2e6c3c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement." class="btn btn-primary" target="_blank" rel="noopener noreferrer">✅ Mark as Read</a>
               </div>
             </div>
@@ -341,6 +393,17 @@
               <span class="source-tag">Dwarkesh Podcast (podcast) · Dwarkesh Patel · 32 min</span>
               <div class="card-actions">
                 <a href="https://www.dwarkesh.com/p/adam-brown" class="btn btn-outline" target="_blank" rel="noopener noreferrer">📖 Read</a>
+                
+                <div class="skip-dropdown">
+                  <button type="button" class="btn btn-outline" onclick="toggleSkipMenu(event, this)">⏭️ Skip ▾</button>
+                  <div class="skip-menu">
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec&amp;body=Item%3A%20%22At%20the%20speculative%20frontier%3A%20vacuum%20decay%2C%20holography%2C%20and%20black-hole%20engineering%22%0AFingerprint%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec%0AAction%3A%20skip%0ACategory%3A%20not_interested_in_topic%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">🎯 Not for me</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec&amp;body=Item%3A%20%22At%20the%20speculative%20frontier%3A%20vacuum%20decay%2C%20holography%2C%20and%20black-hole%20engineering%22%0AFingerprint%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec%0AAction%3A%20skip%0ACategory%3A%20already_seen%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">👀 Already seen</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec&amp;body=Item%3A%20%22At%20the%20speculative%20frontier%3A%20vacuum%20decay%2C%20holography%2C%20and%20black-hole%20engineering%22%0AFingerprint%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec%0AAction%3A%20skip%0ACategory%3A%20low_quality_or_clickbait%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">📉 Low depth</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec&amp;body=Item%3A%20%22At%20the%20speculative%20frontier%3A%20vacuum%20decay%2C%20holography%2C%20and%20black-hole%20engineering%22%0AFingerprint%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec%0AAction%3A%20skip%0ACategory%3A%20wrong_timing%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">⏳ Wrong timing</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec&amp;body=Item%3A%20%22At%20the%20speculative%20frontier%3A%20vacuum%20decay%2C%20holography%2C%20and%20black-hole%20engineering%22%0AFingerprint%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec%0AAction%3A%20skip%0ACategory%3A%20other%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">✍️ Other reason...</a>
+                  </div>
+                </div>
                 <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec&amp;body=Item%3A%20%22At%20the%20speculative%20frontier%3A%20vacuum%20decay%2C%20holography%2C%20and%20black-hole%20engineering%22%0AFingerprint%3A%209d6302189f5a521aaf04a46d935e036844ac84007cad1064a0b3105b7e50d0ec%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement." class="btn btn-primary" target="_blank" rel="noopener noreferrer">✅ Mark as Read</a>
               </div>
             </div>
@@ -363,6 +426,17 @@
               <span class="source-tag">Dwarkesh Podcast (podcast) · Dwarkesh Patel · 46 min</span>
               <div class="card-actions">
                 <a href="https://www.dwarkesh.com/p/michael-nielsen" class="btn btn-outline" target="_blank" rel="noopener noreferrer">📖 Read</a>
+                
+                <div class="skip-dropdown">
+                  <button type="button" class="btn btn-outline" onclick="toggleSkipMenu(event, this)">⏭️ Skip ▾</button>
+                  <div class="skip-menu">
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d&amp;body=Item%3A%20%22How%20scientific%20judgment%20outruns%20experimental%20verification%22%0AFingerprint%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d%0AAction%3A%20skip%0ACategory%3A%20not_interested_in_topic%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">🎯 Not for me</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d&amp;body=Item%3A%20%22How%20scientific%20judgment%20outruns%20experimental%20verification%22%0AFingerprint%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d%0AAction%3A%20skip%0ACategory%3A%20already_seen%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">👀 Already seen</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d&amp;body=Item%3A%20%22How%20scientific%20judgment%20outruns%20experimental%20verification%22%0AFingerprint%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d%0AAction%3A%20skip%0ACategory%3A%20low_quality_or_clickbait%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">📉 Low depth</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d&amp;body=Item%3A%20%22How%20scientific%20judgment%20outruns%20experimental%20verification%22%0AFingerprint%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d%0AAction%3A%20skip%0ACategory%3A%20wrong_timing%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">⏳ Wrong timing</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d&amp;body=Item%3A%20%22How%20scientific%20judgment%20outruns%20experimental%20verification%22%0AFingerprint%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d%0AAction%3A%20skip%0ACategory%3A%20other%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">✍️ Other reason...</a>
+                  </div>
+                </div>
                 <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d&amp;body=Item%3A%20%22How%20scientific%20judgment%20outruns%20experimental%20verification%22%0AFingerprint%3A%204fe8b0e9f7494182e8fdee2ed696b4a17243b3fc9cf35aa5f807508b5b15310d%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement." class="btn btn-primary" target="_blank" rel="noopener noreferrer">✅ Mark as Read</a>
               </div>
             </div>
@@ -385,6 +459,17 @@
               <span class="source-tag">Dwarkesh Podcast (podcast) · Dwarkesh Patel · 24 min</span>
               <div class="card-actions">
                 <a href="https://www.dwarkesh.com/p/eric-jang" class="btn btn-outline" target="_blank" rel="noopener noreferrer">📖 Read</a>
+                
+                <div class="skip-dropdown">
+                  <button type="button" class="btn btn-outline" onclick="toggleSkipMenu(event, this)">⏭️ Skip ▾</button>
+                  <div class="skip-menu">
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a&amp;body=Item%3A%20%22AlphaGo%20as%20a%20worked%20example%20of%20learning%20agents%22%0AFingerprint%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a%0AAction%3A%20skip%0ACategory%3A%20not_interested_in_topic%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">🎯 Not for me</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a&amp;body=Item%3A%20%22AlphaGo%20as%20a%20worked%20example%20of%20learning%20agents%22%0AFingerprint%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a%0AAction%3A%20skip%0ACategory%3A%20already_seen%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">👀 Already seen</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a&amp;body=Item%3A%20%22AlphaGo%20as%20a%20worked%20example%20of%20learning%20agents%22%0AFingerprint%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a%0AAction%3A%20skip%0ACategory%3A%20low_quality_or_clickbait%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">📉 Low depth</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a&amp;body=Item%3A%20%22AlphaGo%20as%20a%20worked%20example%20of%20learning%20agents%22%0AFingerprint%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a%0AAction%3A%20skip%0ACategory%3A%20wrong_timing%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">⏳ Wrong timing</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a&amp;body=Item%3A%20%22AlphaGo%20as%20a%20worked%20example%20of%20learning%20agents%22%0AFingerprint%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a%0AAction%3A%20skip%0ACategory%3A%20other%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">✍️ Other reason...</a>
+                  </div>
+                </div>
                 <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a&amp;body=Item%3A%20%22AlphaGo%20as%20a%20worked%20example%20of%20learning%20agents%22%0AFingerprint%3A%2072113f6d9207576d14fbefd30d9380f04af8d8a23017c91e203b986060fce36a%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement." class="btn btn-primary" target="_blank" rel="noopener noreferrer">✅ Mark as Read</a>
               </div>
             </div>
@@ -407,6 +492,17 @@
               <span class="source-tag">Dwarkesh Podcast (podcast) · Dwarkesh Patel · 38 min</span>
               <div class="card-actions">
                 <a href="https://www.dwarkesh.com/p/andy-matuschak" class="btn btn-outline" target="_blank" rel="noopener noreferrer">📖 Read</a>
+                
+                <div class="skip-dropdown">
+                  <button type="button" class="btn btn-outline" onclick="toggleSkipMenu(event, this)">⏭️ Skip ▾</button>
+                  <div class="skip-menu">
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2&amp;body=Item%3A%20%22Effective%20learning%20begins%20by%20noticing%20confusion%22%0AFingerprint%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2%0AAction%3A%20skip%0ACategory%3A%20not_interested_in_topic%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">🎯 Not for me</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2&amp;body=Item%3A%20%22Effective%20learning%20begins%20by%20noticing%20confusion%22%0AFingerprint%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2%0AAction%3A%20skip%0ACategory%3A%20already_seen%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">👀 Already seen</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2&amp;body=Item%3A%20%22Effective%20learning%20begins%20by%20noticing%20confusion%22%0AFingerprint%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2%0AAction%3A%20skip%0ACategory%3A%20low_quality_or_clickbait%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">📉 Low depth</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2&amp;body=Item%3A%20%22Effective%20learning%20begins%20by%20noticing%20confusion%22%0AFingerprint%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2%0AAction%3A%20skip%0ACategory%3A%20wrong_timing%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">⏳ Wrong timing</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2&amp;body=Item%3A%20%22Effective%20learning%20begins%20by%20noticing%20confusion%22%0AFingerprint%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2%0AAction%3A%20skip%0ACategory%3A%20other%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">✍️ Other reason...</a>
+                  </div>
+                </div>
                 <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2&amp;body=Item%3A%20%22Effective%20learning%20begins%20by%20noticing%20confusion%22%0AFingerprint%3A%20ec7ddcfcf18e3f8deef3aadf9496c8b15a4068259d4ad6b37f0d060e51199ee2%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement." class="btn btn-primary" target="_blank" rel="noopener noreferrer">✅ Mark as Read</a>
               </div>
             </div>
@@ -429,6 +525,17 @@
               <span class="source-tag">Dwarkesh Podcast (podcast) · Dwarkesh Patel · 30 min</span>
               <div class="card-actions">
                 <a href="https://www.dwarkesh.com/p/ada-palmer" class="btn btn-outline" target="_blank" rel="noopener noreferrer">📖 Read</a>
+                
+                <div class="skip-dropdown">
+                  <button type="button" class="btn btn-outline" onclick="toggleSkipMenu(event, this)">⏭️ Skip ▾</button>
+                  <div class="skip-menu">
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00&amp;body=Item%3A%20%22The%20Renaissance%20as%20a%20chain%20of%20unintended%20consequences%22%0AFingerprint%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00%0AAction%3A%20skip%0ACategory%3A%20not_interested_in_topic%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">🎯 Not for me</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00&amp;body=Item%3A%20%22The%20Renaissance%20as%20a%20chain%20of%20unintended%20consequences%22%0AFingerprint%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00%0AAction%3A%20skip%0ACategory%3A%20already_seen%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">👀 Already seen</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00&amp;body=Item%3A%20%22The%20Renaissance%20as%20a%20chain%20of%20unintended%20consequences%22%0AFingerprint%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00%0AAction%3A%20skip%0ACategory%3A%20low_quality_or_clickbait%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">📉 Low depth</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00&amp;body=Item%3A%20%22The%20Renaissance%20as%20a%20chain%20of%20unintended%20consequences%22%0AFingerprint%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00%0AAction%3A%20skip%0ACategory%3A%20wrong_timing%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">⏳ Wrong timing</a>
+                    <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Skip%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00&amp;body=Item%3A%20%22The%20Renaissance%20as%20a%20chain%20of%20unintended%20consequences%22%0AFingerprint%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00%0AAction%3A%20skip%0ACategory%3A%20other%0A%0A%23%23%23%20Notes%20%2F%20Reason%20(Optional)%0A" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">✍️ Other reason...</a>
+                  </div>
+                </div>
                 <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00&amp;body=Item%3A%20%22The%20Renaissance%20as%20a%20chain%20of%20unintended%20consequences%22%0AFingerprint%3A%20fe4117756d65f605a102113a61160d635dd05ce4e6ea232fa6681ddcb78bfd00%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement." class="btn btn-primary" target="_blank" rel="noopener noreferrer">✅ Mark as Read</a>
               </div>
             </div>
@@ -591,6 +698,13 @@
         const tierLabel = item.durabilityTier.toUpperCase();
         const pubDate = new Date(item.publishedAt || item.fetchedAt).toLocaleDateString();
 
+        const skipBaseUrl = "https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new";
+        const getSkipLink = (cat) => {
+          const titleParam = encodeURIComponent("Musement Skip: " + item.fingerprint);
+          const bodyParam = encodeURIComponent("Item: \"" + item.title + "\"\nFingerprint: " + item.fingerprint + "\nAction: skip\nCategory: " + cat + "\n\n### Notes / Reason (Optional)\n");
+          return `${skipBaseUrl}?title=${titleParam}&body=${bodyParam}`;
+        };
+
         return `
         <article class="card">
           <div class="card-meta">
@@ -607,6 +721,16 @@
             <span class="source-tag">Author: ${escapeHtml(item.author)}</span>
             <div class="card-actions">
               <a href="${escapeHtml(item.url)}" class="btn btn-outline" target="_blank" rel="noopener noreferrer">📖 Read</a>
+              <div class="skip-dropdown">
+                <button type="button" class="btn btn-outline" onclick="toggleSkipMenu(event, this)">⏭️ Skip ▾</button>
+                <div class="skip-menu">
+                  <a href="${getSkipLink("not_interested_in_topic")}" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">🎯 Not for me</a>
+                  <a href="${getSkipLink("already_seen")}" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">👀 Already seen</a>
+                  <a href="${getSkipLink("low_quality_or_clickbait")}" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">📉 Low depth</a>
+                  <a href="${getSkipLink("wrong_timing")}" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">⏳ Wrong timing</a>
+                  <a href="${getSkipLink("other")}" target="_blank" rel="noopener noreferrer" onclick="handleSkipClick(event, this)">✍️ Other reason...</a>
+                </div>
+              </div>
               <a href="${escapeHtml(item.callbackUrl)}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">✅ Mark as Read</a>
             </div>
           </div>
@@ -622,6 +746,35 @@
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
+    }
+
+    
+    function toggleSkipMenu(event, btn) {
+      event.stopPropagation();
+      const menu = btn.nextElementSibling;
+      const isOpen = menu.classList.contains("open");
+      closeAllSkipMenus();
+      if (!isOpen) {
+        menu.classList.add("open");
+      }
+    }
+
+    function closeAllSkipMenus() {
+      document.querySelectorAll(".skip-menu.open").forEach(m => m.classList.remove("open"));
+    }
+
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".skip-dropdown")) {
+        closeAllSkipMenus();
+      }
+    });
+
+    function handleSkipClick(event, link) {
+      const card = link.closest(".card");
+      if (card) {
+        card.classList.add("card-skipped");
+      }
+      closeAllSkipMenus();
     }
 
     // Initial render
