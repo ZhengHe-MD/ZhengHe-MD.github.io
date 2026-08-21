@@ -27,5 +27,10 @@
     "action": "read",
     "exposed_at": "2026-08-20T09:36:08.568Z",
     "updated_at": "2026-08-20T22:31:29.113Z"
+  },
+  {
+    "fingerprint": "67bece0b21b86255f8fd6a3294d20c6faceb020e1866ee70d10c1aacfc77d392",
+    "action": "read",
+    "exposed_at": "2026-08-21T01:01:16.745Z"
   }
 ]
