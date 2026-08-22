@@ -8,6 +8,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { build } from './build.mjs';
+import { syncDraft } from './sync-draft.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, '_site');
@@ -40,6 +41,12 @@ fs.watch(ROOT, { recursive: true }, (eventType, filename) => {
   rebuildTimer = setTimeout(() => {
     console.log(`\n[dev] Change detected in ${filename}. Rebuilding...`);
     try {
+      if (filename.endsWith('.md')) {
+        const fullMdPath = path.join(ROOT, filename);
+        if (fs.existsSync(fullMdPath)) {
+          syncDraft(fullMdPath);
+        }
+      }
       build({ verbose: false });
       console.log(`[dev] Rebuilt successfully. Triggering page reload...`);
       notifyReload();
