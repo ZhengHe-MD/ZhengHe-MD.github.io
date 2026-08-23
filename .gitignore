@@ -2,3 +2,11 @@ _site/
 .DS_Store
 node_modules/
 
+.env
+podcast/*/.cache/
+podcast/*/audio.mp3
+podcast/**/cover.png
+podcast/music/bed.*
+!podcast/music/bed.json
+podcast/music/.cache/
+.claude/worktrees/

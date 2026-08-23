@@ -21,6 +21,20 @@ const OUT = path.resolve(ROOT, process.argv.includes('--out')
 const SITE_URL = 'https://zhenghe-md.github.io';
 const SITE_TITLE = '郑鹤 · ZhengHe';
 
+// 白鹤札记 — see docs/podcast-pipeline.md. The feed URL is the show's permanent
+// identity across Apple/Spotify/Overcast; changing it zeroes every subscriber.
+const SHOW = {
+  title: '白鹤札记',
+  url: `${SITE_URL}/podcast/`,
+  feed: `${SITE_URL}/podcast/feed.xml`,
+  image: `${SITE_URL}/podcast/cover.jpg`,
+  author: '郑鹤',
+  email: 'ranchardzheng@gmail.com',
+  language: 'zh-CN',
+  description: '围绕我对这个世界的疑问展开：技术、教育、人性，以及那些还没想明白的事。不限定领域，只跟着问题走。\n\n本节目部分单集由文本转语音技术合成，具体见各单集说明。',
+  categories: [['Society & Culture', 'Philosophy'], ['Technology', null]],
+};
+
 // ---------------------------------------------------------------- utilities
 
 const read = (p) => fs.readFileSync(p, 'utf8');
@@ -40,7 +54,7 @@ function meta(html, name) {
 function titleOf(html) {
   const m = html.match(/<title>([^<]*)<\/title>/i);
   if (!m) return null;
-  return m[1].replace(/\s*·\s*郑鹤\s*$/, '').trim();
+  return m[1].replace(/\s*·\s*(郑鹤|白鹤札记)\s*$/, '').trim();
 }
 
 function replaceRegion(html, name, replacement) {
@@ -89,6 +103,11 @@ function scanCollection(dir) {
       summary: meta(html, 'summary') || '',
       legacy: meta(html, 'legacy'),
       minutes: readMinutes(html),
+      guid: meta(html, 'guid'),
+      audioUrl: meta(html, 'audio-url'),
+      audioBytes: Number(meta(html, 'audio-bytes') || 0),
+      audioDuration: Number(meta(html, 'audio-duration') || 0),
+      synthesized: meta(html, 'synthesized') === 'true',
       sessions: sessionCount(html),
       html,
     });
@@ -105,7 +124,17 @@ function copySite() {
   const skip = new Set(['_site', '.git', 'node_modules', 'scripts', 'docs', '.github']);
   for (const entry of fs.readdirSync(ROOT)) {
     if (skip.has(entry) || entry.startsWith('.') && entry !== '.nojekyll') continue;
-    fs.cpSync(path.join(ROOT, entry), path.join(OUT, entry), { recursive: true });
+    fs.cpSync(path.join(ROOT, entry), path.join(OUT, entry), {
+      recursive: true,
+      // Audio is served from R2 and the chunk cache and music bed are working
+      // files — none of them belong in the published site.
+      filter: (src) => {
+        const rel = path.relative(ROOT, src);
+        return !(rel.includes(`${path.sep}.cache`) || rel.endsWith(`${path.sep}audio.mp3`)
+          || rel.endsWith(`${path.sep}cover.png`)
+          || rel === path.join('podcast', 'music') || rel.startsWith(path.join('podcast', 'music') + path.sep));
+      },
+    });
   }
   if (fs.existsSync(path.join(ROOT, '.nojekyll'))) {
     fs.copyFileSync(path.join(ROOT, '.nojekyll'), path.join(OUT, '.nojekyll'));
@@ -210,6 +239,73 @@ function forwarderStub(oldPath, newUrl) {
 `;
 }
 
+function hhmmss(total) {
+  const h = Math.floor(total / 3600), m = Math.floor((total % 3600) / 60), s = total % 60;
+  const pad = (n) => String(n).padStart(2, '0');
+  return h ? `${h}:${pad(m)}:${pad(s)}` : `${pad(m)}:${pad(s)}`;
+}
+
+function episodeRow(e) {
+  return `<a class="episode-row" href="${e.url}">
+  <div class="date">${esc(e.date)}</div>
+  <div><div class="t">${esc(e.title)}</div><div class="s">${esc(truncate(e.summary, 110))}</div></div>
+  <div class="dur">${hhmmss(e.audioDuration)}</div>
+</a>`;
+}
+
+function rfc822(date) {
+  return new Date(`${date}T08:00:00+08:00`).toUTCString();
+}
+
+function podcastFeed(episodes) {
+  const cats = SHOW.categories.map(([top, sub]) => sub
+    ? `    <itunes:category text="${esc(top)}"><itunes:category text="${esc(sub)}"/></itunes:category>`
+    : `    <itunes:category text="${esc(top)}"/>`).join('\n');
+
+  const items = episodes.filter(e => e.audioUrl).map((e) => {
+    const disclosure = e.synthesized ? '\n\n本集音频由文本转语音技术合成。' : '';
+    const desc = `${e.summary}${disclosure}`;
+    const cover = fs.existsSync(path.join(ROOT, 'podcast', e.slug, 'cover.jpg'))
+      ? `\n      <itunes:image href="${SITE_URL}/podcast/${e.slug}/cover.jpg"/>` : '';
+    return `    <item>
+      <title>${esc(e.title)}</title>
+      <link>${SITE_URL}${e.url}</link>
+      <guid isPermaLink="false">${esc(e.guid || e.slug)}</guid>
+      <pubDate>${rfc822(e.date)}</pubDate>
+      <description>${esc(desc)}</description>
+      <itunes:summary>${esc(desc)}</itunes:summary>
+      <enclosure url="${esc(e.audioUrl)}" length="${e.audioBytes}" type="audio/mpeg"/>
+      <itunes:duration>${hhmmss(e.audioDuration)}</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>${cover}
+    </item>`;
+  }).join('\n');
+
+  return `<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>${esc(SHOW.title)}</title>
+    <link>${SHOW.url}</link>
+    <atom:link href="${SHOW.feed}" rel="self" type="application/rss+xml"/>
+    <language>${SHOW.language}</language>
+    <description>${esc(SHOW.description)}</description>
+    <itunes:author>${esc(SHOW.author)}</itunes:author>
+    <itunes:summary>${esc(SHOW.description)}</itunes:summary>
+    <itunes:owner>
+      <itunes:name>${esc(SHOW.author)}</itunes:name>
+      <itunes:email>${esc(SHOW.email)}</itunes:email>
+    </itunes:owner>
+    <itunes:image href="${SHOW.image}"/>
+${cats}
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+${items}
+  </channel>
+</rss>
+`;
+}
+
 function atomFeed(items) {
   const updated = items.length ? `${items[0].date}T00:00:00Z` : new Date().toISOString();
   const entries = items.map((it) => `  <entry>
@@ -242,6 +338,7 @@ export function build(opts = {}) {
 
   const writing = scanCollection('writing');
   const courses = scanCollection('courses');
+  const podcast = scanCollection('podcast');
 
   // counts for home tiles
   let runningKm = '—';
@@ -292,6 +389,20 @@ export function build(opts = {}) {
     fs.writeFileSync(path.join(OUT, 'courses', 'index.html'), page);
   }
 
+  // podcast index + RSS feed
+  {
+    const src = path.join(ROOT, 'podcast', 'index.html');
+    if (fs.existsSync(src)) {
+      let page = read(src);
+      const rows = podcast.length
+        ? podcast.map(episodeRow).join('\n')
+        : '<p style="color:var(--muted);padding:20px 0;">第一期正在录制中。</p>';
+      page = replaceRegion(page, 'podcast-list', rows);
+      fs.writeFileSync(path.join(OUT, 'podcast', 'index.html'), page);
+      fs.writeFileSync(path.join(OUT, 'podcast', 'feed.xml'), podcastFeed(podcast));
+    }
+  }
+
   // category pages (site-wide taxonomy: 思考 / 实践)
   {
     const byCat = new Map();
@@ -340,7 +451,7 @@ export function build(opts = {}) {
   }
 
   if (verbose) {
-    console.log(`writing: ${writing.length}, courses: ${courses.length}, projects: ${projectsCount}, talks: ${talksCount}, running: ${runningKm} km`);
+    console.log(`writing: ${writing.length}, courses: ${courses.length}, podcast: ${podcast.length}, projects: ${projectsCount}, talks: ${talksCount}, running: ${runningKm} km`);
     console.log(`built → ${OUT}`);
   }
 }

@@ -5,7 +5,7 @@ Personal digital garden and publication system for essays, interactive courses, 
 ## Language
 
 **Collection**:
-A top-level content stream or gallery in the site (Writing, Courses, Projects, Running, Talks).
+A top-level content stream or gallery in the site (Writing, Courses, Projects, Podcast, Running, Talks).
 _Avoid_: Section, category, folder
 
 **Course**:
@@ -47,3 +47,19 @@ _Avoid_: Impression, view log, history
 **Skip**:
 An explicit user signal marking an Encounter as discarded or deferred, categorized by reason (`not_interested_in_topic`, `already_seen`, `low_quality_or_clickbait`, `wrong_timing`, `other`) to guide future curation preference learning.
 _Avoid_: Delete, hide, reject, pass
+
+**Show**:
+The Podcast as a whole — the channel-level identity that listeners subscribe to and platforms index. This Show is 「白鹤札记」.
+_Avoid_: Channel, program, feed, series
+
+**Episode**:
+A single published audio program in the Podcast collection. An Episode may be adapted from a Writing entry, but need not be — it is a first-class work, not a rendering of one.
+_Avoid_: Track, recording, audio version, show
+
+**Speech Script**:
+The narration-ready text an Episode is voiced from, written to be heard rather than read.
+_Avoid_: Draft, manuscript, 朗读稿
+
+**Voice**:
+The single fixed vocal identity an Episode is narrated in, held constant across the whole Episode.
+_Avoid_: Speaker, 音色 slot, model
