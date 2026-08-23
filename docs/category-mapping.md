@@ -38,7 +38,7 @@
 | my-takes-on-interviews | 面试官毁掉技术面试的三大法宝 | 思考 | **思考** | 基于面试经历的观点性分析与思考 |
 | no-admin-ui | 面向工程师的内部系统需要 Web 界面吗？ | （无） | **思考** | 关于内部系统设计方案的思辨性观点文章 |
 | On-Let-s-Build-A-Simple-Interpreter | 从头开始构建一个 Pascal 的解释器 | 实践 | **实践** | 作者跟随教程用 Go 动手实现了 Pascal 解释器并开源 |
-| physics-and-gates | 从硅沙到逻辑门：重拾我的晶体管与逻辑门物理直觉 | （原 TIL） | **实践** | 动手推导物理机制、开发交互式 SVG 模拟器并编写 Python NAND 逻辑代码 |
+| can-education-still-change-destiny | 读书还能改变命运吗？ | （新增） | **思考** | 探讨 AI 时代知识工作替代与教育本质的思辨性文章 |
 | pythagorean-ankle | 用勾股定理画脚踝 | 思考 | **思考** | 由 AI 对话引发的关于 AI 认知能力的思考随笔 |
 | quick-translate | 翻译能有多快？在 Mac 上实现一键翻译 | 实践 | **实践** | 作者动手用 Automator/Keyboard 工具搭建一键翻译方案的实践记录 |
 | relationship | 猫和女儿教会我的道理 | 思考 | **思考** | 个人生活感悟与反思性随笔 |

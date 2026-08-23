@@ -116,11 +116,9 @@ function copySite() {
 
 function latestRow(item) {
   const typeLabel = { writing: '写作', courses: '课程', projects: '项目', talks: '演讲' }[item.collection] || item.collection;
-  const sub = (item.collection === 'writing' || item.collection === 'courses') && item.category
-    ? `${item.category} · ${item.summary}` : item.summary;
   return `<a class="latest-item" href="${item.url}">
   <span class="chip">${esc(typeLabel)}</span>
-  <div><div class="t">${esc(item.title)}</div><div class="s">${esc(truncate(sub, 60))}</div></div>
+  <div><div class="t">${esc(item.title)}</div><div class="s">${esc(item.summary)}</div></div>
   <span class="d">${esc(item.date.slice(5))}</span>
 </a>`;
 }
