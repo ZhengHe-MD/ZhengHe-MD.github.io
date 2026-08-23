@@ -1,6 +1,7 @@
 _site/
 .DS_Store
 node_modules/
+.env
 
 .env
 podcast/*/.cache/
