@@ -1,0 +1,16 @@
+name = "podcast-audio"
+main = "src/index.js"
+compatibility_date = "2026-08-23"
+workers_dev = true
+
+# The same bucket the pipeline uploads to. r2.dev stays enabled on it — the author
+# machine fetches the pinned music bed straight from there, and only listener-facing
+# episode audio goes through this Worker.
+[[r2_buckets]]
+binding = "AUDIO"
+bucket_name = "podcast"
+
+# Created on first write; there is nothing to provision in the dashboard.
+[[analytics_engine_datasets]]
+binding = "ANALYTICS"
+dataset = "podcast_audio_requests"

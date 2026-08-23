@@ -121,17 +121,19 @@ function scanCollection(dir) {
 function copySite() {
   fs.rmSync(OUT, { recursive: true, force: true });
   fs.mkdirSync(OUT, { recursive: true });
-  const skip = new Set(['_site', '.git', 'node_modules', 'scripts', 'docs', '.github']);
+  const skip = new Set(['_site', '.git', 'node_modules', 'scripts', 'docs', '.github', 'workers']);
   for (const entry of fs.readdirSync(ROOT)) {
     if (skip.has(entry) || entry.startsWith('.') && entry !== '.nojekyll') continue;
     fs.cpSync(path.join(ROOT, entry), path.join(OUT, entry), {
       recursive: true,
       // Audio is served from R2 and the chunk cache and music bed are working
-      // files — none of them belong in the published site.
+      // files — none of them belong in the published site. Download counts are the
+      // author's record, not the Show's: publishing them is a separate decision.
       filter: (src) => {
         const rel = path.relative(ROOT, src);
         return !(rel.includes(`${path.sep}.cache`) || rel.endsWith(`${path.sep}audio.mp3`)
           || rel.endsWith(`${path.sep}cover.png`)
+          || rel === path.join('podcast', 'stats.json')
           || rel === path.join('podcast', 'music') || rel.startsWith(path.join('podcast', 'music') + path.sep));
       },
     });

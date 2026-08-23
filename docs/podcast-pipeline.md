@@ -13,7 +13,7 @@ Domain vocabulary: [CONTEXT.md](../CONTEXT.md). Rationale: [ADR-0003](adr/0003-p
 | Category | Society & Culture › Philosophy · secondary: Technology |
 | Language | `zh-CN` |
 | Explicit | `false` |
-| Cover art | ≥1400×1400 — **not yet produced**; blocks Apple submission only |
+| Cover art | `podcast/cover.jpg`, 1400×1400 — upscaled from a 1254px source. Clears Apple's floor; worth regenerating natively at 3000×3000. |
 
 Channel description:
 
@@ -93,6 +93,17 @@ Useful `additions` parameters:
 - MP3 is gitignored — R2 is the store. Committed: Speech Script, chunk manifest, episode metadata JSON.
 - Feed generation is a pure function of committed files plus the R2 base URL, which is a single config value.
 
+### Downloads
+
+Listener-facing audio is served by `workers/podcast-audio`, a Worker bound to the same
+R2 bucket, which records one row per request into Workers Analytics Engine.
+`node scripts/podcast.mjs stats` applies the IAB counting rules afterwards and commits
+daily totals to `podcast/stats.json`. Full design: [podcast-analytics.md](podcast-analytics.md).
+
+`R2_PUBLIC_BASE` stays the *direct* bucket URL — it is what fetches the pinned music bed
+during a render, which is a working action and not a download. `PODCAST_AUDIO_BASE` is
+the Worker, and only enclosure URLs use it.
+
 ### Compliance
 
 Each Episode's `<description>` carries its own AI-synthesis disclosure, driven by a field in its metadata JSON — per 《人工智能生成合成内容标识办法》. See ADR-0003 decision 4.
@@ -107,8 +118,7 @@ The essay contains no code blocks, tables, links, inline code or subheadings, so
 ## Deliberately out of scope for the pilot
 
 - LLM Markdown→Speech Script rewrite layer (nothing in the pilot exercises it — ADR-0003)
-- Cover art, and therefore Apple/Spotify submission
-- Download analytics via a Cloudflare Worker (note: cannot be backfilled — add before the audience exists)
+- Regenerating the Show cover natively at 3000×3000 (the committed one is an upscale)
 - `<podcast:transcript>` and chapter markers (cheap later; the Speech Script is already committed)
 - Custom domain for feed and audio
 - Multi-provider `TTSProvider` abstraction — 火山 only until there is a second engine to abstract against
