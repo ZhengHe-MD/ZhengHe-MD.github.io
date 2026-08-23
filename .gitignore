@@ -10,3 +10,4 @@ podcast/music/bed.*
 !podcast/music/bed.json
 podcast/music/.cache/
 .claude/worktrees/
+.wrangler/
