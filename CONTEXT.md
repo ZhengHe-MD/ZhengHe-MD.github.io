@@ -63,3 +63,11 @@ _Avoid_: Draft, manuscript, 朗读稿
 **Voice**:
 The single fixed vocal identity an Episode is narrated in, held constant across the whole Episode.
 _Avoid_: Speaker, 音色 slot, model
+
+**Download**:
+A judgement rather than an event — one Listener taking at least a minute of one Episode's audio, counted at most once per 24 hours. Derived from request rows after the fact, never recorded directly, so the rules that define it can be revised and the history re-derived.
+_Avoid_: Play, listen, hit, request, view, stream
+
+**Listener**:
+The salted hash of an IP and User-Agent that tells one Download apart from another for 24 hours. Deliberately too weak to identify a person or follow one across time; not an audience measure.
+_Avoid_: User, subscriber, audience member, visitor, unique

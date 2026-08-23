@@ -8,7 +8,8 @@ loudness chain, the storage and identity model — see
 
 `.env` must exist **in the working tree you run from**. Git worktrees do not share
 it; copy it from the main checkout. It needs `VOLC_APP_ID`, `VOLC_ACCESS_KEY`, and
-the five `R2_*` keys. `scripts/podcast.mjs` fails naming the missing key.
+the five `R2_*` keys, plus `PODCAST_AUDIO_BASE` and `CF_ANALYTICS_TOKEN` for step 6.
+`scripts/podcast.mjs` fails naming the missing key.
 
 ## New Episode
 
@@ -71,6 +72,21 @@ git add podcast/ && git commit && git push
 **Done when** `https://zhenghe-md.github.io/podcast/feed.xml` lists the Episode with
 a working `<enclosure>` URL.
 
+### 6. Roll up the download numbers
+
+```bash
+node scripts/podcast.mjs stats
+git add podcast/stats.json && git commit
+```
+
+This is not about the Episode you just shipped — it is about the ones already out.
+Analytics Engine keeps 90 days and `podcast/stats.json` is the only record of anything
+older, so it has to be run at least quarterly. Doing it on every release is what makes
+that automatic. Details: [podcast-analytics.md](podcast-analytics.md).
+
+**Done when** `stats.json` is committed and no more than 90 days separate its
+`derivedFrom` from the previous run's.
+
 ## Re-rendering an existing Episode
 
 Edit `episode.md`, then `node scripts/podcast.mjs all <slug>`.
@@ -101,3 +117,6 @@ and no vocals. Its mastering level does not matter — it is normalized before m
   Show's identity to Apple, Spotify and Overcast; a new URL means zero subscribers.
 - **Synthesis never runs in CI.** It needs credentials and spends money.
 - **Audio and the music bed never enter git.** They live on R2. Cover JPEGs do.
+- **`podcast/stats.json` is an archive, not an output.** It is the only surviving copy
+  of downloads older than 90 days. Never delete it, never regenerate it from scratch,
+  and never publish it.

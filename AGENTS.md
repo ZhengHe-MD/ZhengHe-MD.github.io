@@ -12,6 +12,8 @@ Personal digital garden and publication system for essays, interactive courses, 
 - [docs/adr/0003-podcast-as-independent-collection.md](docs/adr/0003-podcast-as-independent-collection.md) — architectural decision for the Podcast collection, self-hosted feed, and audio identity.
 - [docs/podcast-release.md](docs/podcast-release.md) — runbook for releasing a 白鹤札记 Episode: publishing a new one, re-rendering an existing one, swapping the music bed or cover art.
 - [docs/podcast-pipeline.md](docs/podcast-pipeline.md) — why the podcast pipeline is shaped as it is: Show metadata, audio parameters, loudness chain, storage and identity model. Consult before changing it.
+- [docs/adr/0004-download-analytics-without-a-custom-domain.md](docs/adr/0004-download-analytics-without-a-custom-domain.md) — architectural decision for Download counting: a Worker as the audio origin, IAB rules applied in the rollup rather than at the edge.
+- [docs/podcast-analytics.md](docs/podcast-analytics.md) — how a Download is counted, what is deliberately not measured, and the 90-day retention cliff on the committed record.
 
 ## Invariants
 
@@ -25,6 +27,6 @@ Personal digital garden and publication system for essays, interactive courses, 
 
 - **Writing (`writing/<slug>/index.html`)**: Long-form essays. Requires `<meta name="date">`, `<meta name="summary">`, and optional `<meta name="category">` (`思考` | `实践`), `<meta name="mathjax" content="true">`, `<meta name="legacy">`. Prose lives in `<div class="prose">`.
 - **Courses (`courses/<slug>/index.html`)**: Multi-session interactive courses exported from Course Studio (`interactive-course`). Embeds standalone two-pane reader, session sandboxes, co-design companion drawer, and `<site-nav active="courses"></site-nav>`.
-- **Podcast (`podcast/<slug>/index.html`)**: Episodes of 白鹤札记. Authored via `scripts/podcast.mjs` from `episode.md` (frontmatter + Speech Script); the page carries `<meta name="guid">`, `audio-url`, `audio-bytes`, `audio-duration`, `synthesized`. Audio and the music bed live on Cloudflare R2, never in git; `build.mjs` generates `/podcast/feed.xml` (RSS 2.0 + `itunes:`) from the committed pages. Synthesis costs money and never runs in CI.
+- **Podcast (`podcast/<slug>/index.html`)**: Episodes of 白鹤札记. Authored via `scripts/podcast.mjs` from `episode.md` (frontmatter + Speech Script); the page carries `<meta name="guid">`, `audio-url`, `audio-bytes`, `audio-duration`, `synthesized`. Audio and the music bed live on Cloudflare R2, never in git; `build.mjs` generates `/podcast/feed.xml` (RSS 2.0 + `itunes:`) from the committed pages. Synthesis costs money and never runs in CI. Listener-facing audio is served by `workers/podcast-audio` (an R2-bound Worker, deployed by hand) so Downloads can be counted; `podcast/stats.json` is the permanent record and outlives Analytics Engine's 90-day retention — never delete it, and never publish it.
 - **Projects & Talks (`projects/`, `talks/`)**: Curated card galleries.
 - **Running (`running/`)**: Dashboard fed by `running/data.json` filtered via `scripts/filter-activities.jq`.

@@ -9,6 +9,7 @@
 //   node scripts/podcast.mjs synth <episode-slug>
 //   node scripts/podcast.mjs page  <episode-slug>
 //   node scripts/podcast.mjs all   <episode-slug>
+//   node scripts/podcast.mjs stats [--days <n>] [--dry-run]
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -575,12 +576,19 @@ async function upload(slug) {
   // The key carries a content hash, so an object is never rewritten in place and a
   // year-long immutable cache is safe. r2.dev allows no cache *rules* (that needs a
   // custom domain) but does honour per-object metadata.
+  // Duration rides along as object metadata so the audio Worker can convert a byte
+  // count into seconds of audio without knowing anything about this repo.
   await putObject(env, audio.file, body, {
     'content-type': 'audio/mpeg',
     'cache-control': 'public, max-age=31536000, immutable',
+    'x-amz-meta-duration': String(audio.duration),
   });
 
-  const url = `${env.R2_PUBLIC_BASE.replace(/\/$/, '')}/${audio.file}`;
+  // Listener-facing audio goes through the counting Worker when one is configured.
+  // R2_PUBLIC_BASE stays the *direct* bucket URL — it is what fetches the music bed,
+  // which is a working asset and must not be counted as a download.
+  const base = (env.PODCAST_AUDIO_BASE || env.R2_PUBLIC_BASE).replace(/\/$/, '');
+  const url = `${base}/${audio.file}`;
   fs.writeFileSync(audioFile, JSON.stringify({ ...audio, url }, null, 2) + '\n');
   console.log(`[upload] ${url}`);
   console.log(`[upload] ${(body.length / 1024 / 1024).toFixed(1)}MB, immutable for 1 year`);
@@ -656,16 +664,195 @@ ${paragraphs.map(p => `        <p>${esc(p)}</p>`).join('\n')}
   console.log(`[page] ${path.relative(ROOT, path.join(dir, 'index.html'))}`);
 }
 
+// ---------- stats ----------
+
+// Downloads are *derived*, not measured. The audio Worker records one row per audio
+// request and applies no policy; these constants are the reading of the IAB Podcast
+// Measurement Technical Guidelines v2.2 that turns rows into downloads. Changing one
+// of them re-derives the entire retained window on the next run — which is the whole
+// reason the policy lives here and not on the edge. See docs/podcast-analytics.md.
+const IAB_MIN_SECONDS = 60;     // a listener must take >= 1 minute of audio to count
+const DEDUP_HOURS = 24;         // one listener, one Episode, at most one download
+const AE_RETENTION_DAYS = 90;   // Analytics Engine keeps data points for three months
+const AE_DATASET = 'podcast_audio_requests';
+const AE_ROW_LIMIT = 100000;
+const STATS_FILE = 'podcast/stats.json';
+
+// Episodes are encoded at a fixed 64kbps CBR, so bytes convert to seconds exactly.
+// Only reached for objects uploaded before `upload` began stamping duration on R2.
+const FALLBACK_BYTES_PER_SECOND = 8000;
+
+// Reached the Worker, but not a person pressing play. Filtering here rather than at
+// the edge keeps the judgement reversible — the rows survive to be re-examined.
+// Deliberately absent: okhttp, stagefright, AppleCoreMedia — those are real players.
+const NON_LISTENER = /bot\b|spider|crawler|facebookexternalhit|bingpreview|slurp|ahrefs|semrush|uptimerobot|pingdom|headlesschrome|validator|monitor|curl\/|wget\/|python-requests|go-http-client|libwww-perl|apache-httpclient/i;
+
+function utcDay(ms) {
+  return new Date(ms).toISOString().slice(0, 10);
+}
+
+// Analytics Engine returns ClickHouse DateTime ("2026-08-23 12:34:56"), which is UTC
+// but which Date.parse would read as local time. Normalise before parsing.
+function parseAEDate(value) {
+  const s = String(value);
+  return Date.parse(/[Zz]|[+-]\d{2}:?\d{2}$/.test(s) ? s : `${s.replace(' ', 'T')}Z`);
+}
+
+async function queryAE(env, days) {
+  const sql = [
+    'SELECT timestamp, blob1 AS episode, blob2 AS listener, blob4 AS ua,',
+    '  double1 AS bytes, double2 AS size, double3 AS duration, double4 AS status,',
+    '  _sample_interval AS samples',
+    `FROM ${AE_DATASET}`,
+    `WHERE timestamp > NOW() - INTERVAL '${days}' DAY`,
+    'ORDER BY timestamp ASC',
+    `LIMIT ${AE_ROW_LIMIT}`,
+    'FORMAT JSONEachRow',
+  ].join('\n');
+
+  const res = await fetch(
+    `https://api.cloudflare.com/client/v4/accounts/${env.R2_ACCOUNT_ID}/analytics_engine/sql`,
+    { method: 'POST', headers: { Authorization: `Bearer ${env.CF_ANALYTICS_TOKEN}` }, body: sql },
+  );
+  const text = await res.text();
+  if (!res.ok) {
+    const hint = /unknown table|does not exist|not found/i.test(text)
+      ? ` — dataset "${AE_DATASET}" does not exist yet; the first audio request through the Worker creates it`
+      : '';
+    throw new Error(`Analytics Engine ${res.status}: ${text.slice(0, 300)}${hint}`);
+  }
+
+  const rows = text.split('\n').filter(Boolean).map((line) => {
+    const r = JSON.parse(line);
+    return {
+      t: parseAEDate(r.timestamp),
+      episode: r.episode,
+      listener: r.listener,
+      ua: r.ua || '',
+      bytes: Number(r.bytes) || 0,
+      size: Number(r.size) || 0,
+      duration: Number(r.duration) || 0,
+      status: Number(r.status) || 0,
+      samples: Number(r.samples) || 1,
+    };
+  });
+  if (rows.length >= AE_ROW_LIMIT) {
+    throw new Error(`hit the ${AE_ROW_LIMIT}-row query limit — re-run with a shorter --days window`);
+  }
+  return rows;
+}
+
+// Requests are accumulated, not judged one at a time, because real clients fetch in
+// pieces: three 25-second range requests are one download, not zero and not three.
+function countDownloads(rows) {
+  const byListener = new Map();
+  for (const r of rows) {
+    if (r.status !== 200 && r.status !== 206) continue;
+    if (NON_LISTENER.test(r.ua)) continue;
+    const key = `${r.episode} ${r.listener}`;
+    let list = byListener.get(key);
+    if (!list) byListener.set(key, list = []);
+    list.push(r);   // `rows` arrives sorted by timestamp, so each list is too
+  }
+
+  const dedupMs = DEDUP_HOURS * 3600 * 1000;
+  const downloads = [];
+  for (const reqs of byListener.values()) {
+    let acc = 0, accStart = 0, countedUntil = 0;
+    for (const r of reqs) {
+      if (r.t < countedUntil) continue;                         // inside the 24h shadow
+      if (r.t - accStart > dedupMs) { acc = 0; accStart = r.t; } // stale partial listen
+      acc += r.bytes;
+      const perSecond = r.duration > 0 ? r.size / r.duration : FALLBACK_BYTES_PER_SECOND;
+      if (acc >= IAB_MIN_SECONDS * perSecond) {
+        downloads.push({ episode: r.episode, at: r.t });
+        countedUntil = r.t + dedupMs;
+        acc = 0;
+        accStart = r.t;
+      }
+    }
+  }
+  return downloads;
+}
+
+// Days at or after `fromDay` are replaced by the fresh derivation; earlier days are
+// carried over untouched. That is what makes the committed file outlive Analytics
+// Engine's 90-day retention, and what makes re-running this command idempotent.
+function mergeStats(existing, fresh, fromDay) {
+  const episodes = {};
+  const slugs = new Set([...Object.keys(existing.episodes || {}), ...Object.keys(fresh)]);
+  for (const slug of [...slugs].sort()) {
+    const daily = {};
+    for (const [day, n] of Object.entries(existing.episodes?.[slug]?.daily || {})) {
+      if (day < fromDay) daily[day] = n;
+    }
+    Object.assign(daily, fresh[slug] || {});
+    const sorted = Object.fromEntries(Object.entries(daily).sort(([a], [b]) => a.localeCompare(b)));
+    episodes[slug] = { total: Object.values(sorted).reduce((a, b) => a + b, 0), daily: sorted };
+  }
+  return episodes;
+}
+
+async function stats({ days, dryRun }) {
+  const env = requireEnv(loadEnv(), ['R2_ACCOUNT_ID', 'CF_ANALYTICS_TOKEN']);
+  const window = Math.min(Math.max(Number(days) || AE_RETENTION_DAYS, 1), AE_RETENTION_DAYS);
+
+  // One extra day of lead-in: a download can be assembled from requests that began
+  // before the reporting window opens, and its 24h shadow reaches back over the edge.
+  const rows = await queryAE(env, window + 1);
+  console.log(`[stats] ${rows.length} audio requests in the last ${window} days`);
+  if (!rows.length) return;
+
+  if (rows.some(r => r.samples > 1)) {
+    console.warn('[stats] Analytics Engine is sampling this dataset — counts are floors, not exact');
+  }
+
+  const fromDay = utcDay(Date.now() - window * 86400000);
+  const fresh = {};
+  for (const d of countDownloads(rows)) {
+    const day = utcDay(d.at);
+    if (day < fromDay) continue;                  // belongs to an already-final day
+    fresh[d.episode] ??= {};
+    fresh[d.episode][day] = (fresh[d.episode][day] || 0) + 1;
+  }
+
+  const file = path.join(ROOT, STATS_FILE);
+  const existing = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
+  const episodes = mergeStats(existing, fresh, fromDay);
+
+  for (const [slug, e] of Object.entries(episodes)) {
+    const recent = Object.entries(e.daily).filter(([d]) => d >= fromDay)
+      .reduce((a, [, n]) => a + n, 0);
+    console.log(`[stats] ${slug} — ${e.total} downloads total, ${recent} in window`);
+  }
+
+  if (dryRun) { console.log('[stats] --dry-run: nothing written'); return; }
+
+  const out = {
+    _comment: 'Derived by `node scripts/podcast.mjs stats` from Analytics Engine, which retains '
+      + `${AE_RETENTION_DAYS} days. Days before "derivedFrom" were carried over from earlier runs `
+      + 'and this file is the only record of them that exists — do not delete it.',
+    generatedAt: new Date().toISOString(),
+    derivedFrom: fromDay,
+    rules: { minSeconds: IAB_MIN_SECONDS, dedupHours: DEDUP_HOURS, standard: 'IAB Podcast Measurement v2.2' },
+    episodes,
+  };
+  fs.writeFileSync(file, JSON.stringify(out, null, 2) + '\n');
+  console.log(`[stats] wrote ${STATS_FILE}`);
+}
+
 // ---------- cli ----------
 
 const args = process.argv.slice(2);
 const cmd = args[0];
-const slug = args[1] && !args[1].startsWith('--') ? args[1] : null;   // `bed` takes no slug
+const SLUGLESS = new Set(['bed', 'stats']);   // these act on the Show, not one Episode
+const slug = args[1] && !args[1].startsWith('--') ? args[1] : null;
 const rest = args.slice(slug ? 2 : 1);
 const flag = (name) => { const i = rest.indexOf(`--${name}`); return i === -1 ? null : rest[i + 1]; };
 
-if (!cmd || (!slug && cmd !== 'bed')) {
-  console.error('usage: node scripts/podcast.mjs <draft|synth|upload|page|cover|bed|all> <episode-slug|show> [--from-writing <slug>] [--from <image>]');
+if (!cmd || (!slug && !SLUGLESS.has(cmd))) {
+  console.error('usage: node scripts/podcast.mjs <draft|synth|upload|page|cover|bed|stats|all> <episode-slug|show>'
+    + ' [--from-writing <slug>] [--from <image>] [--days <n>] [--dry-run]');
   process.exit(1);
 }
 
@@ -676,6 +863,7 @@ try {
   else if (cmd === 'upload') await upload(slug);
   else if (cmd === 'cover') cover(slug, flag('from'));
   else if (cmd === 'bed') await pushBed(flag('from'));
+  else if (cmd === 'stats') await stats({ days: flag('days'), dryRun: rest.includes('--dry-run') });
   else if (cmd === 'all') { await synth(slug); await upload(slug); page(slug); }
   else throw new Error(`unknown command: ${cmd}`);
 } catch (err) {

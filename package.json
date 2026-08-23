@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "build": "node scripts/build.mjs",
-    "draft": "node scripts/sync-draft.mjs"
+    "draft": "node scripts/sync-draft.mjs",
+    "test": "node scripts/podcast-analytics.test.mjs"
   },
   "devDependencies": {
     "marked": "^18.0.10"
