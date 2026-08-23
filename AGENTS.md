@@ -10,7 +10,8 @@ Personal digital garden and publication system for essays, interactive courses, 
 - [docs/adr/0002-musement-interaction-feedback-loop.md](docs/adr/0002-musement-interaction-feedback-loop.md) — architectural decision for Musement skip tracking & interaction feedback loop.
 - [docs/category-mapping.md](docs/category-mapping.md) — site-wide taxonomy mapping (`思考` vs `实践`).
 - [docs/adr/0003-podcast-as-independent-collection.md](docs/adr/0003-podcast-as-independent-collection.md) — architectural decision for the Podcast collection, self-hosted feed, and audio identity.
-- [docs/podcast-pipeline.md](docs/podcast-pipeline.md) — 白鹤札记 show metadata and the Speech Script → audio → feed pipeline spec.
+- [docs/podcast-release.md](docs/podcast-release.md) — runbook for releasing a 白鹤札记 Episode: publishing a new one, re-rendering an existing one, swapping the music bed or cover art.
+- [docs/podcast-pipeline.md](docs/podcast-pipeline.md) — why the podcast pipeline is shaped as it is: Show metadata, audio parameters, loudness chain, storage and identity model. Consult before changing it.
 
 ## Invariants
 
