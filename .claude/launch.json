@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["scripts/dev.mjs", "--port", "8912"],
+      "port": 8912,
+      "autoPort": false
+    }
+  ]
+}

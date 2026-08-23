@@ -1,0 +1,85 @@
+{
+  "speaker": "zh_male_yuanboxiaoshu_uranus_bigtts",
+  "resourceId": "seed-tts-2.0",
+  "sampleRate": 24000,
+  "chunks": [
+    {
+      "hash": "eded0c7809175adf",
+      "chars": 10,
+      "gapMs": 1200,
+      "cached": true
+    },
+    {
+      "hash": "71eb6581085ca3d5",
+      "chars": 201,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "cc9bc3ea94cc50ca",
+      "chars": 98,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "e274a2ce6ac14b78",
+      "chars": 293,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "39acb9c8e92611ba",
+      "chars": 197,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "830fc7f49d477b09",
+      "chars": 100,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "ab25c782c86d9ba0",
+      "chars": 123,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "a1097e0a2878a3e5",
+      "chars": 259,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "915c3f2685b3d48b",
+      "chars": 190,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "8d5c91ebbba7b97b",
+      "chars": 212,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "b7606e32ee645471",
+      "chars": 91,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "ea39212d3b79c573",
+      "chars": 149,
+      "gapMs": 800,
+      "cached": true
+    },
+    {
+      "hash": "770a9a2f8abff995",
+      "chars": 120,
+      "gapMs": 1500,
+      "cached": true
+    }
+  ]
+}

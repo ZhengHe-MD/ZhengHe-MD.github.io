@@ -30,6 +30,7 @@
   var NAV_ITEMS = [
     { id: 'writing', zh: '写作', en: 'Writing', href: '/writing/' },
     { id: 'courses', zh: '课程', en: 'Courses', href: '/courses/' },
+    { id: 'podcast', zh: '播客', en: 'Podcast', href: '/podcast/' },
     { id: 'projects', zh: '项目', en: 'Projects', href: '/projects/' },
     { id: 'running', zh: '跑步', en: 'Running', href: '/running/' },
     { id: 'talks', zh: '演讲', en: 'Talks', href: '/talks/' },

@@ -475,3 +475,18 @@ site-footer { display: block; }
 .hljs-meta, .hljs-deletion { color: var(--muted); }
 .hljs-emphasis { font-style: italic; }
 .hljs-strong { font-weight: 600; }
+
+/* ---------- podcast ---------- */
+.episode-summary{color:var(--muted);margin:0 0 18px;line-height:1.7}
+.episode-audio{width:100%;margin:8px 0 16px;display:block}
+.episode-disclosure,.episode-source{font-size:.85rem;color:var(--muted);margin:0 0 6px}
+.episode-row{display:grid;grid-template-columns:96px 1fr auto;gap:14px;align-items:baseline;
+  padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.episode-row:hover{background:var(--surface)}
+.episode-row .date{color:var(--muted);font-size:.85rem}
+.episode-row .t{font-weight:600;margin-bottom:4px}
+.episode-row .s{color:var(--muted);font-size:.9rem;line-height:1.6}
+.episode-row .dur{color:var(--muted);font-size:.85rem;white-space:nowrap}
+.show-head{display:flex;gap:22px;align-items:flex-start;margin-bottom:8px;flex-wrap:wrap}
+.show-head img{width:150px;height:150px;border-radius:10px;border:1px solid var(--line)}
+@media(max-width:640px){.episode-row{grid-template-columns:1fr;gap:4px}}
