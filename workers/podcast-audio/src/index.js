@@ -94,6 +94,15 @@ async function record(request, env, { key, span, size, object, status }) {
 
   const episode = key.replace(/-[0-9a-f]{8}\.mp3$/, '');
   const ip = request.headers.get('cf-connecting-ip') || '';
+
+  // Without the salt the hash is a plain digest of IP+UA, and the IPv4 space is small
+  // enough to enumerate. Recording still happens — silently counting nothing would be
+  // the worse failure, since downloads cannot be backfilled — but this must not pass
+  // unnoticed: `wrangler tail` surfaces it.
+  if (!env.LISTENER_SALT) {
+    console.error('LISTENER_SALT is not set — listener hashes are unsalted and reversible;'
+      + ' see workers/podcast-audio/README.md');
+  }
   const listener = await listenerHash(env.LISTENER_SALT || '', ip, ua);
 
   // Duration is stamped on the object at upload. Without it the rollup cannot turn
