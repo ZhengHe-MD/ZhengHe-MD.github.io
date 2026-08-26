@@ -5,7 +5,7 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>Unexposed candidate materials collected from configured sources</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Aug 2026 00:30:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 00:23:46 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/pool.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[Hacker News] Bookshelf – Self-hosted eBook library that runs on object storage</title>
@@ -97,7 +97,7 @@
       <guid isPermaLink="false">musement:pool:b93516b697db6e42e6b669ecaa6c156eb6235552d88b594231434abb29ef69ff</guid>
       <pubDate>Mon, 24 Aug 2026 18:45:43 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> stagas</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
 <p>Article URL: https://textlog.cc/post/2059 Comments URL: https://news.ycombinator.com/item?id=49424167 Points: 42 # Comments: 22</p>
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
@@ -109,7 +109,7 @@
       <guid isPermaLink="false">musement:pool:d867f30dbc36216040cacef010705844ef2fc7990d695ccf1159f0cd1ec799cb</guid>
       <pubDate>Mon, 24 Aug 2026 18:37:24 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> lumpa</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
 <p>Article URL: https://lucumr.pocoo.org/2026/8/24/anger-anxiety-agency/ Comments URL: https://news.ycombinator.com/item?id=49424082 Points: 84 # Comments: 94</p>
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
@@ -217,7 +217,7 @@
       <guid isPermaLink="false">musement:pool:7d04125d99c1265495beaf9274f365b6c79216458e51bd0b4c8a08558bd983f1</guid>
       <pubDate>Mon, 24 Aug 2026 16:15:10 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> tke248</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
 <p>Article URL: https://glassbox.codecanary.org Comments URL: https://news.ycombinator.com/item?id=49421948 Points: 86 # Comments: 41</p>
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
@@ -229,7 +229,7 @@
       <guid isPermaLink="false">musement:pool:489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b</guid>
       <pubDate>Mon, 24 Aug 2026 16:08:17 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> adesh_nalpet</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
 <p>PicoMQ is a Rust server for Durable Streams, built on Object Store. Cheap, URL-addressable, granular streams (create/append/read/long-poll/SSE), with Pico Protocol or Durable Streams Protocol as the facade. S3Stream is the stream storage primitive, used in AutoMQ, shipped as a Rust library. Coordination is a command log in Postgres. Comments URL: https://news.ycombinator.com/item?id=49421806 Points: 84 # Comments: 16</p>
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
@@ -246,6 +246,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://larsfaye.com/articles/ai-coding-will-prevent-expertise">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%208317e1187afa3abdb819c874e0a6785de86bda1ca42df776fd7f4059472f17cf&amp;body=Item%3A%20%22Coding%20expertise%20is%20going%20to%20collapse%20from%20AI%20reliance%22%0AFingerprint%3A%208317e1187afa3abdb819c874e0a6785de86bda1ca42df776fd7f4059472f17cf%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Briefing Chat: New narcolepsy drug could unlock host of novel brain therapies</title>
+      <link>https://www.nature.com/articles/d41586-026-02626-x</link>
+      <guid isPermaLink="false">musement:pool:804a16a04f8b0993f5eb1ec498435897253d42ea25db3099cf88e2678c9b8619</guid>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 21 August 2026; doi:10.1038/d41586-026-02626-x Nature staff discuss how an FDA-approved drug for narcolepsy could have promise beyond the condition, and the longest-lived human brain organoids yet.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02626-x">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20804a16a04f8b0993f5eb1ec498435897253d42ea25db3099cf88e2678c9b8619&amp;body=Item%3A%20%22Briefing%20Chat%3A%20New%20narcolepsy%20drug%20could%20unlock%20host%20of%20novel%20brain%20therapies%22%0AFingerprint%3A%20804a16a04f8b0993f5eb1ec498435897253d42ea25db3099cf88e2678c9b8619%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Earth-shaking thunder probes underground geology</title>
@@ -282,18 +294,6 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02352-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20a05aa880d388b4e7116cca0ad82fed2caaa07b4fe6deab752bc4477b74ed34dd&amp;body=Item%3A%20%22Sleuth%20identifies%20dozens%20of%20studies%20that%20used%20the%20wrong%20antibody%22%0AFingerprint%3A%20a05aa880d388b4e7116cca0ad82fed2caaa07b4fe6deab752bc4477b74ed34dd%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Briefing Chat: New narcolepsy drug could unlock host of novel brain therapies</title>
-      <link>https://www.nature.com/articles/d41586-026-02626-x</link>
-      <guid isPermaLink="false">musement:pool:804a16a04f8b0993f5eb1ec498435897253d42ea25db3099cf88e2678c9b8619</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Nature, Published online: 21 August 2026; doi:10.1038/d41586-026-02626-x Nature staff discuss how an FDA-approved drug for narcolepsy could have promise beyond the condition, and the longest-lived human brain organoids yet.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02626-x">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20804a16a04f8b0993f5eb1ec498435897253d42ea25db3099cf88e2678c9b8619&amp;body=Item%3A%20%22Briefing%20Chat%3A%20New%20narcolepsy%20drug%20could%20unlock%20host%20of%20novel%20brain%20therapies%22%0AFingerprint%3A%20804a16a04f8b0993f5eb1ec498435897253d42ea25db3099cf88e2678c9b8619%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Huberman Lab] Essentials: How to Access Your Creativity | Rick Rubin</title>
@@ -524,18 +524,6 @@
 <p><a href="https://www.nature.com/articles/s41586-026-10951-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2078f9cb213a1ccc20fae9526d5a0b5ae0652852cffea1099f51becf3cbe22e0a9&amp;body=Item%3A%20%22Functional%20role%20of%20skull%20lymphoid%20structures%20in%20CNS%20immunosurveillance%22%0AFingerprint%3A%2078f9cb213a1ccc20fae9526d5a0b5ae0652852cffea1099f51becf3cbe22e0a9%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Nature News] Observation of conformal field theory spectra in a quantum simulator</title>
-      <link>https://www.nature.com/articles/s41586-026-10904-x</link>
-      <guid isPermaLink="false">musement:pool:39184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10904-x Measurements on an array of optically trapped neutral atoms at a quantum phase transition provide a direct observation of the universal excitation spectrum predicted by conformal field theory.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10904-x">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2039184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba&amp;body=Item%3A%20%22Observation%20of%20conformal%20field%20theory%20spectra%20in%20a%20quantum%20simulator%22%0AFingerprint%3A%2039184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Nature News] Wake-activated neuronal populations that regulate sleep drive</title>
       <link>https://www.nature.com/articles/s41586-026-10928-3</link>
       <guid isPermaLink="false">musement:pool:6d1d57ffdc0eb2c1518d780f9bc0dc4451b72a72f495f46a941b28ddcc4c9c3c</guid>
@@ -560,18 +548,6 @@
 <p><a href="https://www.nature.com/articles/s41586-026-10935-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201d120f8ba94869c3b18cea96f39375c47d9e497feda6d7963759e6f03224aaa0&amp;body=Item%3A%20%22Increasing%20CO%3Csub%3E2%3C%2Fsub%3E%20levels%20fertilize%20C%3Csub%3E4%3C%2Fsub%3E%20grass%20production%22%0AFingerprint%3A%201d120f8ba94869c3b18cea96f39375c47d9e497feda6d7963759e6f03224aaa0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Nature News] A global atmospheric methane record from a tropical ice core</title>
-      <link>https://www.nature.com/articles/s41586-026-10938-1</link>
-      <guid isPermaLink="false">musement:pool:d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10938-1 A 2,000-year Peruvian ice core record of atmospheric CH4 concentrations contains the first historical global CH4 record from the low latitudes, and implementation of a four-box model indicates higher equatorial CH4 strength than previous estimates from polar-only records.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10938-1">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402&amp;body=Item%3A%20%22A%20global%20atmospheric%20methane%20record%20from%20a%20tropical%20ice%20core%22%0AFingerprint%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Nature News] Family genetic designs in MoBa provide insights into health and functioning</title>
       <link>https://www.nature.com/articles/s41586-026-10926-5</link>
       <guid isPermaLink="false">musement:pool:b04ff3a227f6aa332781036ce09eff7b1e4cc9e0107799f8c1015197137a69f8</guid>
@@ -594,18 +570,6 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/s41586-026-10900-1">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20219944dfa074fe97e54ef78cfd16e66195c0d0ec8048d462c7b92fed8f706fef&amp;body=Item%3A%20%22Asymmetric%20prefrontal%20representations%20for%20leader%E2%80%93follower%20dynamics%22%0AFingerprint%3A%20219944dfa074fe97e54ef78cfd16e66195c0d0ec8048d462c7b92fed8f706fef%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Atomic-scale double-slit interferometry with a focused electron probe</title>
-      <link>https://www.nature.com/articles/s41586-026-10914-9</link>
-      <guid isPermaLink="false">musement:pool:13759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10914-9 Double-slit interferometry at the atomic scale is demonstrated using scanning transmission electron microscopy to provide evidence of interference fringes generated with a focused electron beam encountering two silicon atomic columns separated by 1.36 Å.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10914-9">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2013759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0&amp;body=Item%3A%20%22Atomic-scale%20double-slit%20interferometry%20with%20a%20focused%20electron%20probe%22%0AFingerprint%3A%2013759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Synthesis of pyrroles from isoxazoles by an O-to-C skeletal edit</title>
@@ -776,18 +740,6 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02528-y">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20367e7e754cb7e1d216a157ff3b65c21e97ebba7df2600f8de23c1cc0afcc334f&amp;body=Item%3A%20%22Screening%20babies%E2%80%99%20genomes%20could%20save%20lives.%20Here%E2%80%99s%20how%20it%20would%20work%22%0AFingerprint%3A%20367e7e754cb7e1d216a157ff3b65c21e97ebba7df2600f8de23c1cc0afcc334f%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Nature News] AI tool lets researchers ‘vibe code’ in the quantum realm</title>
-      <link>https://www.nature.com/articles/d41586-026-02495-4</link>
-      <guid isPermaLink="false">musement:pool:02a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Davide Castelvecchi</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 19 August 2026; doi:10.1038/d41586-026-02495-4 An autonomous AI agent can write and execute quantum computing code, but it sometimes needs a human touch.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02495-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5&amp;body=Item%3A%20%22AI%20tool%20lets%20researchers%20%E2%80%98vibe%20code%E2%80%99%20in%20the%20quantum%20realm%22%0AFingerprint%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Nature News] Computational ‘gym’ trains AI models to control turbulence</title>
       <link>https://www.nature.com/articles/d41586-026-02375-x</link>
       <guid isPermaLink="false">musement:pool:4cb5a779a31e95cea66bcd16a435d7558f7be56097dbedbae0e4c0d7d6f0d628</guid>
@@ -836,6 +788,42 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02376-w">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20e40b15447cdd6cfb1e21274a29e7903528ca2c637ff8f2434d98b9bc6ad9fa30&amp;body=Item%3A%20%22The%20Antarctic%20ice%20sheet%20has%20gained%20mass%20%E2%80%94%20but%20probably%20not%20for%20long%22%0AFingerprint%3A%20e40b15447cdd6cfb1e21274a29e7903528ca2c637ff8f2434d98b9bc6ad9fa30%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Nature News] Observation of conformal field theory spectra in a quantum simulator</title>
+      <link>https://www.nature.com/articles/s41586-026-10904-x</link>
+      <guid isPermaLink="false">musement:pool:39184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10904-x Measurements on an array of optically trapped neutral atoms at a quantum phase transition provide a direct observation of the universal excitation spectrum predicted by conformal field theory.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-10904-x">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2039184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba&amp;body=Item%3A%20%22Observation%20of%20conformal%20field%20theory%20spectra%20in%20a%20quantum%20simulator%22%0AFingerprint%3A%2039184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] A global atmospheric methane record from a tropical ice core</title>
+      <link>https://www.nature.com/articles/s41586-026-10938-1</link>
+      <guid isPermaLink="false">musement:pool:d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10938-1 A 2,000-year Peruvian ice core record of atmospheric CH4 concentrations contains the first historical global CH4 record from the low latitudes, and implementation of a four-box model indicates higher equatorial CH4 strength than previous estimates from polar-only records.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-10938-1">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402&amp;body=Item%3A%20%22A%20global%20atmospheric%20methane%20record%20from%20a%20tropical%20ice%20core%22%0AFingerprint%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Atomic-scale double-slit interferometry with a focused electron probe</title>
+      <link>https://www.nature.com/articles/s41586-026-10914-9</link>
+      <guid isPermaLink="false">musement:pool:13759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10914-9 Double-slit interferometry at the atomic scale is demonstrated using scanning transmission electron microscopy to provide evidence of interference fringes generated with a focused electron beam encountering two silicon atomic columns separated by 1.36 Å.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-10914-9">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2013759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0&amp;body=Item%3A%20%22Atomic-scale%20double-slit%20interferometry%20with%20a%20focused%20electron%20probe%22%0AFingerprint%3A%2013759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] Twenty-two easy ways to power up your lab meetings</title>
       <link>https://www.nature.com/articles/d41586-026-02037-y</link>
       <guid isPermaLink="false">musement:pool:bbe798b6de5b730edbd022a66b44dbefea2f00f7a27772ab1a92b3c227b3fe4e</guid>
@@ -870,6 +858,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02516-2">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201ccff97b1f9df5ac97f1c276ebecc3d9d05c45cc63f5558b4d7580bc25bdb5e0&amp;body=Item%3A%20%22South%20Africa%E2%80%99s%20scientists%20must%20register%20with%20official%20body%20or%20risk%20prison%2C%20according%20to%20draft%20law%22%0AFingerprint%3A%201ccff97b1f9df5ac97f1c276ebecc3d9d05c45cc63f5558b4d7580bc25bdb5e0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] AI tool lets researchers ‘vibe code’ in the quantum realm</title>
+      <link>https://www.nature.com/articles/d41586-026-02495-4</link>
+      <guid isPermaLink="false">musement:pool:02a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Davide Castelvecchi</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/d41586-026-02495-4 An autonomous AI agent can write and execute quantum computing code, but it sometimes needs a human touch.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02495-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5&amp;body=Item%3A%20%22AI%20tool%20lets%20researchers%20%E2%80%98vibe%20code%E2%80%99%20in%20the%20quantum%20realm%22%0AFingerprint%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Delisted</title>
@@ -913,7 +913,7 @@
       <guid isPermaLink="false">musement:pool:7a1a4757fcc3ecb0b001b1f720251ddebf39b5163bbf21fdf24e640847141d24</guid>
       <pubDate>Tue, 18 Aug 2026 11:33:08 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Veritasium | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
 <p>Could identical twins get away with murder? Identical twins have the same DNA. So, if one of them commits a murder, which one goes to prison? [music] When police run a standard DNA test at a crime scene and it matches two twins, they&amp;#39;re stuck. [music] And this has literally happened. In Germany, two twin brothers were suspected of robbing luxury [music] stores. DNA was found, but they both walked free cuz they couldn&amp;#39;t prove who did it. But, the identical in identical twins &amp;gt;&amp;gt; [mus</p>
 <p><strong>Estimated Time:</strong> 1 min (video)</p>
 <hr/>
@@ -1105,11 +1105,35 @@
       <guid isPermaLink="false">musement:pool:cfde27534c4869847d1e7d279218d8f858faa5260e35a174e28ac2104c2734eb</guid>
       <pubDate>Mon, 17 Aug 2026 03:40:25 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Huberman Lab | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
 <p>Maybe, Andrew, you look at this cup and say, &amp;quot;It&amp;#39;s a gray cup.&amp;quot; What if it evoked an emotion in me, a childhood moment that a gray cup might mean something that only me and my best friend share? That is a completely inaccessible piece of information in my brain that is never uploaded on the internet, and no matter how mighty AI is today, cannot access that. So that my reaction to this cup and potentially what I would do with it because of that piece of memory can be completely diff</p>
 <p><strong>Estimated Time:</strong> 1 min (video)</p>
 <hr/>
 <p><a href="https://www.youtube.com/shorts/XmUVbu5BgiI">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20cfde27534c4869847d1e7d279218d8f858faa5260e35a174e28ac2104c2734eb&amp;body=Item%3A%20%22Benevolent%20Uses%20of%20AI%20to%20Improve%20Your%20Life%22%0AFingerprint%3A%20cfde27534c4869847d1e7d279218d8f858faa5260e35a174e28ac2104c2734eb%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Positional isomerisation of pyridine via nitrogen transposition</title>
+      <link>https://www.nature.com/articles/s41586-026-11006-4</link>
+      <guid isPermaLink="false">musement:pool:2babf67906395221f6d6a4f505724fc11704b77faec576c934edfe1ed2eabfe8</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 17 August 2026; doi:10.1038/s41586-026-11006-4 Positional isomerisation of pyridine via nitrogen transposition</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-11006-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%202babf67906395221f6d6a4f505724fc11704b77faec576c934edfe1ed2eabfe8&amp;body=Item%3A%20%22Positional%20isomerisation%20of%20pyridine%20via%20nitrogen%20transposition%22%0AFingerprint%3A%202babf67906395221f6d6a4f505724fc11704b77faec576c934edfe1ed2eabfe8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Programmable remodelling of carbon–nitrogen connectivity in amines</title>
+      <link>https://www.nature.com/articles/s41586-026-11009-1</link>
+      <guid isPermaLink="false">musement:pool:e07c08099bbde5f1a89156f3ed4cabe5e4aa09e073352775c798bf89a34236e8</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 17 August 2026; doi:10.1038/s41586-026-11009-1 Programmable remodelling of carbon–nitrogen connectivity in amines</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-11009-1">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20e07c08099bbde5f1a89156f3ed4cabe5e4aa09e073352775c798bf89a34236e8&amp;body=Item%3A%20%22Programmable%20remodelling%20of%20carbon%E2%80%93nitrogen%20connectivity%20in%20amines%22%0AFingerprint%3A%20e07c08099bbde5f1a89156f3ed4cabe5e4aa09e073352775c798bf89a34236e8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Defect passivation and optical management of triple-junction solar cells</title>
@@ -1158,30 +1182,6 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02529-x">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2071b0ef0a66b524022de727858030fc7255fcdfa0736df978d79f93f9f5f48ae7&amp;body=Item%3A%20%22Why%20AI%20systems%20are%20most%20useful%20as%20designers%20of%20new%20scientific%20tools%22%0AFingerprint%3A%2071b0ef0a66b524022de727858030fc7255fcdfa0736df978d79f93f9f5f48ae7%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Positional isomerisation of pyridine via nitrogen transposition</title>
-      <link>https://www.nature.com/articles/s41586-026-11006-4</link>
-      <guid isPermaLink="false">musement:pool:2babf67906395221f6d6a4f505724fc11704b77faec576c934edfe1ed2eabfe8</guid>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
-<p>Nature, Published online: 17 August 2026; doi:10.1038/s41586-026-11006-4 Positional isomerisation of pyridine via nitrogen transposition</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-11006-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%202babf67906395221f6d6a4f505724fc11704b77faec576c934edfe1ed2eabfe8&amp;body=Item%3A%20%22Positional%20isomerisation%20of%20pyridine%20via%20nitrogen%20transposition%22%0AFingerprint%3A%202babf67906395221f6d6a4f505724fc11704b77faec576c934edfe1ed2eabfe8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Programmable remodelling of carbon–nitrogen connectivity in amines</title>
-      <link>https://www.nature.com/articles/s41586-026-11009-1</link>
-      <guid isPermaLink="false">musement:pool:e07c08099bbde5f1a89156f3ed4cabe5e4aa09e073352775c798bf89a34236e8</guid>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
-<p>Nature, Published online: 17 August 2026; doi:10.1038/s41586-026-11009-1 Programmable remodelling of carbon–nitrogen connectivity in amines</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-11009-1">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20e07c08099bbde5f1a89156f3ed4cabe5e4aa09e073352775c798bf89a34236e8&amp;body=Item%3A%20%22Programmable%20remodelling%20of%20carbon%E2%80%93nitrogen%20connectivity%20in%20amines%22%0AFingerprint%3A%20e07c08099bbde5f1a89156f3ed4cabe5e4aa09e073352775c798bf89a34236e8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] How the story of life and our planet unfolded — together</title>

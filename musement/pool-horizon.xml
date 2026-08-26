@@ -5,7 +5,7 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>Fast-moving ambient updates, current events, and tangents</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Aug 2026 00:30:15 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 00:23:46 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/pool-horizon.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[Hacker News] Bookshelf – Self-hosted eBook library that runs on object storage</title>
@@ -56,6 +56,18 @@
 <p><a href="https://www.bbc.com/news/articles/c62m4gpnp78o">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2053d975e083eaf7f3df887ebd414efede0210af959b10b0b1357e2feefebb47bf&amp;body=Item%3A%20%22Oceans%20hit%20highest%20temperature%20on%20record%22%0AFingerprint%3A%2053d975e083eaf7f3df887ebd414efede0210af959b10b0b1357e2feefebb47bf%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Hacker News] Removed all counters, replies, following/ers, timestamps, from textlog</title>
+      <link>https://textlog.cc/post/2059</link>
+      <guid isPermaLink="false">musement:pool:b93516b697db6e42e6b669ecaa6c156eb6235552d88b594231434abb29ef69ff</guid>
+      <pubDate>Mon, 24 Aug 2026 18:45:43 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> stagas</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Article URL: https://textlog.cc/post/2059 Comments URL: https://news.ycombinator.com/item?id=49424167 Points: 42 # Comments: 22</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://textlog.cc/post/2059">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20b93516b697db6e42e6b669ecaa6c156eb6235552d88b594231434abb29ef69ff&amp;body=Item%3A%20%22Removed%20all%20counters%2C%20replies%2C%20following%2Fers%2C%20timestamps%2C%20from%20textlog%22%0AFingerprint%3A%20b93516b697db6e42e6b669ecaa6c156eb6235552d88b594231434abb29ef69ff%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Hacker News] Autostep (YC P26) Is Hiring AI/Fullstack Engineers and a Chief of Staff</title>
       <link>https://app.dover.com/Autostep/careers/e9510e3b-a854-4e48-9e5d-c89796acaed4</link>
       <guid isPermaLink="false">musement:pool:f8ca85b331a1187b46b5f115bfc92006f591b7336786a28d48dcaf237b033bff</guid>
@@ -92,28 +104,16 @@
 <p><a href="https://sf.thijs.gg/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20945e4068028bbca3435130c60c945f6137492a561b97d57277c6677c89c59a53&amp;body=Item%3A%20%22The%20entire%20city%20of%20San%20Francisco%20as%20a%20video%20game%22%0AFingerprint%3A%20945e4068028bbca3435130c60c945f6137492a561b97d57277c6677c89c59a53%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Hacker News] Show HN: PicoMQ – Durable Streams over HTTP, on object storage</title>
-      <link>https://picomq.com/</link>
-      <guid isPermaLink="false">musement:pool:489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b</guid>
-      <pubDate>Mon, 24 Aug 2026 16:08:17 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> adesh_nalpet</p>
+      <title>[Hacker News] Show HN: GlassBox – what the browser reveals, and how identifiable you are</title>
+      <link>https://glassbox.codecanary.org</link>
+      <guid isPermaLink="false">musement:pool:7d04125d99c1265495beaf9274f365b6c79216458e51bd0b4c8a08558bd983f1</guid>
+      <pubDate>Mon, 24 Aug 2026 16:15:10 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> tke248</p>
 <p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>PicoMQ is a Rust server for Durable Streams, built on Object Store. Cheap, URL-addressable, granular streams (create/append/read/long-poll/SSE), with Pico Protocol or Durable Streams Protocol as the facade. S3Stream is the stream storage primitive, used in AutoMQ, shipped as a Rust library. Coordination is a command log in Postgres. Comments URL: https://news.ycombinator.com/item?id=49421806 Points: 84 # Comments: 16</p>
+<p>Article URL: https://glassbox.codecanary.org Comments URL: https://news.ycombinator.com/item?id=49421948 Points: 86 # Comments: 41</p>
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
-<p><a href="https://picomq.com/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b&amp;body=Item%3A%20%22Show%20HN%3A%20PicoMQ%20%E2%80%93%20Durable%20Streams%20over%20HTTP%2C%20on%20object%20storage%22%0AFingerprint%3A%20489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Briefing Chat: New narcolepsy drug could unlock host of novel brain therapies</title>
-      <link>https://www.nature.com/articles/d41586-026-02626-x</link>
-      <guid isPermaLink="false">musement:pool:804a16a04f8b0993f5eb1ec498435897253d42ea25db3099cf88e2678c9b8619</guid>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Nature, Published online: 21 August 2026; doi:10.1038/d41586-026-02626-x Nature staff discuss how an FDA-approved drug for narcolepsy could have promise beyond the condition, and the longest-lived human brain organoids yet.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02626-x">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20804a16a04f8b0993f5eb1ec498435897253d42ea25db3099cf88e2678c9b8619&amp;body=Item%3A%20%22Briefing%20Chat%3A%20New%20narcolepsy%20drug%20could%20unlock%20host%20of%20novel%20brain%20therapies%22%0AFingerprint%3A%20804a16a04f8b0993f5eb1ec498435897253d42ea25db3099cf88e2678c9b8619%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+<p><a href="https://glassbox.codecanary.org">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%207d04125d99c1265495beaf9274f365b6c79216458e51bd0b4c8a08558bd983f1&amp;body=Item%3A%20%22Show%20HN%3A%20GlassBox%20%E2%80%93%20what%20the%20browser%20reveals%2C%20and%20how%20identifiable%20you%20are%22%0AFingerprint%3A%207d04125d99c1265495beaf9274f365b6c79216458e51bd0b4c8a08558bd983f1%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Exclusive: NSF set to issue lowest number of new grants in four decades</title>
@@ -176,6 +176,18 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02516-2">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201ccff97b1f9df5ac97f1c276ebecc3d9d05c45cc63f5558b4d7580bc25bdb5e0&amp;body=Item%3A%20%22South%20Africa%E2%80%99s%20scientists%20must%20register%20with%20official%20body%20or%20risk%20prison%2C%20according%20to%20draft%20law%22%0AFingerprint%3A%201ccff97b1f9df5ac97f1c276ebecc3d9d05c45cc63f5558b4d7580bc25bdb5e0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Nature News] AI tool lets researchers ‘vibe code’ in the quantum realm</title>
+      <link>https://www.nature.com/articles/d41586-026-02495-4</link>
+      <guid isPermaLink="false">musement:pool:02a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Davide Castelvecchi</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/d41586-026-02495-4 An autonomous AI agent can write and execute quantum computing code, but it sometimes needs a human touch.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02495-4">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5&amp;body=Item%3A%20%22AI%20tool%20lets%20researchers%20%E2%80%98vibe%20code%E2%80%99%20in%20the%20quantum%20realm%22%0AFingerprint%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] Delisted</title>
       <link>https://www.nature.com/articles/d41586-026-02410-x</link>
       <guid isPermaLink="false">musement:pool:f830670d0c50abfeb33d819bcda6b16a90613a9897361c9517f5c787b2ac5e92</guid>
@@ -234,18 +246,6 @@
 <p><strong>Estimated Time:</strong> 23 min (video)</p>
 <hr/>
 <p><a href="https://www.youtube.com/watch?v=J1WoNuemKOg">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20b4928b4a0d98c405bbff7609dd4c34438807f7b2810d100ce58e180c94989b08&amp;body=Item%3A%20%22Total%20Solar%20Eclipse%20from%2092%2C000%20Feet%22%0AFingerprint%3A%20b4928b4a0d98c405bbff7609dd4c34438807f7b2810d100ce58e180c94989b08%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Huberman Lab] Benevolent Uses of AI to Improve Your Life</title>
-      <link>https://www.youtube.com/shorts/XmUVbu5BgiI</link>
-      <guid isPermaLink="false">musement:pool:cfde27534c4869847d1e7d279218d8f858faa5260e35a174e28ac2104c2734eb</guid>
-      <pubDate>Mon, 17 Aug 2026 03:40:25 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Huberman Lab | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Maybe, Andrew, you look at this cup and say, &amp;quot;It&amp;#39;s a gray cup.&amp;quot; What if it evoked an emotion in me, a childhood moment that a gray cup might mean something that only me and my best friend share? That is a completely inaccessible piece of information in my brain that is never uploaded on the internet, and no matter how mighty AI is today, cannot access that. So that my reaction to this cup and potentially what I would do with it because of that piece of memory can be completely diff</p>
-<p><strong>Estimated Time:</strong> 1 min (video)</p>
-<hr/>
-<p><a href="https://www.youtube.com/shorts/XmUVbu5BgiI">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20cfde27534c4869847d1e7d279218d8f858faa5260e35a174e28ac2104c2734eb&amp;body=Item%3A%20%22Benevolent%20Uses%20of%20AI%20to%20Improve%20Your%20Life%22%0AFingerprint%3A%20cfde27534c4869847d1e7d279218d8f858faa5260e35a174e28ac2104c2734eb%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Author Correction: Synthetic vulnerabilities of mesenchymal subpopulations in pancreatic cancer</title>
@@ -596,16 +596,16 @@
 <p><a href="https://www.youtube.com/shorts/vmRWUqkTtKA">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20f21fb83528fd779e5bb2c04b8430ad4190f3e184d68fa13a4533f416bed7fbb8&amp;body=Item%3A%20%22My%20book%20Protocols%20releases%20September%2015th%22%0AFingerprint%3A%20f21fb83528fd779e5bb2c04b8430ad4190f3e184d68fa13a4533f416bed7fbb8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[小Lin说] 特朗普收入曝光，一年狂揽$22亿，竟然是靠…</title>
-      <link>https://www.youtube.com/watch?v=fKoWrF49Qo8</link>
-      <guid isPermaLink="false">musement:pool:5c2998929624bfcbd456170dd0192d0807606cfeae3cf61229575c45fa9769eb</guid>
-      <pubDate>Thu, 23 Jul 2026 12:26:17 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> 小Lin说 | <strong>Author:</strong> Unknown</p>
+      <title>[Matt Pocock] /wayfinder: Nothing is too big to plan anymore</title>
+      <link>https://www.youtube.com/watch?v=F3lL98Pj90o</link>
+      <guid isPermaLink="false">musement:pool:3aee5302ea2eb4b663e9545104a761207c09c111810704fc21a2041ad3d7941c</guid>
+      <pubDate>Thu, 30 Jul 2026 10:17:45 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
 <p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>你知道吗 特朗普刚刚当总统 这短短一年多时间 他赚到的钱 就赶上了他之前半个多世纪 攒下来的全部身家 他的个人财富 已经翻了近3倍 从23亿美元暴涨到65亿 是美国历史上 最赚钱的总统 你要知道 他第一任任期的时候 虽说也是风光无限 但在商业上 打击是非常大的 你看看这个身家 可以说一路是连滚带爬 而中间经历了重创之后 一下子悟了啊 不光政治上重回白宫 商业上 更是总结出了一套 一家人全上阵 完全颠覆了 自己之前的经商逻辑 总统的红利 时代的红利 他在这中间游刃有余 特朗普到底悟出了什么 他背后最大的金主又是谁 废话少说 我们就来看看 美国总统的赚钱秘籍 Pro Max 要了解他的新版秘籍 咱先来看看他之前的版本 众所周知 特朗普是个富二代 早期接过 父亲的地产生意之后 80年代末疯狂加杠杆 胃口非常大 要盖最高的楼 开最大的赌场 结果呢 经营非常不顺 前前后后破产了6次 但砸了这么多钱呢 &amp;quot;创普&amp;quot;这个名号 确实打出去了 后来凭借着04年 开播的一个真人秀节目 《学徒》 一战成名 一口气连播了14季 他那句 火遍全美 也成功的把特朗普 这个商界大佬的形象 焊在了美国</p>
-<p><strong>Estimated Time:</strong> 21 min (video)</p>
+<p>I think I figured out a way to plan any size of work with an agent. The existing planning tools that I was using and playing around with, even ones that I&amp;#39;ve created, felt too constrained, too tied to a single session. I felt like I wasn&amp;#39;t able to be ambitious enough. And because of that, I was kind of constraining the stuff I was building to fit AI, which doesn&amp;#39;t feel right. This new approach doesn&amp;#39;t have that limit. You can plan enormous chunks of work and it will orchestrate t</p>
+<p><strong>Estimated Time:</strong> 15 min (video)</p>
 <hr/>
-<p><a href="https://www.youtube.com/watch?v=fKoWrF49Qo8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%205c2998929624bfcbd456170dd0192d0807606cfeae3cf61229575c45fa9769eb&amp;body=Item%3A%20%22%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%B6%E5%85%A5%E6%9B%9D%E5%85%89%EF%BC%8C%E4%B8%80%E5%B9%B4%E7%8B%82%E6%8F%BD%2422%E4%BA%BF%EF%BC%8C%E7%AB%9F%E7%84%B6%E6%98%AF%E9%9D%A0%E2%80%A6%22%0AFingerprint%3A%205c2998929624bfcbd456170dd0192d0807606cfeae3cf61229575c45fa9769eb%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+<p><a href="https://www.youtube.com/watch?v=F3lL98Pj90o">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%203aee5302ea2eb4b663e9545104a761207c09c111810704fc21a2041ad3d7941c&amp;body=Item%3A%20%22%2Fwayfinder%3A%20Nothing%20is%20too%20big%20to%20plan%20anymore%22%0AFingerprint%3A%203aee5302ea2eb4b663e9545104a761207c09c111810704fc21a2041ad3d7941c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
   </channel>
 </rss>
