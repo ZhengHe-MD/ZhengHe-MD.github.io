@@ -5,7 +5,7 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>Unexposed candidate materials collected from configured sources</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2026 00:23:46 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 00:30:54 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/pool.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[Hacker News] Bookshelf – Self-hosted eBook library that runs on object storage</title>
@@ -229,7 +229,7 @@
       <guid isPermaLink="false">musement:pool:489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b</guid>
       <pubDate>Mon, 24 Aug 2026 16:08:17 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> adesh_nalpet</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
 <p>PicoMQ is a Rust server for Durable Streams, built on Object Store. Cheap, URL-addressable, granular streams (create/append/read/long-poll/SSE), with Pico Protocol or Durable Streams Protocol as the facade. S3Stream is the stream storage primitive, used in AutoMQ, shipped as a Rust library. Coordination is a command log in Postgres. Comments URL: https://news.ycombinator.com/item?id=49421806 Points: 84 # Comments: 16</p>
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
@@ -380,6 +380,18 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02612-3">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20a75852985a5a67df6e36335eb57173feb19a9921b71762e27a22808fbabacdbd&amp;body=Item%3A%20%22Moderna%20cancer%20vaccine%20stops%20melanoma%20returning%3A%20what%E2%80%99s%20next%20for%20personalized%20treatments%3F%22%0AFingerprint%3A%20a75852985a5a67df6e36335eb57173feb19a9921b71762e27a22808fbabacdbd%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Nature News] Investors’ sneak peak: can this AI tool spot the science that will lead to patents?</title>
+      <link>https://www.nature.com/articles/d41586-026-02549-7</link>
+      <guid isPermaLink="false">musement:pool:9cfbc8ef94edb37dcfe7268cce22582d5f52939d044015ea20573d47533db2f5</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Chris Stokel-Walker</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 20 August 2026; doi:10.1038/d41586-026-02549-7 The approach could speed up investment decisions, but researchers say it has flaws.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02549-7">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%209cfbc8ef94edb37dcfe7268cce22582d5f52939d044015ea20573d47533db2f5&amp;body=Item%3A%20%22Investors%E2%80%99%20sneak%20peak%3A%20can%20this%20AI%20tool%20spot%20the%20science%20that%20will%20lead%20to%20patents%3F%22%0AFingerprint%3A%209cfbc8ef94edb37dcfe7268cce22582d5f52939d044015ea20573d47533db2f5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] Researcher, heal thyself: meet the scientists studying their own diseases</title>
       <link>https://www.nature.com/articles/d41586-026-02455-y</link>
       <guid isPermaLink="false">musement:pool:f436cceb8577734d94c7a6ec425f6b3138cb89d93fa9e52df8ada424eac892b1</guid>
@@ -414,18 +426,6 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02617-y">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20c94ed6919c71dad5cabe427ffa53a18791ee6139be416187f86426fb7421209f&amp;body=Item%3A%20%22Daily%20briefing%3A%20People%20older%20than%20100%20have%20more%20cancer-killing%20cells%22%0AFingerprint%3A%20c94ed6919c71dad5cabe427ffa53a18791ee6139be416187f86426fb7421209f%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Investors’ sneak peak: can this AI tool spot the science that will lead to patents?</title>
-      <link>https://www.nature.com/articles/d41586-026-02549-7</link>
-      <guid isPermaLink="false">musement:pool:9cfbc8ef94edb37dcfe7268cce22582d5f52939d044015ea20573d47533db2f5</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Chris Stokel-Walker</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Nature, Published online: 20 August 2026; doi:10.1038/d41586-026-02549-7 The approach could speed up investment decisions, but researchers say it has flaws.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02549-7">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%209cfbc8ef94edb37dcfe7268cce22582d5f52939d044015ea20573d47533db2f5&amp;body=Item%3A%20%22Investors%E2%80%99%20sneak%20peak%3A%20can%20this%20AI%20tool%20spot%20the%20science%20that%20will%20lead%20to%20patents%3F%22%0AFingerprint%3A%209cfbc8ef94edb37dcfe7268cce22582d5f52939d044015ea20573d47533db2f5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Staggering 90% of biomedical papers now show signs of AI help</title>
@@ -524,6 +524,18 @@
 <p><a href="https://www.nature.com/articles/s41586-026-10951-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2078f9cb213a1ccc20fae9526d5a0b5ae0652852cffea1099f51becf3cbe22e0a9&amp;body=Item%3A%20%22Functional%20role%20of%20skull%20lymphoid%20structures%20in%20CNS%20immunosurveillance%22%0AFingerprint%3A%2078f9cb213a1ccc20fae9526d5a0b5ae0652852cffea1099f51becf3cbe22e0a9%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Nature News] Observation of conformal field theory spectra in a quantum simulator</title>
+      <link>https://www.nature.com/articles/s41586-026-10904-x</link>
+      <guid isPermaLink="false">musement:pool:39184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10904-x Measurements on an array of optically trapped neutral atoms at a quantum phase transition provide a direct observation of the universal excitation spectrum predicted by conformal field theory.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-10904-x">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2039184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba&amp;body=Item%3A%20%22Observation%20of%20conformal%20field%20theory%20spectra%20in%20a%20quantum%20simulator%22%0AFingerprint%3A%2039184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] Wake-activated neuronal populations that regulate sleep drive</title>
       <link>https://www.nature.com/articles/s41586-026-10928-3</link>
       <guid isPermaLink="false">musement:pool:6d1d57ffdc0eb2c1518d780f9bc0dc4451b72a72f495f46a941b28ddcc4c9c3c</guid>
@@ -548,6 +560,18 @@
 <p><a href="https://www.nature.com/articles/s41586-026-10935-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201d120f8ba94869c3b18cea96f39375c47d9e497feda6d7963759e6f03224aaa0&amp;body=Item%3A%20%22Increasing%20CO%3Csub%3E2%3C%2Fsub%3E%20levels%20fertilize%20C%3Csub%3E4%3C%2Fsub%3E%20grass%20production%22%0AFingerprint%3A%201d120f8ba94869c3b18cea96f39375c47d9e497feda6d7963759e6f03224aaa0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Nature News] A global atmospheric methane record from a tropical ice core</title>
+      <link>https://www.nature.com/articles/s41586-026-10938-1</link>
+      <guid isPermaLink="false">musement:pool:d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10938-1 A 2,000-year Peruvian ice core record of atmospheric CH4 concentrations contains the first historical global CH4 record from the low latitudes, and implementation of a four-box model indicates higher equatorial CH4 strength than previous estimates from polar-only records.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-10938-1">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402&amp;body=Item%3A%20%22A%20global%20atmospheric%20methane%20record%20from%20a%20tropical%20ice%20core%22%0AFingerprint%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] Family genetic designs in MoBa provide insights into health and functioning</title>
       <link>https://www.nature.com/articles/s41586-026-10926-5</link>
       <guid isPermaLink="false">musement:pool:b04ff3a227f6aa332781036ce09eff7b1e4cc9e0107799f8c1015197137a69f8</guid>
@@ -570,6 +594,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/s41586-026-10900-1">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20219944dfa074fe97e54ef78cfd16e66195c0d0ec8048d462c7b92fed8f706fef&amp;body=Item%3A%20%22Asymmetric%20prefrontal%20representations%20for%20leader%E2%80%93follower%20dynamics%22%0AFingerprint%3A%20219944dfa074fe97e54ef78cfd16e66195c0d0ec8048d462c7b92fed8f706fef%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Atomic-scale double-slit interferometry with a focused electron probe</title>
+      <link>https://www.nature.com/articles/s41586-026-10914-9</link>
+      <guid isPermaLink="false">musement:pool:13759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10914-9 Double-slit interferometry at the atomic scale is demonstrated using scanning transmission electron microscopy to provide evidence of interference fringes generated with a focused electron beam encountering two silicon atomic columns separated by 1.36 Å.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-10914-9">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2013759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0&amp;body=Item%3A%20%22Atomic-scale%20double-slit%20interferometry%20with%20a%20focused%20electron%20probe%22%0AFingerprint%3A%2013759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Synthesis of pyrroles from isoxazoles by an O-to-C skeletal edit</title>
@@ -740,6 +776,18 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02528-y">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20367e7e754cb7e1d216a157ff3b65c21e97ebba7df2600f8de23c1cc0afcc334f&amp;body=Item%3A%20%22Screening%20babies%E2%80%99%20genomes%20could%20save%20lives.%20Here%E2%80%99s%20how%20it%20would%20work%22%0AFingerprint%3A%20367e7e754cb7e1d216a157ff3b65c21e97ebba7df2600f8de23c1cc0afcc334f%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Nature News] AI tool lets researchers ‘vibe code’ in the quantum realm</title>
+      <link>https://www.nature.com/articles/d41586-026-02495-4</link>
+      <guid isPermaLink="false">musement:pool:02a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Davide Castelvecchi</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/d41586-026-02495-4 An autonomous AI agent can write and execute quantum computing code, but it sometimes needs a human touch.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02495-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5&amp;body=Item%3A%20%22AI%20tool%20lets%20researchers%20%E2%80%98vibe%20code%E2%80%99%20in%20the%20quantum%20realm%22%0AFingerprint%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] Computational ‘gym’ trains AI models to control turbulence</title>
       <link>https://www.nature.com/articles/d41586-026-02375-x</link>
       <guid isPermaLink="false">musement:pool:4cb5a779a31e95cea66bcd16a435d7558f7be56097dbedbae0e4c0d7d6f0d628</guid>
@@ -788,42 +836,6 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02376-w">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20e40b15447cdd6cfb1e21274a29e7903528ca2c637ff8f2434d98b9bc6ad9fa30&amp;body=Item%3A%20%22The%20Antarctic%20ice%20sheet%20has%20gained%20mass%20%E2%80%94%20but%20probably%20not%20for%20long%22%0AFingerprint%3A%20e40b15447cdd6cfb1e21274a29e7903528ca2c637ff8f2434d98b9bc6ad9fa30%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Nature News] Observation of conformal field theory spectra in a quantum simulator</title>
-      <link>https://www.nature.com/articles/s41586-026-10904-x</link>
-      <guid isPermaLink="false">musement:pool:39184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
-<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10904-x Measurements on an array of optically trapped neutral atoms at a quantum phase transition provide a direct observation of the universal excitation spectrum predicted by conformal field theory.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10904-x">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2039184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba&amp;body=Item%3A%20%22Observation%20of%20conformal%20field%20theory%20spectra%20in%20a%20quantum%20simulator%22%0AFingerprint%3A%2039184ad391fb37d75ea80208c98abaef8581d46c140ec0d8c2a137c42e1685ba%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] A global atmospheric methane record from a tropical ice core</title>
-      <link>https://www.nature.com/articles/s41586-026-10938-1</link>
-      <guid isPermaLink="false">musement:pool:d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
-<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10938-1 A 2,000-year Peruvian ice core record of atmospheric CH4 concentrations contains the first historical global CH4 record from the low latitudes, and implementation of a four-box model indicates higher equatorial CH4 strength than previous estimates from polar-only records.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10938-1">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402&amp;body=Item%3A%20%22A%20global%20atmospheric%20methane%20record%20from%20a%20tropical%20ice%20core%22%0AFingerprint%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Atomic-scale double-slit interferometry with a focused electron probe</title>
-      <link>https://www.nature.com/articles/s41586-026-10914-9</link>
-      <guid isPermaLink="false">musement:pool:13759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
-<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10914-9 Double-slit interferometry at the atomic scale is demonstrated using scanning transmission electron microscopy to provide evidence of interference fringes generated with a focused electron beam encountering two silicon atomic columns separated by 1.36 Å.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10914-9">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2013759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0&amp;body=Item%3A%20%22Atomic-scale%20double-slit%20interferometry%20with%20a%20focused%20electron%20probe%22%0AFingerprint%3A%2013759ce042c14ec46f1874d806d4abab229c442f595543455e98c5f3b54981f0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Nature News] Twenty-two easy ways to power up your lab meetings</title>
       <link>https://www.nature.com/articles/d41586-026-02037-y</link>
       <guid isPermaLink="false">musement:pool:bbe798b6de5b730edbd022a66b44dbefea2f00f7a27772ab1a92b3c227b3fe4e</guid>
@@ -858,18 +870,6 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02516-2">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201ccff97b1f9df5ac97f1c276ebecc3d9d05c45cc63f5558b4d7580bc25bdb5e0&amp;body=Item%3A%20%22South%20Africa%E2%80%99s%20scientists%20must%20register%20with%20official%20body%20or%20risk%20prison%2C%20according%20to%20draft%20law%22%0AFingerprint%3A%201ccff97b1f9df5ac97f1c276ebecc3d9d05c45cc63f5558b4d7580bc25bdb5e0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] AI tool lets researchers ‘vibe code’ in the quantum realm</title>
-      <link>https://www.nature.com/articles/d41586-026-02495-4</link>
-      <guid isPermaLink="false">musement:pool:02a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Davide Castelvecchi</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Nature, Published online: 19 August 2026; doi:10.1038/d41586-026-02495-4 An autonomous AI agent can write and execute quantum computing code, but it sometimes needs a human touch.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02495-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5&amp;body=Item%3A%20%22AI%20tool%20lets%20researchers%20%E2%80%98vibe%20code%E2%80%99%20in%20the%20quantum%20realm%22%0AFingerprint%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Delisted</title>
@@ -913,7 +913,7 @@
       <guid isPermaLink="false">musement:pool:7a1a4757fcc3ecb0b001b1f720251ddebf39b5163bbf21fdf24e640847141d24</guid>
       <pubDate>Tue, 18 Aug 2026 11:33:08 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Veritasium | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
 <p>Could identical twins get away with murder? Identical twins have the same DNA. So, if one of them commits a murder, which one goes to prison? [music] When police run a standard DNA test at a crime scene and it matches two twins, they&amp;#39;re stuck. [music] And this has literally happened. In Germany, two twin brothers were suspected of robbing luxury [music] stores. DNA was found, but they both walked free cuz they couldn&amp;#39;t prove who did it. But, the identical in identical twins &amp;gt;&amp;gt; [mus</p>
 <p><strong>Estimated Time:</strong> 1 min (video)</p>
 <hr/>
@@ -930,6 +930,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02577-3">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2022a99698df0cb89fbd1e9fff8f29b8328cbc18fe5337cc6416648ade48e883ed&amp;body=Item%3A%20%22Heatwaves%20expose%20weak%20links%20in%20food%20systems%22%0AFingerprint%3A%2022a99698df0cb89fbd1e9fff8f29b8328cbc18fe5337cc6416648ade48e883ed%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Treat biological databases as infrastructure, not projects</title>
+      <link>https://www.nature.com/articles/d41586-026-02575-5</link>
+      <guid isPermaLink="false">musement:pool:207011c4db57c150e74ef5431bd6642f23d5d6f99e6ab83323e5a3be8101d75c</guid>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 18 August 2026; doi:10.1038/d41586-026-02575-5 Treat biological databases as infrastructure, not projects</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02575-5">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20207011c4db57c150e74ef5431bd6642f23d5d6f99e6ab83323e5a3be8101d75c&amp;body=Item%3A%20%22Treat%20biological%20databases%20as%20infrastructure%2C%20not%20projects%22%0AFingerprint%3A%20207011c4db57c150e74ef5431bd6642f23d5d6f99e6ab83323e5a3be8101d75c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Europe must adapt to live with megafires</title>
@@ -1016,18 +1028,6 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02381-z">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2090bfbcc8701678a77d6c7eb85aa2e96618e98f912a3c3987754e5d7578641efd&amp;body=Item%3A%20%22Scientific%20expedition%20makes%20the%20best%20of%20bad%20weather%22%0AFingerprint%3A%2090bfbcc8701678a77d6c7eb85aa2e96618e98f912a3c3987754e5d7578641efd%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Nature News] Treat biological databases as infrastructure, not projects</title>
-      <link>https://www.nature.com/articles/d41586-026-02575-5</link>
-      <guid isPermaLink="false">musement:pool:207011c4db57c150e74ef5431bd6642f23d5d6f99e6ab83323e5a3be8101d75c</guid>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
-<p>Nature, Published online: 18 August 2026; doi:10.1038/d41586-026-02575-5 Treat biological databases as infrastructure, not projects</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02575-5">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20207011c4db57c150e74ef5431bd6642f23d5d6f99e6ab83323e5a3be8101d75c&amp;body=Item%3A%20%22Treat%20biological%20databases%20as%20infrastructure%2C%20not%20projects%22%0AFingerprint%3A%20207011c4db57c150e74ef5431bd6642f23d5d6f99e6ab83323e5a3be8101d75c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Nature News] How to get the most out of an informational interview</title>
       <link>https://www.nature.com/articles/d41586-026-01932-8</link>
       <guid isPermaLink="false">musement:pool:6c15d7270435376bb13cc0014ff8fa514457d9ea7b83ff77067605df2fd94203</guid>
@@ -1081,7 +1081,7 @@
       <guid isPermaLink="false">musement:pool:b4928b4a0d98c405bbff7609dd4c34438807f7b2810d100ce58e180c94989b08</guid>
       <pubDate>Mon, 17 Aug 2026 14:30:16 GMT</pubDate>
       <description><![CDATA[<p><strong>Source:</strong> Veritasium | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
 <p>In just a couple of seconds Spain is about to get its first total solar eclipse in over 100 years. And we&amp;#39;re here with NASA to film it from space. But we almost didn&amp;#39;t do this video because it turns out there are a great couple videos on solar eclipses on YouTube, and we just thought we couldn&amp;#39;t add anything. But then we started looking. [laughs] Oh my God, that&amp;#39;s insane! And it turns out... Oh, I can&amp;#39;t, I just gotta go watch this. That&amp;#39;s insane. So, Henry, Emilia and I s</p>
 <p><strong>Estimated Time:</strong> 23 min (video)</p>
 <hr/>
@@ -1160,18 +1160,6 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02532-2">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20cab745055bb2f3fbe3b7b7fd38b11642d426dfcfa82b39ff8052a95482aac330&amp;body=Item%3A%20%22Too%20hot%20to%20sleep%3F%20How%20heatwaves%20at%20night%20affect%20our%20health%22%0AFingerprint%3A%20cab745055bb2f3fbe3b7b7fd38b11642d426dfcfa82b39ff8052a95482aac330%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Nature News] Universities must stop protecting bullies — or more people will leave science</title>
-      <link>https://www.nature.com/articles/d41586-026-02526-0</link>
-      <guid isPermaLink="false">musement:pool:dc9fb9eb1409e66288228114e0d707172321c62b63ae05ec0428df0b9d1a4b5d</guid>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Morteza Mahmoudi</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 17 August 2026; doi:10.1038/d41586-026-02526-0 Letting powerful academics off the hook and punishing the people they bullied sends the message that abuse is acceptable in academia.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02526-0">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20dc9fb9eb1409e66288228114e0d707172321c62b63ae05ec0428df0b9d1a4b5d&amp;body=Item%3A%20%22Universities%20must%20stop%20protecting%20bullies%20%E2%80%94%20or%20more%20people%20will%20leave%20science%22%0AFingerprint%3A%20dc9fb9eb1409e66288228114e0d707172321c62b63ae05ec0428df0b9d1a4b5d%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Nature News] Why AI systems are most useful as designers of new scientific tools</title>
       <link>https://www.nature.com/articles/d41586-026-02529-x</link>
       <guid isPermaLink="false">musement:pool:71b0ef0a66b524022de727858030fc7255fcdfa0736df978d79f93f9f5f48ae7</guid>
@@ -1194,6 +1182,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02530-4">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d723c3205878bb5ecd04970b247fdc54883c9b913519a5088b36f2b17b326fcf&amp;body=Item%3A%20%22How%20the%20story%20of%20life%20and%20our%20planet%20unfolded%20%E2%80%94%20together%22%0AFingerprint%3A%20d723c3205878bb5ecd04970b247fdc54883c9b913519a5088b36f2b17b326fcf%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Universities must stop protecting bullies — or more people will leave science</title>
+      <link>https://www.nature.com/articles/d41586-026-02526-0</link>
+      <guid isPermaLink="false">musement:pool:dc9fb9eb1409e66288228114e0d707172321c62b63ae05ec0428df0b9d1a4b5d</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Morteza Mahmoudi</p>
+<p><strong>Durability Tier:</strong> [EVERGREEN]</p>
+<p>Nature, Published online: 17 August 2026; doi:10.1038/d41586-026-02526-0 Letting powerful academics off the hook and punishing the people they bullied sends the message that abuse is acceptable in academia.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02526-0">👉 Read Article</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20dc9fb9eb1409e66288228114e0d707172321c62b63ae05ec0428df0b9d1a4b5d&amp;body=Item%3A%20%22Universities%20must%20stop%20protecting%20bullies%20%E2%80%94%20or%20more%20people%20will%20leave%20science%22%0AFingerprint%3A%20dc9fb9eb1409e66288228114e0d707172321c62b63ae05ec0428df0b9d1a4b5d%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Author Correction: Synthetic vulnerabilities of mesenchymal subpopulations in pancreatic cancer</title>
