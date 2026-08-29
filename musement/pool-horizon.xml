@@ -5,7 +5,7 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>Fast-moving ambient updates, current events, and tangents</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Aug 2026 00:26:54 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 00:23:36 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/pool-horizon.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[Hacker News] Bookshelf – Self-hosted eBook library that runs on object storage</title>
@@ -92,6 +92,18 @@
 <p><a href="https://sf.thijs.gg/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20945e4068028bbca3435130c60c945f6137492a561b97d57277c6677c89c59a53&amp;body=Item%3A%20%22The%20entire%20city%20of%20San%20Francisco%20as%20a%20video%20game%22%0AFingerprint%3A%20945e4068028bbca3435130c60c945f6137492a561b97d57277c6677c89c59a53%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Hacker News] Hot Chips 2026: CUDA Targets RISC-V – By Chester Lam</title>
+      <link>https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc</link>
+      <guid isPermaLink="false">musement:pool:3e6ae02d2641cc8190d9b618073f0af7e287b58273e4d158b519305232c70442</guid>
+      <pubDate>Mon, 24 Aug 2026 16:52:01 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> rbanffy</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Article URL: https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc Comments URL: https://news.ycombinator.com/item?id=49422548 Points: 68 # Comments: 8</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%203e6ae02d2641cc8190d9b618073f0af7e287b58273e4d158b519305232c70442&amp;body=Item%3A%20%22Hot%20Chips%202026%3A%20CUDA%20Targets%20RISC-V%20%E2%80%93%20By%20Chester%20Lam%22%0AFingerprint%3A%203e6ae02d2641cc8190d9b618073f0af7e287b58273e4d158b519305232c70442%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Hacker News] Show HN: GlassBox – what the browser reveals, and how identifiable you are</title>
       <link>https://glassbox.codecanary.org</link>
       <guid isPermaLink="false">musement:pool:7d04125d99c1265495beaf9274f365b6c79216458e51bd0b4c8a08558bd983f1</guid>
@@ -102,6 +114,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://glassbox.codecanary.org">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%207d04125d99c1265495beaf9274f365b6c79216458e51bd0b4c8a08558bd983f1&amp;body=Item%3A%20%22Show%20HN%3A%20GlassBox%20%E2%80%93%20what%20the%20browser%20reveals%2C%20and%20how%20identifiable%20you%20are%22%0AFingerprint%3A%207d04125d99c1265495beaf9274f365b6c79216458e51bd0b4c8a08558bd983f1%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Show HN: PicoMQ – Durable Streams over HTTP, on object storage</title>
+      <link>https://picomq.com/</link>
+      <guid isPermaLink="false">musement:pool:489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b</guid>
+      <pubDate>Mon, 24 Aug 2026 16:08:17 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> adesh_nalpet</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>PicoMQ is a Rust server for Durable Streams, built on Object Store. Cheap, URL-addressable, granular streams (create/append/read/long-poll/SSE), with Pico Protocol or Durable Streams Protocol as the facade. S3Stream is the stream storage primitive, used in AutoMQ, shipped as a Rust library. Coordination is a command log in Postgres. Comments URL: https://news.ycombinator.com/item?id=49421806 Points: 84 # Comments: 16</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://picomq.com/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b&amp;body=Item%3A%20%22Show%20HN%3A%20PicoMQ%20%E2%80%93%20Durable%20Streams%20over%20HTTP%2C%20on%20object%20storage%22%0AFingerprint%3A%20489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Exclusive: NSF set to issue lowest number of new grants in four decades</title>
@@ -164,6 +188,18 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02495-4">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5&amp;body=Item%3A%20%22AI%20tool%20lets%20researchers%20%E2%80%98vibe%20code%E2%80%99%20in%20the%20quantum%20realm%22%0AFingerprint%3A%2002a6a50127db7d2bb1bce66bdf0e2733e0193af2a591cbdee3bdf91cafc573d5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Nature News] Delisted</title>
+      <link>https://www.nature.com/articles/d41586-026-02410-x</link>
+      <guid isPermaLink="false">musement:pool:f830670d0c50abfeb33d819bcda6b16a90613a9897361c9517f5c787b2ac5e92</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Ximing Zhang</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Nature, Published online: 19 August 2026; doi:10.1038/d41586-026-02410-x Called to account.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02410-x">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20f830670d0c50abfeb33d819bcda6b16a90613a9897361c9517f5c787b2ac5e92&amp;body=Item%3A%20%22Delisted%22%0AFingerprint%3A%20f830670d0c50abfeb33d819bcda6b16a90613a9897361c9517f5c787b2ac5e92%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] Daily briefing: How 3D printers are changing lab work</title>
       <link>https://www.nature.com/articles/d41586-026-02614-1</link>
       <guid isPermaLink="false">musement:pool:5cf66055c0669662f6a4c1692ba564486c800f6dccd5d4f5c2b3b8f675aa2099</guid>
@@ -210,6 +246,18 @@
 <p><strong>Estimated Time:</strong> 23 min (video)</p>
 <hr/>
 <p><a href="https://www.youtube.com/watch?v=J1WoNuemKOg">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20b4928b4a0d98c405bbff7609dd4c34438807f7b2810d100ce58e180c94989b08&amp;body=Item%3A%20%22Total%20Solar%20Eclipse%20from%2092%2C000%20Feet%22%0AFingerprint%3A%20b4928b4a0d98c405bbff7609dd4c34438807f7b2810d100ce58e180c94989b08%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Huberman Lab] Benevolent Uses of AI to Improve Your Life</title>
+      <link>https://www.youtube.com/shorts/XmUVbu5BgiI</link>
+      <guid isPermaLink="false">musement:pool:cfde27534c4869847d1e7d279218d8f858faa5260e35a174e28ac2104c2734eb</guid>
+      <pubDate>Mon, 17 Aug 2026 03:40:25 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Huberman Lab | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [HORIZON]</p>
+<p>Maybe, Andrew, you look at this cup and say, &amp;quot;It&amp;#39;s a gray cup.&amp;quot; What if it evoked an emotion in me, a childhood moment that a gray cup might mean something that only me and my best friend share? That is a completely inaccessible piece of information in my brain that is never uploaded on the internet, and no matter how mighty AI is today, cannot access that. So that my reaction to this cup and potentially what I would do with it because of that piece of memory can be completely diff</p>
+<p><strong>Estimated Time:</strong> 1 min (video)</p>
+<hr/>
+<p><a href="https://www.youtube.com/shorts/XmUVbu5BgiI">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20cfde27534c4869847d1e7d279218d8f858faa5260e35a174e28ac2104c2734eb&amp;body=Item%3A%20%22Benevolent%20Uses%20of%20AI%20to%20Improve%20Your%20Life%22%0AFingerprint%3A%20cfde27534c4869847d1e7d279218d8f858faa5260e35a174e28ac2104c2734eb%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Author Correction: Synthetic vulnerabilities of mesenchymal subpopulations in pancreatic cancer</title>
@@ -558,54 +606,6 @@
 <p><strong>Estimated Time:</strong> 1 min (video)</p>
 <hr/>
 <p><a href="https://www.youtube.com/shorts/vmRWUqkTtKA">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20f21fb83528fd779e5bb2c04b8430ad4190f3e184d68fa13a4533f416bed7fbb8&amp;body=Item%3A%20%22My%20book%20Protocols%20releases%20September%2015th%22%0AFingerprint%3A%20f21fb83528fd779e5bb2c04b8430ad4190f3e184d68fa13a4533f416bed7fbb8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[小Lin说] 特朗普收入曝光，一年狂揽$22亿，竟然是靠…</title>
-      <link>https://www.youtube.com/watch?v=fKoWrF49Qo8</link>
-      <guid isPermaLink="false">musement:pool:5c2998929624bfcbd456170dd0192d0807606cfeae3cf61229575c45fa9769eb</guid>
-      <pubDate>Thu, 23 Jul 2026 12:26:17 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> 小Lin说 | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>你知道吗 特朗普刚刚当总统 这短短一年多时间 他赚到的钱 就赶上了他之前半个多世纪 攒下来的全部身家 他的个人财富 已经翻了近3倍 从23亿美元暴涨到65亿 是美国历史上 最赚钱的总统 你要知道 他第一任任期的时候 虽说也是风光无限 但在商业上 打击是非常大的 你看看这个身家 可以说一路是连滚带爬 而中间经历了重创之后 一下子悟了啊 不光政治上重回白宫 商业上 更是总结出了一套 一家人全上阵 完全颠覆了 自己之前的经商逻辑 总统的红利 时代的红利 他在这中间游刃有余 特朗普到底悟出了什么 他背后最大的金主又是谁 废话少说 我们就来看看 美国总统的赚钱秘籍 Pro Max 要了解他的新版秘籍 咱先来看看他之前的版本 众所周知 特朗普是个富二代 早期接过 父亲的地产生意之后 80年代末疯狂加杠杆 胃口非常大 要盖最高的楼 开最大的赌场 结果呢 经营非常不顺 前前后后破产了6次 但砸了这么多钱呢 &amp;quot;创普&amp;quot;这个名号 确实打出去了 后来凭借着04年 开播的一个真人秀节目 《学徒》 一战成名 一口气连播了14季 他那句 火遍全美 也成功的把特朗普 这个商界大佬的形象 焊在了美国</p>
-<p><strong>Estimated Time:</strong> 21 min (video)</p>
-<hr/>
-<p><a href="https://www.youtube.com/watch?v=fKoWrF49Qo8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%205c2998929624bfcbd456170dd0192d0807606cfeae3cf61229575c45fa9769eb&amp;body=Item%3A%20%22%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%B6%E5%85%A5%E6%9B%9D%E5%85%89%EF%BC%8C%E4%B8%80%E5%B9%B4%E7%8B%82%E6%8F%BD%2422%E4%BA%BF%EF%BC%8C%E7%AB%9F%E7%84%B6%E6%98%AF%E9%9D%A0%E2%80%A6%22%0AFingerprint%3A%205c2998929624bfcbd456170dd0192d0807606cfeae3cf61229575c45fa9769eb%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Matt Pocock] Using /grill-me for interviews?!</title>
-      <link>https://www.youtube.com/shorts/5hYsBUMmr-I</link>
-      <guid isPermaLink="false">musement:pool:f3a19aaeb8efbd016149cd51d88f751fc92f063fef9788301d1b1665cf3ea7ea</guid>
-      <pubDate>Mon, 20 Jul 2026 10:26:34 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Someone messaged me the other week and told me they were using Grill me in a way that I had never considered before and I think it&amp;#39;s actually kind of genius. They were using it for technical interviews. So they would interview people, they would have them on a video call. They would get them to use Grill me in their Claude instance and basically get them to add a feature to a code base. The thing about Grill me is that it asks a lot of you, right? It asks you to clearly describe where you&amp;#3</p>
-<p><strong>Estimated Time:</strong> 1 min (video)</p>
-<hr/>
-<p><a href="https://www.youtube.com/shorts/5hYsBUMmr-I">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20f3a19aaeb8efbd016149cd51d88f751fc92f063fef9788301d1b1665cf3ea7ea&amp;body=Item%3A%20%22Using%20%2Fgrill-me%20for%20interviews%3F!%22%0AFingerprint%3A%20f3a19aaeb8efbd016149cd51d88f751fc92f063fef9788301d1b1665cf3ea7ea%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Matt Pocock] This change makes /grill-me SO MUCH BETTER</title>
-      <link>https://www.youtube.com/shorts/tLyfDIt9wHg</link>
-      <guid isPermaLink="false">musement:pool:871461c99797ace7a9e8e5fd6e024e5b3936c3ba483c61b6e5b1c12cd6f05c94</guid>
-      <pubDate>Fri, 17 Jul 2026 11:20:45 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Yeah, I&amp;#39;m pretty sure that in the next version of my skills, uh Grill Me is going to change significantly and it&amp;#39;s going to grill or instead of grilling one question at a time, it&amp;#39;s going to grill in batches. Grill Me had this really weird failure mode where when you got to the end of a grilling session, it would basically just ask you a bunch of questions in a row that were all yeses. Yes, I agree with your recommendation. Agree, agree, agree. And that&amp;#39;s just so wasteful in term</p>
-<p><strong>Estimated Time:</strong> 2 min (video)</p>
-<hr/>
-<p><a href="https://www.youtube.com/shorts/tLyfDIt9wHg">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20871461c99797ace7a9e8e5fd6e024e5b3936c3ba483c61b6e5b1c12cd6f05c94&amp;body=Item%3A%20%22This%20change%20makes%20%2Fgrill-me%20SO%20MUCH%20BETTER%22%0AFingerprint%3A%20871461c99797ace7a9e8e5fd6e024e5b3936c3ba483c61b6e5b1c12cd6f05c94%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Matt Pocock] Kill your MEMORY.md</title>
-      <link>https://www.youtube.com/shorts/A0scuiiGBC4</link>
-      <guid isPermaLink="false">musement:pool:cec5ff6ec13c9cba2be5807fd39efd3881a3a4cb612b86aa20456fc80bb26ce8</guid>
-      <pubDate>Fri, 17 Jul 2026 10:10:42 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Matt Pocock | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [HORIZON]</p>
-<p>Yeah, I actually don&amp;#39;t recommend doing that at all. I recommend almost deleting everything that the agent saves in its own memory banks. In Claude code, you can do this by going into memory and just basically turning auto memory off there. I just have it off completely. When this is on, it saves it into a local file called uppercase memory.md and it uses this to remember your preferences. Except it&amp;#39;s just way too freaking eager to remember your preferences and save them some. And so you </p>
-<p><strong>Estimated Time:</strong> 1 min (video)</p>
-<hr/>
-<p><a href="https://www.youtube.com/shorts/A0scuiiGBC4">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20cec5ff6ec13c9cba2be5807fd39efd3881a3a4cb612b86aa20456fc80bb26ce8&amp;body=Item%3A%20%22Kill%20your%20MEMORY.md%22%0AFingerprint%3A%20cec5ff6ec13c9cba2be5807fd39efd3881a3a4cb612b86aa20456fc80bb26ce8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
   </channel>
 </rss>

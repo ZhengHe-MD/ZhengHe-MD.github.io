@@ -5,7 +5,7 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>Multi-year and monthly paradigm shifts, architectural deep-dives, and podcasts</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Aug 2026 00:26:54 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 00:23:36 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/pool-emerging.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[Hacker News] LLMs could control their host machines by exploiting inference engines</title>
@@ -68,30 +68,6 @@
 <p><a href="https://daily.jstor.org/where-did-all-the-public-bathrooms-go/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%205f3bc974058a776c0d614ca02d2830c9276ba08631cb598c64094677d20a5522&amp;body=Item%3A%20%22Where%20did%20all%20the%20public%20bathrooms%20go%3F%22%0AFingerprint%3A%205f3bc974058a776c0d614ca02d2830c9276ba08631cb598c64094677d20a5522%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Hacker News] Hot Chips 2026: CUDA Targets RISC-V – By Chester Lam</title>
-      <link>https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc</link>
-      <guid isPermaLink="false">musement:pool:3e6ae02d2641cc8190d9b618073f0af7e287b58273e4d158b519305232c70442</guid>
-      <pubDate>Mon, 24 Aug 2026 16:52:01 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> rbanffy</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Article URL: https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc Comments URL: https://news.ycombinator.com/item?id=49422548 Points: 68 # Comments: 8</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%203e6ae02d2641cc8190d9b618073f0af7e287b58273e4d158b519305232c70442&amp;body=Item%3A%20%22Hot%20Chips%202026%3A%20CUDA%20Targets%20RISC-V%20%E2%80%93%20By%20Chester%20Lam%22%0AFingerprint%3A%203e6ae02d2641cc8190d9b618073f0af7e287b58273e4d158b519305232c70442%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Hacker News] Show HN: PicoMQ – Durable Streams over HTTP, on object storage</title>
-      <link>https://picomq.com/</link>
-      <guid isPermaLink="false">musement:pool:489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b</guid>
-      <pubDate>Mon, 24 Aug 2026 16:08:17 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> adesh_nalpet</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>PicoMQ is a Rust server for Durable Streams, built on Object Store. Cheap, URL-addressable, granular streams (create/append/read/long-poll/SSE), with Pico Protocol or Durable Streams Protocol as the facade. S3Stream is the stream storage primitive, used in AutoMQ, shipped as a Rust library. Coordination is a command log in Postgres. Comments URL: https://news.ycombinator.com/item?id=49421806 Points: 84 # Comments: 16</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://picomq.com/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b&amp;body=Item%3A%20%22Show%20HN%3A%20PicoMQ%20%E2%80%93%20Durable%20Streams%20over%20HTTP%2C%20on%20object%20storage%22%0AFingerprint%3A%20489edfc37a30ad38ca4748c5769969b176fd5f808df5f761c467aa8ba6976e3b%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Hacker News] Coding expertise is going to collapse from AI reliance</title>
       <link>https://larsfaye.com/articles/ai-coding-will-prevent-expertise</link>
       <guid isPermaLink="false">musement:pool:8317e1187afa3abdb819c874e0a6785de86bda1ca42df776fd7f4059472f17cf</guid>
@@ -150,6 +126,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02352-4">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20a05aa880d388b4e7116cca0ad82fed2caaa07b4fe6deab752bc4477b74ed34dd&amp;body=Item%3A%20%22Sleuth%20identifies%20dozens%20of%20studies%20that%20used%20the%20wrong%20antibody%22%0AFingerprint%3A%20a05aa880d388b4e7116cca0ad82fed2caaa07b4fe6deab752bc4477b74ed34dd%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Dialkyl ether synthesis through heteroatom homolytic substitution</title>
+      <link>https://www.nature.com/articles/s41586-026-11043-z</link>
+      <guid isPermaLink="false">musement:pool:42df3084da787ce20f5b8f7b46b63117601117d20afd48a6dabb1922a251e7d8</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 20 August 2026; doi:10.1038/s41586-026-11043-z Dialkyl ether synthesis through heteroatom homolytic substitution</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-11043-z">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2042df3084da787ce20f5b8f7b46b63117601117d20afd48a6dabb1922a251e7d8&amp;body=Item%3A%20%22Dialkyl%20ether%20synthesis%20through%20heteroatom%20homolytic%20substitution%22%0AFingerprint%3A%2042df3084da787ce20f5b8f7b46b63117601117d20afd48a6dabb1922a251e7d8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Hidden volcanoes hint at Moon’s turbulent past</title>
@@ -342,18 +330,6 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/s41586-026-10935-4">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201d120f8ba94869c3b18cea96f39375c47d9e497feda6d7963759e6f03224aaa0&amp;body=Item%3A%20%22Increasing%20CO%3Csub%3E2%3C%2Fsub%3E%20levels%20fertilize%20C%3Csub%3E4%3C%2Fsub%3E%20grass%20production%22%0AFingerprint%3A%201d120f8ba94869c3b18cea96f39375c47d9e497feda6d7963759e6f03224aaa0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] A global atmospheric methane record from a tropical ice core</title>
-      <link>https://www.nature.com/articles/s41586-026-10938-1</link>
-      <guid isPermaLink="false">musement:pool:d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 19 August 2026; doi:10.1038/s41586-026-10938-1 A 2,000-year Peruvian ice core record of atmospheric CH4 concentrations contains the first historical global CH4 record from the low latitudes, and implementation of a four-box model indicates higher equatorial CH4 strength than previous estimates from polar-only records.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10938-1">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402&amp;body=Item%3A%20%22A%20global%20atmospheric%20methane%20record%20from%20a%20tropical%20ice%20core%22%0AFingerprint%3A%20d0875166ac330a73689e8e5dcbb88a9644f2b22b47d410116d2473d0a66fd402%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Family genetic designs in MoBa provide insights into health and functioning</title>
@@ -606,6 +582,30 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02376-w">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20e40b15447cdd6cfb1e21274a29e7903528ca2c637ff8f2434d98b9bc6ad9fa30&amp;body=Item%3A%20%22The%20Antarctic%20ice%20sheet%20has%20gained%20mass%20%E2%80%94%20but%20probably%20not%20for%20long%22%0AFingerprint%3A%20e40b15447cdd6cfb1e21274a29e7903528ca2c637ff8f2434d98b9bc6ad9fa30%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Heatwaves expose weak links in food systems</title>
+      <link>https://www.nature.com/articles/d41586-026-02577-3</link>
+      <guid isPermaLink="false">musement:pool:22a99698df0cb89fbd1e9fff8f29b8328cbc18fe5337cc6416648ade48e883ed</guid>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 18 August 2026; doi:10.1038/d41586-026-02577-3 Heatwaves expose weak links in food systems</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02577-3">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2022a99698df0cb89fbd1e9fff8f29b8328cbc18fe5337cc6416648ade48e883ed&amp;body=Item%3A%20%22Heatwaves%20expose%20weak%20links%20in%20food%20systems%22%0AFingerprint%3A%2022a99698df0cb89fbd1e9fff8f29b8328cbc18fe5337cc6416648ade48e883ed%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Europe must adapt to live with megafires</title>
+      <link>https://www.nature.com/articles/d41586-026-02578-2</link>
+      <guid isPermaLink="false">musement:pool:fc02d543e1ebad902ac93d1b5cce6b5de1e4cbd0fc96e6a4fd93ce2d28ae7022</guid>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 18 August 2026; doi:10.1038/d41586-026-02578-2 Europe must adapt to live with megafires</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02578-2">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20fc02d543e1ebad902ac93d1b5cce6b5de1e4cbd0fc96e6a4fd93ce2d28ae7022&amp;body=Item%3A%20%22Europe%20must%20adapt%20to%20live%20with%20megafires%22%0AFingerprint%3A%20fc02d543e1ebad902ac93d1b5cce6b5de1e4cbd0fc96e6a4fd93ce2d28ae7022%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
   </channel>
 </rss>
