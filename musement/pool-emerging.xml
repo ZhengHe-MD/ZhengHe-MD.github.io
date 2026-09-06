@@ -5,8 +5,20 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>Multi-year and monthly paradigm shifts, architectural deep-dives, and podcasts</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2026 00:27:29 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 00:02:24 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/pool-emerging.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[Hacker News] METR Report on OpenAI / Hugging Face Hacking Incident</title>
+      <link>https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#core-takeaways-about-this-incident</link>
+      <guid isPermaLink="false">musement:pool:d88dfbb9d82a9afbf8e5b0bad5b5cc621ae9e7e2d302f091059d2a984bb59f34</guid>
+      <pubDate>Wed, 02 Sep 2026 23:08:47 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> stikit</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Article URL: https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#core-takeaways-about-this-incident Comments URL: https://news.ycombinator.com/item?id=49543841 Points: 35 # Comments: 14</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#core-takeaways-about-this-incident">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d88dfbb9d82a9afbf8e5b0bad5b5cc621ae9e7e2d302f091059d2a984bb59f34&amp;body=Item%3A%20%22METR%20Report%20on%20OpenAI%20%2F%20Hugging%20Face%20Hacking%20Incident%22%0AFingerprint%3A%20d88dfbb9d82a9afbf8e5b0bad5b5cc621ae9e7e2d302f091059d2a984bb59f34%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
     <item>
       <title>[Hacker News] Maybe We Shouldn&apos;t Be Reviewing All This Code</title>
       <link>https://martinfowler.com/rachels-ramblings/code-review.html</link>
@@ -32,6 +44,42 @@
 <p><a href="https://secondthoughts.ai/p/14-reasons-robotics-is-hard">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20ae11cbdb1ce95a4b4038aadb2e1535d488aae5e66204c82652d6cbb2e6426799&amp;body=Item%3A%20%22Reasons%20robotics%20is%20hard%22%0AFingerprint%3A%20ae11cbdb1ce95a4b4038aadb2e1535d488aae5e66204c82652d6cbb2e6426799%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Hacker News] Uber shuts operations in Nigeria and Uganda with immediate effect</title>
+      <link>https://www.bbc.com/news/articles/c86xpv8l9y9o</link>
+      <guid isPermaLink="false">musement:pool:6e9b0d79af0faff49bbbe0a4994fae2abff8400daddd14e609f5585fec97e763</guid>
+      <pubDate>Wed, 02 Sep 2026 21:46:33 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> yakkomajuri</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Article URL: https://www.bbc.com/news/articles/c86xpv8l9y9o Comments URL: https://news.ycombinator.com/item?id=49543007 Points: 52 # Comments: 18</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.bbc.com/news/articles/c86xpv8l9y9o">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%206e9b0d79af0faff49bbbe0a4994fae2abff8400daddd14e609f5585fec97e763&amp;body=Item%3A%20%22Uber%20shuts%20operations%20in%20Nigeria%20and%20Uganda%20with%20immediate%20effect%22%0AFingerprint%3A%206e9b0d79af0faff49bbbe0a4994fae2abff8400daddd14e609f5585fec97e763%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Nango (YC W23) is hiring across eng, product and GTM (SF and remote)</title>
+      <link>https://nango.dev/careers</link>
+      <guid isPermaLink="false">musement:pool:69dbb9011b73222b34ff06af115eedd26821d4c5956941c0339efd2d8a6c154a</guid>
+      <pubDate>Wed, 02 Sep 2026 21:00:04 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> bastienbeurier</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Article URL: https://nango.dev/careers Comments URL: https://news.ycombinator.com/item?id=49542486 Points: 0 # Comments: 0</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://nango.dev/careers">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2069dbb9011b73222b34ff06af115eedd26821d4c5956941c0339efd2d8a6c154a&amp;body=Item%3A%20%22Nango%20(YC%20W23)%20is%20hiring%20across%20eng%2C%20product%20and%20GTM%20(SF%20and%20remote)%22%0AFingerprint%3A%2069dbb9011b73222b34ff06af115eedd26821d4c5956941c0339efd2d8a6c154a%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Altair Basic Interpreter Source Code (1975) [pdf]</title>
+      <link>https://images.gatesnotes.com/12514eb8-7b51-008e-41a9-512542cf683b/34d561c8-cf5c-4e69-af47-3782ea11482e/Original-Microsoft-Source-Code.pdf</link>
+      <guid isPermaLink="false">musement:pool:413599201807f3fae4758de969bb6dbfb569df995b60a53062b13b77c016dd54</guid>
+      <pubDate>Wed, 02 Sep 2026 20:08:22 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> Eridanus2</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Article URL: https://images.gatesnotes.com/12514eb8-7b51-008e-41a9-512542cf683b/34d561c8-cf5c-4e69-af47-3782ea11482e/Original-Microsoft-Source-Code.pdf Comments URL: https://news.ycombinator.com/item?id=49541754 Points: 37 # Comments: 11</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://images.gatesnotes.com/12514eb8-7b51-008e-41a9-512542cf683b/34d561c8-cf5c-4e69-af47-3782ea11482e/Original-Microsoft-Source-Code.pdf">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20413599201807f3fae4758de969bb6dbfb569df995b60a53062b13b77c016dd54&amp;body=Item%3A%20%22Altair%20Basic%20Interpreter%20Source%20Code%20(1975)%20%5Bpdf%5D%22%0AFingerprint%3A%20413599201807f3fae4758de969bb6dbfb569df995b60a53062b13b77c016dd54%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Hacker News] I wanna live an NPC life</title>
       <link>https://signalundefied.bearblog.dev/i-wanna-live-an-npc-life/</link>
       <guid isPermaLink="false">musement:pool:9c1cae2e856a603a0c2a821b28f1566c34081bd6932764861dd1acbaaf9b9968</guid>
@@ -42,6 +90,42 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://signalundefied.bearblog.dev/i-wanna-live-an-npc-life/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%209c1cae2e856a603a0c2a821b28f1566c34081bd6932764861dd1acbaaf9b9968&amp;body=Item%3A%20%22I%20wanna%20live%20an%20NPC%20life%22%0AFingerprint%3A%209c1cae2e856a603a0c2a821b28f1566c34081bd6932764861dd1acbaaf9b9968%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Fable 5.1 World Modeling</title>
+      <link>https://github.com/PhiloLabs/fable51-worlds</link>
+      <guid isPermaLink="false">musement:pool:b90745bb976c0508fe9314656d5df1c0aae30f773491450d5457b8d675ecb310</guid>
+      <pubDate>Wed, 02 Sep 2026 19:49:01 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> surreal_</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Article URL: https://github.com/PhiloLabs/fable51-worlds Comments URL: https://news.ycombinator.com/item?id=49541458 Points: 119 # Comments: 42</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://github.com/PhiloLabs/fable51-worlds">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20b90745bb976c0508fe9314656d5df1c0aae30f773491450d5457b8d675ecb310&amp;body=Item%3A%20%22Fable%205.1%20World%20Modeling%22%0AFingerprint%3A%20b90745bb976c0508fe9314656d5df1c0aae30f773491450d5457b8d675ecb310%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Muse Spark 1.3</title>
+      <link>https://developer.meta.com/ai/models/muse-spark/</link>
+      <guid isPermaLink="false">musement:pool:8aa10573a59369c87b86a52ddd934b4a3eb05630400f0f3034c2140177cdcc16</guid>
+      <pubDate>Wed, 02 Sep 2026 19:35:04 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> bvaldivielso</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>https://research.meta.ai/blog/introducing-muse-spark-1-3 Comments URL: https://news.ycombinator.com/item?id=49541256 Points: 326 # Comments: 232</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://developer.meta.com/ai/models/muse-spark/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%208aa10573a59369c87b86a52ddd934b4a3eb05630400f0f3034c2140177cdcc16&amp;body=Item%3A%20%22Muse%20Spark%201.3%22%0AFingerprint%3A%208aa10573a59369c87b86a52ddd934b4a3eb05630400f0f3034c2140177cdcc16%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Qantas Airbus A380 engine failure in 2010 (2023)</title>
+      <link>https://admiralcloudberg.medium.com/a-matter-of-millimeters-the-story-of-qantas-flight-32-bdaa62dc98e7</link>
+      <guid isPermaLink="false">musement:pool:f770f179ead4633f2f13585e5eddc5c2b711cd5d611fed0cf754c45d87488efa</guid>
+      <pubDate>Wed, 02 Sep 2026 18:42:41 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> gumby</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Article URL: https://admiralcloudberg.medium.com/a-matter-of-millimeters-the-story-of-qantas-flight-32-bdaa62dc98e7 Comments URL: https://news.ycombinator.com/item?id=49540565 Points: 67 # Comments: 39</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://admiralcloudberg.medium.com/a-matter-of-millimeters-the-story-of-qantas-flight-32-bdaa62dc98e7">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20f770f179ead4633f2f13585e5eddc5c2b711cd5d611fed0cf754c45d87488efa&amp;body=Item%3A%20%22Qantas%20Airbus%20A380%20engine%20failure%20in%202010%20(2023)%22%0AFingerprint%3A%20f770f179ead4633f2f13585e5eddc5c2b711cd5d611fed0cf754c45d87488efa%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Hacker News] Embedded Rust RTOS vs. C RTOS</title>
@@ -68,6 +152,42 @@
 <p><a href="https://www.smithsonianmag.com/science-nature/earths-organisms-developed-via-evolution-some-theorists-wonder-what-if-the-entire-cosmos-did-too-180989338/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2006de302643a6f0165fb5266febbb704f8f9ead04e8bf8e688b8d9a6dc0e5e596&amp;body=Item%3A%20%22Earth&apos;s%20organisms%20developed%20via%20evolution.%20What%20if%20the%20cosmos%20did%2C%20too%3F%22%0AFingerprint%3A%2006de302643a6f0165fb5266febbb704f8f9ead04e8bf8e688b8d9a6dc0e5e596%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Hacker News] Gemini 3.8 Flash and 3.8 Flash Cyber</title>
+      <link>https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/</link>
+      <guid isPermaLink="false">musement:pool:1e5b8618d900b42a6d0b1d1d120a68d5a6363388e52c74af5ad67348ab1581c0</guid>
+      <pubDate>Wed, 02 Sep 2026 15:12:40 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> bratao</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>https://deepmind.google/models/model-cards/gemini-3-8-flash/ Comments URL: https://news.ycombinator.com/item?id=49537553 Points: 790 # Comments: 468</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201e5b8618d900b42a6d0b1d1d120a68d5a6363388e52c74af5ad67348ab1581c0&amp;body=Item%3A%20%22Gemini%203.8%20Flash%20and%203.8%20Flash%20Cyber%22%0AFingerprint%3A%201e5b8618d900b42a6d0b1d1d120a68d5a6363388e52c74af5ad67348ab1581c0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Google avoids a breakup of its ad tech business</title>
+      <link>https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html</link>
+      <guid isPermaLink="false">musement:pool:94851e28049dfa13d6613a3e6b98f4fde182b798ecc5635c7f35c1bd769ac79b</guid>
+      <pubDate>Wed, 02 Sep 2026 14:46:16 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> donohoe</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>https://archive.ph/rlAbY https://www.reuters.com/legal/litigation/google-defeats-us-b... Comments URL: https://news.ycombinator.com/item?id=49537131 Points: 225 # Comments: 134</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2094851e28049dfa13d6613a3e6b98f4fde182b798ecc5635c7f35c1bd769ac79b&amp;body=Item%3A%20%22Google%20avoids%20a%20breakup%20of%20its%20ad%20tech%20business%22%0AFingerprint%3A%2094851e28049dfa13d6613a3e6b98f4fde182b798ecc5635c7f35c1bd769ac79b%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Exit the Cave</title>
+      <link>https://turtlespace.blog/p/exit-the-cave</link>
+      <guid isPermaLink="false">musement:pool:7ba86f7b1ce262d8beee73c952124413dbd5fa40211a157d137ebb43a34dee32</guid>
+      <pubDate>Wed, 02 Sep 2026 14:16:45 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> akkartik</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Article URL: https://turtlespace.blog/p/exit-the-cave Comments URL: https://news.ycombinator.com/item?id=49536606 Points: 198 # Comments: 67</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://turtlespace.blog/p/exit-the-cave">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%207ba86f7b1ce262d8beee73c952124413dbd5fa40211a157d137ebb43a34dee32&amp;body=Item%3A%20%22Exit%20the%20Cave%22%0AFingerprint%3A%207ba86f7b1ce262d8beee73c952124413dbd5fa40211a157d137ebb43a34dee32%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Hacker News] Three sites made 215,128 “best software” pages for AI. Perplexity cites them</title>
       <link>https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/</link>
       <guid isPermaLink="false">musement:pool:b3e7eee395813d61fc13108b00e112dbff4c70ba0f2e133988c1fe57bb736dcd</guid>
@@ -78,6 +198,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20b3e7eee395813d61fc13108b00e112dbff4c70ba0f2e133988c1fe57bb736dcd&amp;body=Item%3A%20%22Three%20sites%20made%20215%2C128%20%E2%80%9Cbest%20software%E2%80%9D%20pages%20for%20AI.%20Perplexity%20cites%20them%22%0AFingerprint%3A%20b3e7eee395813d61fc13108b00e112dbff4c70ba0f2e133988c1fe57bb736dcd%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Poisson Disk Sampling</title>
+      <link>https://stripeacross.com/posts/poisson-disk-sampling/</link>
+      <guid isPermaLink="false">musement:pool:0d4cf45aafbbfaab986eedd4b551215bdf88665f11162f3e105a72f246b25650</guid>
+      <pubDate>Wed, 02 Sep 2026 13:47:49 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> vismit2000</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Article URL: https://stripeacross.com/posts/poisson-disk-sampling/ Comments URL: https://news.ycombinator.com/item?id=49536177 Points: 119 # Comments: 17</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://stripeacross.com/posts/poisson-disk-sampling/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%200d4cf45aafbbfaab986eedd4b551215bdf88665f11162f3e105a72f246b25650&amp;body=Item%3A%20%22Poisson%20Disk%20Sampling%22%0AFingerprint%3A%200d4cf45aafbbfaab986eedd4b551215bdf88665f11162f3e105a72f246b25650%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Hacker News] Biggest dark matter detector spots a single weird particle</title>
@@ -188,6 +320,42 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02684-1">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2078472c78922617dc1a2272c1dbff663c311460077045ec36f472fe16d65f0c2b&amp;body=Item%3A%20%22AI%20models%20are%20being%20used%20to%20track%20zoonotic%20diseases.%20Will%20they%20prevent%20the%20next%20pandemic%3F%22%0AFingerprint%3A%2078472c78922617dc1a2272c1dbff663c311460077045ec36f472fe16d65f0c2b%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[小Lin说] 日元创40年新低，美国突然出手，怎么回事儿？</title>
+      <link>https://www.youtube.com/watch?v=8BN8p5xDkzw</link>
+      <guid isPermaLink="false">musement:pool:b5e64f8cc7eca0af2ada3e92359038e1f5ea2fd0b6d8e8fc71603b38214ae533</guid>
+      <pubDate>Fri, 28 Aug 2026 13:00:25 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> 小Lin说 | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>朋友们 今年日元 又崩了 美元兑日元 一度摸到了164关口 达到了40年来的最低点 其实之前几年 日元就一路滑坡 逼得日本政府 出手救过好几次 但今年这回不一样了 一呢 是因为它这个崩盘的主导因素 变了 这背后都是因为一个人 华尔街甚至以ta的名字 命名了一个交易 更关键的是 这回把大哥给叫来了 美国政府也插手了 宣布联合日本一起干预 是美国15年来首次 出手干预外汇市场 7月31号 就有媒体拍到了 贝森特的笔记本里 有一个待办事项 叫买日元50-100亿美元 你看看这个图片多清晰 一看就不像是偷拍的对吧 写的也清楚 拍的也清楚 字那么大 下面还有下划线 你都不知道是不是 他故意给媒体看的 而之后特朗普说的就更直接了 (日本)他们 他们的日元在贬值 他们需要一点帮助 我们永远支持日本 日本一直都对我们很好 当然珍珠港事件除外 那次他们很不好 咱也不知道是不是巧合 上回日元在165上面的时候 是美国刚刚牵头 签订了广场协议 让日元一路飙升 之后整整40年 没有回到过165关口 这回眼看要突破165了 美国又出手 你说说 是谁触发了 日元止不住的下跌 美国又为什么 莫名其妙的进来插一脚 这</p>
+<p><strong>Estimated Time:</strong> 16 min (video)</p>
+<hr/>
+<p><a href="https://www.youtube.com/watch?v=8BN8p5xDkzw">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20b5e64f8cc7eca0af2ada3e92359038e1f5ea2fd0b6d8e8fc71603b38214ae533&amp;body=Item%3A%20%22%E6%97%A5%E5%85%83%E5%88%9B40%E5%B9%B4%E6%96%B0%E4%BD%8E%EF%BC%8C%E7%BE%8E%E5%9B%BD%E7%AA%81%E7%84%B6%E5%87%BA%E6%89%8B%EF%BC%8C%E6%80%8E%E4%B9%88%E5%9B%9E%E4%BA%8B%E5%84%BF%EF%BC%9F%22%0AFingerprint%3A%20b5e64f8cc7eca0af2ada3e92359038e1f5ea2fd0b6d8e8fc71603b38214ae533%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Briefing Chat: How Dolly Parton left her mark on science</title>
+      <link>https://www.nature.com/articles/d41586-026-02732-w</link>
+      <guid isPermaLink="false">musement:pool:1f796f1767f0f6f76b59710963a0f386d10463fd3fd4c35241eb1efc52ce5fcc</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 28 August 2026; doi:10.1038/d41586-026-02732-w Nature reporters discuss the country-music icon&apos;s advocacy for vaccines and public health — plus, promising trial results for an mRNA cancer therapy.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02732-w">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201f796f1767f0f6f76b59710963a0f386d10463fd3fd4c35241eb1efc52ce5fcc&amp;body=Item%3A%20%22Briefing%20Chat%3A%20How%20Dolly%20Parton%20left%20her%20mark%20on%20science%22%0AFingerprint%3A%201f796f1767f0f6f76b59710963a0f386d10463fd3fd4c35241eb1efc52ce5fcc%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Mysteries of the deep and AI friendship: Books in brief</title>
+      <link>https://www.nature.com/articles/d41586-026-02725-9</link>
+      <guid isPermaLink="false">musement:pool:81479a74cd86de5e7c49e2f4dc9b5b6ba740005422f883e576f582fdc79881eb</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Andrew Robinson</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 28 August 2026; doi:10.1038/d41586-026-02725-9 Andrew Robinson reviews five of the best science picks.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02725-9">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2081479a74cd86de5e7c49e2f4dc9b5b6ba740005422f883e576f582fdc79881eb&amp;body=Item%3A%20%22Mysteries%20of%20the%20deep%20and%20AI%20friendship%3A%20Books%20in%20brief%22%0AFingerprint%3A%2081479a74cd86de5e7c49e2f4dc9b5b6ba740005422f883e576f582fdc79881eb%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] The Moderna cancer vaccine offers hope — now we must speed up personalized therapies</title>
       <link>https://www.nature.com/articles/d41586-026-02680-5</link>
       <guid isPermaLink="false">musement:pool:dc751b4d7b57db7b33ce8fd51fa06db710d14ce10e31b227e044f5b7e770904b</guid>
@@ -198,6 +366,30 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02680-5">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20dc751b4d7b57db7b33ce8fd51fa06db710d14ce10e31b227e044f5b7e770904b&amp;body=Item%3A%20%22The%20Moderna%20cancer%20vaccine%20offers%20hope%20%E2%80%94%20now%20we%20must%20speed%20up%20personalized%20therapies%22%0AFingerprint%3A%20dc751b4d7b57db7b33ce8fd51fa06db710d14ce10e31b227e044f5b7e770904b%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Heisuke Hironaka obituary: mathematician who smoothed out geometry’s complexities</title>
+      <link>https://www.nature.com/articles/d41586-026-02688-x</link>
+      <guid isPermaLink="false">musement:pool:82590d8c9aca57a9f9fad31e5f03750c7ee9a03ffba0627e476e5f421d46b71c</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Allyn Jackson</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 28 August 2026; doi:10.1038/d41586-026-02688-x His awe-inspiring proof for the resolution of singularities — such as peaks, edges and self-crossings — revolutionized algebraic geometry.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02688-x">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2082590d8c9aca57a9f9fad31e5f03750c7ee9a03ffba0627e476e5f421d46b71c&amp;body=Item%3A%20%22Heisuke%20Hironaka%20obituary%3A%20mathematician%20who%20smoothed%20out%20geometry%E2%80%99s%20complexities%22%0AFingerprint%3A%2082590d8c9aca57a9f9fad31e5f03750c7ee9a03ffba0627e476e5f421d46b71c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Will Meta’s deal make social media safe for kids? Researchers are dubious</title>
+      <link>https://www.nature.com/articles/d41586-026-02733-9</link>
+      <guid isPermaLink="false">musement:pool:168930a2e790ae8354fbf91f1cd7492c4e78ef5030b690b6c1ce6e98a54f0204</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Kaia Glickman</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 28 August 2026; doi:10.1038/d41586-026-02733-9 Nature talks to specialists about the changes coming to Facebook and Instagram, and whether there’s evidence they will help.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02733-9">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20168930a2e790ae8354fbf91f1cd7492c4e78ef5030b690b6c1ce6e98a54f0204&amp;body=Item%3A%20%22Will%20Meta%E2%80%99s%20deal%20make%20social%20media%20safe%20for%20kids%3F%20Researchers%20are%20dubious%22%0AFingerprint%3A%20168930a2e790ae8354fbf91f1cd7492c4e78ef5030b690b6c1ce6e98a54f0204%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] What employers are looking for in the age of AI — and four ways to provide it</title>
@@ -236,6 +428,30 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02628-9">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%204222f0743edd1888de4e5da42107387b55fdd5ddcebb1314f6ffb185356a00e2&amp;body=Item%3A%20%22A%20solution%20to%20the%20mystery%20of%20the%20missing%20neutrinos%22%0AFingerprint%3A%204222f0743edd1888de4e5da42107387b55fdd5ddcebb1314f6ffb185356a00e2%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Nature News] Animal-microbe partnerships date back to the dawn of complex life</title>
+      <link>https://www.nature.com/articles/d41586-026-02629-8</link>
+      <guid isPermaLink="false">musement:pool:09201e2bcb01026712c9b1ebf4f2600f015786b0dfea24f970e10cb4eff3ec5f</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 27 August 2026; doi:10.1038/d41586-026-02629-8 Geochemical clues hint that worm-like creatures in the Ediacaran period benefited from symbiosis with bacteria.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02629-8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2009201e2bcb01026712c9b1ebf4f2600f015786b0dfea24f970e10cb4eff3ec5f&amp;body=Item%3A%20%22Animal-microbe%20partnerships%20date%20back%20to%20the%20dawn%20of%20complex%20life%22%0AFingerprint%3A%2009201e2bcb01026712c9b1ebf4f2600f015786b0dfea24f970e10cb4eff3ec5f%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] ‘Robot Olympics’ reveal humanoids’ rapid progress — and flaws</title>
+      <link>https://www.nature.com/articles/d41586-026-02713-z</link>
+      <guid isPermaLink="false">musement:pool:253750ce772cfe48204794c4b7d739cbdf362a83cbbf8cea28f400d2ab758882</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Kaia Glickman</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 27 August 2026; doi:10.1038/d41586-026-02713-z Humanoid robots broke records at sporting events such as sprints, but struggled at practical tasks such as hammering nails.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02713-z">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20253750ce772cfe48204794c4b7d739cbdf362a83cbbf8cea28f400d2ab758882&amp;body=Item%3A%20%22%E2%80%98Robot%20Olympics%E2%80%99%20reveal%20humanoids%E2%80%99%20rapid%20progress%20%E2%80%94%20and%20flaws%22%0AFingerprint%3A%20253750ce772cfe48204794c4b7d739cbdf362a83cbbf8cea28f400d2ab758882%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] Glacier collapse caused Nepal’s deadly flash flood — a sign of things to come?</title>
       <link>https://www.nature.com/articles/d41586-026-02716-w</link>
       <guid isPermaLink="false">musement:pool:94d99ca8e3c9dd827538406f757e16eb7e2b404630edb7b6e22ec1941977f511</guid>
@@ -270,6 +486,30 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02717-9">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2044189a3efa41638066b1a3e7e7cd27328407a21b3cd10c353e94c9308895ba2c&amp;body=Item%3A%20%22Why%20are%20El%20Ni%C3%B1os%20getting%20stronger%3F%201%2C000-year-coral%20record%20points%20to%20climate%20change%22%0AFingerprint%3A%2044189a3efa41638066b1a3e7e7cd27328407a21b3cd10c353e94c9308895ba2c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Veritasium] We Took $10,000 From @mkbhd&apos;s Locked iPhone</title>
+      <link>https://www.youtube.com/shorts/b3KpFdb1pW8</link>
+      <guid isPermaLink="false">musement:pool:123fa941c12ff4d5629c3d5d11b52c1992d6efd66dfe0529080d87bdd328b2d5</guid>
+      <pubDate>Wed, 26 Aug 2026 15:00:02 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Veritasium | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>I&amp;#39;m here with MKBHD and we&amp;#39;re going to try to steal $10,000 from his locked iPhone. Really hope it doesn&amp;#39;t work. Really hope it doesn&amp;#39;t work. I&amp;#39;m going to get you to put that phone down on top of this device. &amp;gt;&amp;gt; It&amp;#39;s just a regular payment terminal. Nothing nothing weird about that. &amp;gt;&amp;gt; Careful. [music] Careful with that. Careful. Careful. That&amp;#39;s a lot of zeros. Careful with that. Oh my god. Okay. &amp;gt;&amp;gt; Do you do you even think it&amp;#39;s possible first fi</p>
+<p><strong>Estimated Time:</strong> 1 min (video)</p>
+<hr/>
+<p><a href="https://www.youtube.com/shorts/b3KpFdb1pW8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20123fa941c12ff4d5629c3d5d11b52c1992d6efd66dfe0529080d87bdd328b2d5&amp;body=Item%3A%20%22We%20Took%20%2410%2C000%20From%20%40mkbhd&apos;s%20Locked%20iPhone%22%0AFingerprint%3A%20123fa941c12ff4d5629c3d5d11b52c1992d6efd66dfe0529080d87bdd328b2d5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Highest-ever ocean temperatures recorded as El Niño intensifies</title>
+      <link>https://www.nature.com/articles/d41586-026-02681-4</link>
+      <guid isPermaLink="false">musement:pool:e73a45f754cd935b3169624937368350cc3acff23e3b67e6488efaefad5353ad</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02681-4 Why extreme temperatures are expected to weaken ocean carbon sinks — plus, how mitochondrial injections could treat vision loss.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02681-4">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20e73a45f754cd935b3169624937368350cc3acff23e3b67e6488efaefad5353ad&amp;body=Item%3A%20%22Highest-ever%20ocean%20temperatures%20recorded%20as%20El%20Ni%C3%B1o%20intensifies%22%0AFingerprint%3A%20e73a45f754cd935b3169624937368350cc3acff23e3b67e6488efaefad5353ad%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Using nuclear waste to power space missions</title>
@@ -344,6 +584,18 @@
 <p><a href="https://www.nature.com/articles/s41586-026-10577-6">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2075d06276b62c95af99b9dc7f8d5ec241aae06e7469848b2ad6c6476b113948d6&amp;body=Item%3A%20%22Cell-type-specific%20eQTLs%20underlie%20the%20genetic%20architecture%20of%20complex%20traits%22%0AFingerprint%3A%2075d06276b62c95af99b9dc7f8d5ec241aae06e7469848b2ad6c6476b113948d6%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Nature News] Amphibious stem-insect sheds light on colonization of land</title>
+      <link>https://www.nature.com/articles/s41586-026-10961-2</link>
+      <guid isPermaLink="false">musement:pool:e0dbbc823f654c5c349e84ed2473c98e945eb4cf7b67715493394befd1c07fe8</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10961-2 Restudy of a challenging fossil using cross-polarized light imaging and phylogenetic reconstruction identifies Chosha praecursor, a probable early-diverging insect, helping to bridge the longstanding ‘hexapod gap’ in the fossil record.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-10961-2">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20e0dbbc823f654c5c349e84ed2473c98e945eb4cf7b67715493394befd1c07fe8&amp;body=Item%3A%20%22Amphibious%20stem-insect%20sheds%20light%20on%20colonization%20of%20land%22%0AFingerprint%3A%20e0dbbc823f654c5c349e84ed2473c98e945eb4cf7b67715493394befd1c07fe8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] 3D bulk-resolved &lt;i&gt;g&lt;/i&gt;-wave altermagnetic order parameter in CrSb</title>
       <link>https://www.nature.com/articles/s41586-026-10902-z</link>
       <guid isPermaLink="false">musement:pool:261a57c11135ba39eab5f70f26bfa29b1c356ad9e77e9ab005a09da62c099e44</guid>
@@ -354,258 +606,6 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/s41586-026-10902-z">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20261a57c11135ba39eab5f70f26bfa29b1c356ad9e77e9ab005a09da62c099e44&amp;body=Item%3A%20%223D%20bulk-resolved%20%3Ci%3Eg%3C%2Fi%3E-wave%20altermagnetic%20order%20parameter%20in%20CrSb%22%0AFingerprint%3A%20261a57c11135ba39eab5f70f26bfa29b1c356ad9e77e9ab005a09da62c099e44%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Tidal tomography reveals a thermal anomaly beneath Mars’s crustal dichotomy</title>
-      <link>https://www.nature.com/articles/s41586-026-10893-x</link>
-      <guid isPermaLink="false">musement:pool:852a65ab59f6355017f122f77b642372399ba4c049a5f807aa54f4b5f6f83be4</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10893-x Analysis of tracking data from Mars orbiters reveals time-variable gravity field behaviour reflecting the structure underlying the Martian crustal dichotomy and indicates the preservation of a 200–400 °C thermal anomaly in the present-day mantle below the southern highlands.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10893-x">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20852a65ab59f6355017f122f77b642372399ba4c049a5f807aa54f4b5f6f83be4&amp;body=Item%3A%20%22Tidal%20tomography%20reveals%20a%20thermal%20anomaly%20beneath%20Mars%E2%80%99s%20crustal%20dichotomy%22%0AFingerprint%3A%20852a65ab59f6355017f122f77b642372399ba4c049a5f807aa54f4b5f6f83be4%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Synergistic degradation of fucoidans in the ocean</title>
-      <link>https://www.nature.com/articles/s41586-026-10980-z</link>
-      <guid isPermaLink="false">musement:pool:c769a9a33ffd8fec63778aa6a702b5598e6b44137b31e1ecc0537ae52b26c662</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10980-z Efficient degradation of fucoidans depends on complementary bacterial guilds that cooperatively break backbone and side-chain sugars, revealing a conserved, globally relevant mechanism that shapes marine carbon cycling.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10980-z">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20c769a9a33ffd8fec63778aa6a702b5598e6b44137b31e1ecc0537ae52b26c662&amp;body=Item%3A%20%22Synergistic%20degradation%20of%20fucoidans%20in%20the%20ocean%22%0AFingerprint%3A%20c769a9a33ffd8fec63778aa6a702b5598e6b44137b31e1ecc0537ae52b26c662%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] A binding-to-release strategy for targeted anticancer drug delivery</title>
-      <link>https://www.nature.com/articles/s41586-026-10971-0</link>
-      <guid isPermaLink="false">musement:pool:11b06ac93ad5c365b783079e764ea3dcac9ee57f031b15824780672e4ae6ddd9</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10971-0 A binding-to-release drug conjugate strategy enables targeted payload release without cellular internalization, improving tumour specificity, efficacy and expanding therapeutic targets beyond conventional drug conjugates.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10971-0">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2011b06ac93ad5c365b783079e764ea3dcac9ee57f031b15824780672e4ae6ddd9&amp;body=Item%3A%20%22A%20binding-to-release%20strategy%20for%20targeted%20anticancer%20drug%20delivery%22%0AFingerprint%3A%2011b06ac93ad5c365b783079e764ea3dcac9ee57f031b15824780672e4ae6ddd9%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Critical zone processes limit alkalinity export from natural basaltic systems</title>
-      <link>https://www.nature.com/articles/s41586-026-10936-3</link>
-      <guid isPermaLink="false">musement:pool:e90fad0d120b701b3f6804c0bb594e91ff74d17a585b6e80ee3d4572a66142c5</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10936-3 Observations from natural volcanic watersheds demonstrate attenuation of alkalinity fluxes along the complete reactive pathways from soil to river that lead to reductions in exported alkalinity, indicating the limiting effects of critical zone processes.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10936-3">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20e90fad0d120b701b3f6804c0bb594e91ff74d17a585b6e80ee3d4572a66142c5&amp;body=Item%3A%20%22Critical%20zone%20processes%20limit%20alkalinity%20export%20from%20natural%20basaltic%20systems%22%0AFingerprint%3A%20e90fad0d120b701b3f6804c0bb594e91ff74d17a585b6e80ee3d4572a66142c5%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Aberrant excitatory neuronal ERBB4 promotes Alzheimer’s disease pathology</title>
-      <link>https://www.nature.com/articles/s41586-026-10964-z</link>
-      <guid isPermaLink="false">musement:pool:da0887133af75ec22ebf1e0e67c638dda19dad8042bd8039e5fb7e4f5f24ec77</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10964-z Neuroinflammation alone may be dispensable for early synapse loss in Alzheimer’s disease.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10964-z">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20da0887133af75ec22ebf1e0e67c638dda19dad8042bd8039e5fb7e4f5f24ec77&amp;body=Item%3A%20%22Aberrant%20excitatory%20neuronal%20ERBB4%20promotes%20Alzheimer%E2%80%99s%20disease%20pathology%22%0AFingerprint%3A%20da0887133af75ec22ebf1e0e67c638dda19dad8042bd8039e5fb7e4f5f24ec77%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Video reconstruction of variable VLBI observations with neural fields</title>
-      <link>https://www.nature.com/articles/s41586-026-10988-5</link>
-      <guid isPermaLink="false">musement:pool:70f3c51e98a4bb3627fc47be9d4a31ddbc1e171fcbd87fc667f9a9629ee3093e</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10988-5 The kine neural reconstruction algorithm produces high-resolution, time-continuous very long baseline interferometry videos, enabling direct measurement of instantaneous plasma velocities and detailed kinematic analysis of relativistic astrophysical jets.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10988-5">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2070f3c51e98a4bb3627fc47be9d4a31ddbc1e171fcbd87fc667f9a9629ee3093e&amp;body=Item%3A%20%22Video%20reconstruction%20of%20variable%20VLBI%20observations%20with%20neural%20fields%22%0AFingerprint%3A%2070f3c51e98a4bb3627fc47be9d4a31ddbc1e171fcbd87fc667f9a9629ee3093e%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Endocannabinoids facilitate reward engagement through retrograde gain control</title>
-      <link>https://www.nature.com/articles/s41586-026-10967-w</link>
-      <guid isPermaLink="false">musement:pool:9660984aff1eb7fbc5b8aa498c5f6c704601915781cb7134b8fc5fedcf1428a8</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10967-w A key role for retrograde neuromodulatory signalling in motivated behaviour is shown through dynamic endocannabinoid release within a thalamostriatal circuit that regulates behavioural engagement during reward seeking.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10967-w">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%209660984aff1eb7fbc5b8aa498c5f6c704601915781cb7134b8fc5fedcf1428a8&amp;body=Item%3A%20%22Endocannabinoids%20facilitate%20reward%20engagement%20through%20retrograde%20gain%20control%22%0AFingerprint%3A%209660984aff1eb7fbc5b8aa498c5f6c704601915781cb7134b8fc5fedcf1428a8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Primate-specific regulation of the human glycosphingolipid gatekeeper UGCG</title>
-      <link>https://www.nature.com/articles/s41586-026-10927-4</link>
-      <guid isPermaLink="false">musement:pool:473fe1b19f5241aa41bed57ce3e1c26b1822f541b39b8254fde245a053c52491</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10927-4 Cryogenic electron microscopy structures of full-length human UGCG, the gatekeeper that dictates the scale and composition of glycosphingolipid diversity, are reported, showing that it uses a metal-independent catalytic mechanism driven by an arginine network.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10927-4">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20473fe1b19f5241aa41bed57ce3e1c26b1822f541b39b8254fde245a053c52491&amp;body=Item%3A%20%22Primate-specific%20regulation%20of%20the%20human%20glycosphingolipid%20gatekeeper%20UGCG%22%0AFingerprint%3A%20473fe1b19f5241aa41bed57ce3e1c26b1822f541b39b8254fde245a053c52491%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Granule cells reorient cortical trajectories to separate contexts</title>
-      <link>https://www.nature.com/articles/s41586-026-10946-1</link>
-      <guid isPermaLink="false">musement:pool:a2ad1035a2952000893fcae8a6d3e8b1251319191e1d23e21ba96039b8fca762</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10946-1 Simultaneous imaging of premotor cortex and cerebellar granule cells in mice learning two skills in parallel shows that trajectories generalize in cortex but coherently reorient apart in granule cells, supporting generalization and separation between contexts.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10946-1">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20a2ad1035a2952000893fcae8a6d3e8b1251319191e1d23e21ba96039b8fca762&amp;body=Item%3A%20%22Granule%20cells%20reorient%20cortical%20trajectories%20to%20separate%20contexts%22%0AFingerprint%3A%20a2ad1035a2952000893fcae8a6d3e8b1251319191e1d23e21ba96039b8fca762%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Long-read sequencing reveals pre-meiotic gene conversion in sperm</title>
-      <link>https://www.nature.com/articles/s41586-026-10901-0</link>
-      <guid isPermaLink="false">musement:pool:06e305d1c3a7ccbe92df89c00e766fcefa53dbc348eab1dcd99617644f56f38c</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10901-0 Single-molecule long-read sequencing of human sperm reveals variation in recombination across donors and that a substantial fraction of non-crossover gene conversions arises before meiosis, distinct from PRDM9-driven recombination and associated with fragile sites.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10901-0">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2006e305d1c3a7ccbe92df89c00e766fcefa53dbc348eab1dcd99617644f56f38c&amp;body=Item%3A%20%22Long-read%20sequencing%20reveals%20pre-meiotic%20gene%20conversion%20in%20sperm%22%0AFingerprint%3A%2006e305d1c3a7ccbe92df89c00e766fcefa53dbc348eab1dcd99617644f56f38c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Infrared absorption spectroscopy of a single polyatomic molecular ion</title>
-      <link>https://www.nature.com/articles/s41586-026-10915-8</link>
-      <guid isPermaLink="false">musement:pool:6f832737bab72e01ab4f5e721aaa3e1b7146c9371710b27fa8374aca53521054</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10915-8 Non-destructive single-molecule absorption spectroscopy is achieved by detecting photon recoil from a trapped molecular ion, enabling single-photon-sensitive measurements of molecular vibrational transitions.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10915-8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%206f832737bab72e01ab4f5e721aaa3e1b7146c9371710b27fa8374aca53521054&amp;body=Item%3A%20%22Infrared%20absorption%20spectroscopy%20of%20a%20single%20polyatomic%20molecular%20ion%22%0AFingerprint%3A%206f832737bab72e01ab4f5e721aaa3e1b7146c9371710b27fa8374aca53521054%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Spontaneously charged water drops induce corrosion</title>
-      <link>https://www.nature.com/articles/s41586-026-10941-6</link>
-      <guid isPermaLink="false">musement:pool:d286a6ac6cd742b0491b7016e9db5f9533c7f28cf15559f4e09c69401d47d941</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10941-6 Experiments have shown that spontaneously charged water drops can damage coatings on metal surfaces, leading to corrosion of the metal.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/s41586-026-10941-6">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d286a6ac6cd742b0491b7016e9db5f9533c7f28cf15559f4e09c69401d47d941&amp;body=Item%3A%20%22Spontaneously%20charged%20water%20drops%20induce%20corrosion%22%0AFingerprint%3A%20d286a6ac6cd742b0491b7016e9db5f9533c7f28cf15559f4e09c69401d47d941%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Can nuclear reactors hit the road?</title>
-      <link>https://www.nature.com/articles/d41586-026-02510-8</link>
-      <guid isPermaLink="false">musement:pool:4a0feed1f7b8ab1271d5313cf8276800c150e889b53d19ceec1630087f428da4</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Katherine Bourzac</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02510-8 Fission facilities that fit in a truck could provide portable power where it’s needed — but some people question whether it’s worth the cost, safety compromises and the risk of sending the raw materials for bombs into communities.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02510-8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%204a0feed1f7b8ab1271d5313cf8276800c150e889b53d19ceec1630087f428da4&amp;body=Item%3A%20%22Can%20nuclear%20reactors%20hit%20the%20road%3F%22%0AFingerprint%3A%204a0feed1f7b8ab1271d5313cf8276800c150e889b53d19ceec1630087f428da4%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] A practical recycling strategy for making thiophosphate molecules with enzymes</title>
-      <link>https://www.nature.com/articles/d41586-026-02482-9</link>
-      <guid isPermaLink="false">musement:pool:a2413e83a6b075393af573c3078a293163eeea4d1d5097f137a79dd60b5e5273</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02482-9 An enzymatic platform for constructing the thiophosphate molecular motif without relying on large amounts of expensive reagents has been developed. The method lays the foundation for developing enzymatic cascades to synthesize thiophosphate-containing motifs in drug development.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02482-9">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20a2413e83a6b075393af573c3078a293163eeea4d1d5097f137a79dd60b5e5273&amp;body=Item%3A%20%22A%20practical%20recycling%20strategy%20for%20making%20thiophosphate%20molecules%20with%20enzymes%22%0AFingerprint%3A%20a2413e83a6b075393af573c3078a293163eeea4d1d5097f137a79dd60b5e5273%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Smaller reactors bring nuclear power closer to fulfilling its promise</title>
-      <link>https://www.nature.com/articles/d41586-026-02506-4</link>
-      <guid isPermaLink="false">musement:pool:d2a2fb21adc8408d80296950821c7b07b8ea51ae4b918ee3d7a7b5ede73ebf2c</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Neil Savage</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02506-4 Shadowed by past disasters, nuclear engineers are developing different types of reactor, fuel, coolant and material that could help to make fission the zero-carbon energy technology of choice.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02506-4">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d2a2fb21adc8408d80296950821c7b07b8ea51ae4b918ee3d7a7b5ede73ebf2c&amp;body=Item%3A%20%22Smaller%20reactors%20bring%20nuclear%20power%20closer%20to%20fulfilling%20its%20promise%22%0AFingerprint%3A%20d2a2fb21adc8408d80296950821c7b07b8ea51ae4b918ee3d7a7b5ede73ebf2c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] The 46 companies scrambling to commercialize fusion for energy</title>
-      <link>https://www.nature.com/articles/d41586-026-02513-5</link>
-      <guid isPermaLink="false">musement:pool:4fc813a0afe2ea6e9f463268ab312f05b0c2cf5752e12750f7cd727603f7588b</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Neil Savage</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02513-5 Whether the billions of dollars of investment will lead to an inexhaustible source of clean electrical power is not yet known.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02513-5">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%204fc813a0afe2ea6e9f463268ab312f05b0c2cf5752e12750f7cd727603f7588b&amp;body=Item%3A%20%22The%2046%20companies%20scrambling%20to%20commercialize%20fusion%20for%20energy%22%0AFingerprint%3A%204fc813a0afe2ea6e9f463268ab312f05b0c2cf5752e12750f7cd727603f7588b%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] This pulsating muscle graft mimics benefits of exercise</title>
-      <link>https://www.nature.com/articles/d41586-026-02664-5</link>
-      <guid isPermaLink="false">musement:pool:119210712aecf5c251923bcd02928de5cbf019cff21739972409ee7cc3b938e4</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Mohana Basu</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02664-5 Mice with the surgical implant developed more muscle mass, strength and bone density.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02664-5">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20119210712aecf5c251923bcd02928de5cbf019cff21739972409ee7cc3b938e4&amp;body=Item%3A%20%22This%20pulsating%20muscle%20graft%20mimics%20benefits%20of%20exercise%22%0AFingerprint%3A%20119210712aecf5c251923bcd02928de5cbf019cff21739972409ee7cc3b938e4%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Savannah grass growth in dry conditions is boosted by increased CO&lt;sub&gt;2&lt;/sub&gt; levels</title>
-      <link>https://www.nature.com/articles/d41586-026-02480-x</link>
-      <guid isPermaLink="false">musement:pool:808cb596f0222a5bf952b8ab67cbd982ca9e4dcee5475c38924afa033643ae4e</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02480-x Analysis of 70 experiments and 32 years of field observations shows that increasing the amount of carbon dioxide enhances the growth of the C4 group of grasses when water is limited. These findings challenge the assumption that C4 grasses respond weakly to changes in carbon dioxide level, and reveal an overlooked driver of change across the world’s savannahs.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02480-x">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20808cb596f0222a5bf952b8ab67cbd982ca9e4dcee5475c38924afa033643ae4e&amp;body=Item%3A%20%22Savannah%20grass%20growth%20in%20dry%20conditions%20is%20boosted%20by%20increased%20CO%3Csub%3E2%3C%2Fsub%3E%20levels%22%0AFingerprint%3A%20808cb596f0222a5bf952b8ab67cbd982ca9e4dcee5475c38924afa033643ae4e%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Vaporization trick enables ‘tandem’ solar cells to be made at lower temperatures</title>
-      <link>https://www.nature.com/articles/d41586-026-02469-6</link>
-      <guid isPermaLink="false">musement:pool:c228b19e5d5cfca884809b5ccdbc7e3ef7bbe4daa9a482309d508abe0436a51c</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02469-6 A clever approach for evaporating a compound used to make perovskite semiconductors tackles a vexing challenge in scaling up next-generation solar cells.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02469-6">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20c228b19e5d5cfca884809b5ccdbc7e3ef7bbe4daa9a482309d508abe0436a51c&amp;body=Item%3A%20%22Vaporization%20trick%20enables%20%E2%80%98tandem%E2%80%99%20solar%20cells%20to%20be%20made%20at%20lower%20temperatures%22%0AFingerprint%3A%20c228b19e5d5cfca884809b5ccdbc7e3ef7bbe4daa9a482309d508abe0436a51c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] The baffling science of SSRIs: how do they really work?</title>
-      <link>https://www.nature.com/articles/d41586-026-02570-w</link>
-      <guid isPermaLink="false">musement:pool:d14c1cae26ed21b3ddc2293d08038a6781ebcca8ab82b44007c522aaee92359c</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Lynne Peeples</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02570-w The world’s most popular antidepressant drugs are under fire. But are they really harder to quit than heroin?</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02570-w">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d14c1cae26ed21b3ddc2293d08038a6781ebcca8ab82b44007c522aaee92359c&amp;body=Item%3A%20%22The%20baffling%20science%20of%20SSRIs%3A%20how%20do%20they%20really%20work%3F%22%0AFingerprint%3A%20d14c1cae26ed21b3ddc2293d08038a6781ebcca8ab82b44007c522aaee92359c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] A raft of start-up firms is betting on nuclear fusion</title>
-      <link>https://www.nature.com/articles/d41586-026-02511-7</link>
-      <guid isPermaLink="false">musement:pool:948768f3f65c0409cea6e263da94182ba32b8d2e53371b7688586837133dca63</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Neil Savage</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02511-7 The phenomenon that makes stars shine and hydrogen bombs explode has yet to be reliably tamed for energy generation. But that isn’t stopping companies from trying.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02511-7">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20948768f3f65c0409cea6e263da94182ba32b8d2e53371b7688586837133dca63&amp;body=Item%3A%20%22A%20raft%20of%20start-up%20firms%20is%20betting%20on%20nuclear%20fusion%22%0AFingerprint%3A%20948768f3f65c0409cea6e263da94182ba32b8d2e53371b7688586837133dca63%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
   </channel>
 </rss>
