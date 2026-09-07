@@ -5,19 +5,31 @@
     <link>https://zhenghe-md.github.io/musement</link>
     <description>Multi-year and monthly paradigm shifts, architectural deep-dives, and podcasts</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Sep 2026 15:11:24 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 00:10:43 GMT</lastBuildDate>
     <atom:link href="https://zhenghe-md.github.io/musement/pool-emerging.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[Hacker News] Reasons robotics is hard</title>
-      <link>https://secondthoughts.ai/p/14-reasons-robotics-is-hard</link>
-      <guid isPermaLink="false">musement:pool:ae11cbdb1ce95a4b4038aadb2e1535d488aae5e66204c82652d6cbb2e6426799</guid>
-      <pubDate>Wed, 02 Sep 2026 22:02:30 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> ddp26</p>
+      <title>[Hacker News] METR Report on OpenAI / Hugging Face Hacking Incident</title>
+      <link>https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#core-takeaways-about-this-incident</link>
+      <guid isPermaLink="false">musement:pool:d88dfbb9d82a9afbf8e5b0bad5b5cc621ae9e7e2d302f091059d2a984bb59f34</guid>
+      <pubDate>Wed, 02 Sep 2026 23:08:47 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> stikit</p>
 <p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Article URL: https://secondthoughts.ai/p/14-reasons-robotics-is-hard Comments URL: https://news.ycombinator.com/item?id=49543191 Points: 14 # Comments: 1</p>
+<p>Article URL: https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#core-takeaways-about-this-incident Comments URL: https://news.ycombinator.com/item?id=49543841 Points: 35 # Comments: 14</p>
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
-<p><a href="https://secondthoughts.ai/p/14-reasons-robotics-is-hard">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20ae11cbdb1ce95a4b4038aadb2e1535d488aae5e66204c82652d6cbb2e6426799&amp;body=Item%3A%20%22Reasons%20robotics%20is%20hard%22%0AFingerprint%3A%20ae11cbdb1ce95a4b4038aadb2e1535d488aae5e66204c82652d6cbb2e6426799%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+<p><a href="https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#core-takeaways-about-this-incident">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d88dfbb9d82a9afbf8e5b0bad5b5cc621ae9e7e2d302f091059d2a984bb59f34&amp;body=Item%3A%20%22METR%20Report%20on%20OpenAI%20%2F%20Hugging%20Face%20Hacking%20Incident%22%0AFingerprint%3A%20d88dfbb9d82a9afbf8e5b0bad5b5cc621ae9e7e2d302f091059d2a984bb59f34%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Hacker News] Maybe We Shouldn&apos;t Be Reviewing All This Code</title>
+      <link>https://martinfowler.com/rachels-ramblings/code-review.html</link>
+      <guid isPermaLink="false">musement:pool:fa2cf7f3abc01193a67a5eb65d4cb461c1c3eedfc4797bc3f78f8a7f941822fe</guid>
+      <pubDate>Wed, 02 Sep 2026 22:36:30 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> ingve</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Article URL: https://martinfowler.com/rachels-ramblings/code-review.html Comments URL: https://news.ycombinator.com/item?id=49543535 Points: 26 # Comments: 27</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://martinfowler.com/rachels-ramblings/code-review.html">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20fa2cf7f3abc01193a67a5eb65d4cb461c1c3eedfc4797bc3f78f8a7f941822fe&amp;body=Item%3A%20%22Maybe%20We%20Shouldn&apos;t%20Be%20Reviewing%20All%20This%20Code%22%0AFingerprint%3A%20fa2cf7f3abc01193a67a5eb65d4cb461c1c3eedfc4797bc3f78f8a7f941822fe%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Hacker News] Embedded Rust RTOS vs. C RTOS</title>
@@ -30,18 +42,6 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://tweedegolf.nl/en/blog/65/async-rust-vs-rtos-showdown/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201daec64550a440b40afb94d408327eb1bbfc18ec3d0919faf8387b7cb9bb2a2a&amp;body=Item%3A%20%22Embedded%20Rust%20RTOS%20vs.%20C%20RTOS%22%0AFingerprint%3A%201daec64550a440b40afb94d408327eb1bbfc18ec3d0919faf8387b7cb9bb2a2a%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Hacker News] Earth&apos;s organisms developed via evolution. What if the cosmos did, too?</title>
-      <link>https://www.smithsonianmag.com/science-nature/earths-organisms-developed-via-evolution-some-theorists-wonder-what-if-the-entire-cosmos-did-too-180989338/</link>
-      <guid isPermaLink="false">musement:pool:06de302643a6f0165fb5266febbb704f8f9ead04e8bf8e688b8d9a6dc0e5e596</guid>
-      <pubDate>Wed, 02 Sep 2026 17:46:42 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Hacker News | <strong>Author:</strong> JulianPGough</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Last year, I wrote a speculative cosmology piece called Blowtorch Theory. It rather cheekily extended the American theoretical physicist Lee Smolin&apos;s wonderful, powerful, oddly neglected theory of cosmological natural selection; the idea that universes reproduce, with variation, leading to Darwinian evolution of universes. While I was having dinner with my five-year-old, a friend texted to say that the piece was at number one on Hacker News. At the time, I didn&apos;t really know anything about the w</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.smithsonianmag.com/science-nature/earths-organisms-developed-via-evolution-some-theorists-wonder-what-if-the-entire-cosmos-did-too-180989338/">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2006de302643a6f0165fb5266febbb704f8f9ead04e8bf8e688b8d9a6dc0e5e596&amp;body=Item%3A%20%22Earth&apos;s%20organisms%20developed%20via%20evolution.%20What%20if%20the%20cosmos%20did%2C%20too%3F%22%0AFingerprint%3A%2006de302643a6f0165fb5266febbb704f8f9ead04e8bf8e688b8d9a6dc0e5e596%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Hacker News] Three sites made 215,128 “best software” pages for AI. Perplexity cites them</title>
@@ -104,18 +104,6 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02543-z">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20257f22102baba953b20fa5188c6dbeca743b72ddf259f6b03d2185dad66011f0&amp;body=Item%3A%20%22What%E2%80%99s%20your%20lab%E2%80%99s%20archetype%3F%20The%20answer%20could%20inform%20how%20you%20use%20AI%22%0AFingerprint%3A%20257f22102baba953b20fa5188c6dbeca743b72ddf259f6b03d2185dad66011f0%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Nature News] Order from disorder: do we need a new law of physics?</title>
-      <link>https://www.nature.com/articles/d41586-026-02685-0</link>
-      <guid isPermaLink="false">musement:pool:823a45564b4323f61361fdc68669efe60062467f3d1de42761db6faec5e528b3</guid>
-      <pubDate>Mon, 31 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Graham Shields</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 31 August 2026; doi:10.1038/d41586-026-02685-0 A radical proposal that evolutionary pressures apply to atoms as much as animals should provoke scientific debate.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02685-0">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20823a45564b4323f61361fdc68669efe60062467f3d1de42761db6faec5e528b3&amp;body=Item%3A%20%22Order%20from%20disorder%3A%20do%20we%20need%20a%20new%20law%20of%20physics%3F%22%0AFingerprint%3A%20823a45564b4323f61361fdc68669efe60062467f3d1de42761db6faec5e528b3%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Nature News] The leap second is dead. Long live the leap hour?</title>
       <link>https://www.nature.com/articles/d41586-026-02669-0</link>
       <guid isPermaLink="false">musement:pool:d991ce4dfdcfd2932cfa1b765a3d62465d5c6b2b342316c0076993d4f2071194</guid>
@@ -176,6 +164,18 @@
 <p><a href="https://www.nature.com/articles/d41586-026-01913-x">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20baa2159bc4ae4c9ca585ff8ff7fc4ecdd7e59a15d55a02fc259d30717e6cc92a&amp;body=Item%3A%20%22What%20employers%20are%20looking%20for%20in%20the%20age%20of%20AI%20%E2%80%94%20and%20four%20ways%20to%20provide%20it%22%0AFingerprint%3A%20baa2159bc4ae4c9ca585ff8ff7fc4ecdd7e59a15d55a02fc259d30717e6cc92a%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
+      <title>[Huberman Lab] Essentials: Diet &amp;amp; Nutrition for Mental Health | Dr. Chris Palmer</title>
+      <link>https://www.youtube.com/watch?v=E56LSFCNdkI</link>
+      <guid isPermaLink="false">musement:pool:9783aebdd629381fdbe44f22cb57a457ee482baf43b6c9d70622e7cd854830cd</guid>
+      <pubDate>Thu, 27 Aug 2026 12:00:25 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Huberman Lab | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Welcome to Huberman Lab Essentials, [music] where we revisit past episodes for the most potent and actionable science-based [music] tools for mental health, physical health, and performance. I&amp;#39;m Andrew Huberman, and I&amp;#39;m a professor of neurobiology and ophthalmology at Stanford School of Medicine. And now for my discussion with Dr. Chris Palmer. Chris, Dr. Palmer, thank you for being here. &amp;gt;&amp;gt; Thank you, Andrew, for having me. &amp;gt;&amp;gt; I have a lot of questions for you, and I&amp;#39;m r</p>
+<p><strong>Estimated Time:</strong> 35 min (video)</p>
+<hr/>
+<p><a href="https://www.youtube.com/watch?v=E56LSFCNdkI">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%209783aebdd629381fdbe44f22cb57a457ee482baf43b6c9d70622e7cd854830cd&amp;body=Item%3A%20%22Essentials%3A%20Diet%20%26amp%3B%20Nutrition%20for%20Mental%20Health%20%7C%20Dr.%20Chris%20Palmer%22%0AFingerprint%3A%209783aebdd629381fdbe44f22cb57a457ee482baf43b6c9d70622e7cd854830cd%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
       <title>[Nature News] A solution to the mystery of the missing neutrinos</title>
       <link>https://www.nature.com/articles/d41586-026-02628-9</link>
       <guid isPermaLink="false">musement:pool:4222f0743edd1888de4e5da42107387b55fdd5ddcebb1314f6ffb185356a00e2</guid>
@@ -186,6 +186,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02628-9">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%204222f0743edd1888de4e5da42107387b55fdd5ddcebb1314f6ffb185356a00e2&amp;body=Item%3A%20%22A%20solution%20to%20the%20mystery%20of%20the%20missing%20neutrinos%22%0AFingerprint%3A%204222f0743edd1888de4e5da42107387b55fdd5ddcebb1314f6ffb185356a00e2%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Animal-microbe partnerships date back to the dawn of complex life</title>
+      <link>https://www.nature.com/articles/d41586-026-02629-8</link>
+      <guid isPermaLink="false">musement:pool:09201e2bcb01026712c9b1ebf4f2600f015786b0dfea24f970e10cb4eff3ec5f</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 27 August 2026; doi:10.1038/d41586-026-02629-8 Geochemical clues hint that worm-like creatures in the Ediacaran period benefited from symbiosis with bacteria.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/d41586-026-02629-8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2009201e2bcb01026712c9b1ebf4f2600f015786b0dfea24f970e10cb4eff3ec5f&amp;body=Item%3A%20%22Animal-microbe%20partnerships%20date%20back%20to%20the%20dawn%20of%20complex%20life%22%0AFingerprint%3A%2009201e2bcb01026712c9b1ebf4f2600f015786b0dfea24f970e10cb4eff3ec5f%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] Glacier collapse caused Nepal’s deadly flash flood — a sign of things to come?</title>
@@ -294,6 +306,18 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/s41586-026-10577-6">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%2075d06276b62c95af99b9dc7f8d5ec241aae06e7469848b2ad6c6476b113948d6&amp;body=Item%3A%20%22Cell-type-specific%20eQTLs%20underlie%20the%20genetic%20architecture%20of%20complex%20traits%22%0AFingerprint%3A%2075d06276b62c95af99b9dc7f8d5ec241aae06e7469848b2ad6c6476b113948d6%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
+    </item>
+    <item>
+      <title>[Nature News] Amphibious stem-insect sheds light on colonization of land</title>
+      <link>https://www.nature.com/articles/s41586-026-10961-2</link>
+      <guid isPermaLink="false">musement:pool:e0dbbc823f654c5c349e84ed2473c98e945eb4cf7b67715493394befd1c07fe8</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
+<p><strong>Durability Tier:</strong> [EMERGING]</p>
+<p>Nature, Published online: 26 August 2026; doi:10.1038/s41586-026-10961-2 Restudy of a challenging fossil using cross-polarized light imaging and phylogenetic reconstruction identifies Chosha praecursor, a probable early-diverging insect, helping to bridge the longstanding ‘hexapod gap’ in the fossil record.</p>
+<p><strong>Estimated Time:</strong> 1 min (article)</p>
+<hr/>
+<p><a href="https://www.nature.com/articles/s41586-026-10961-2">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20e0dbbc823f654c5c349e84ed2473c98e945eb4cf7b67715493394befd1c07fe8&amp;body=Item%3A%20%22Amphibious%20stem-insect%20sheds%20light%20on%20colonization%20of%20land%22%0AFingerprint%3A%20e0dbbc823f654c5c349e84ed2473c98e945eb4cf7b67715493394befd1c07fe8%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
       <title>[Nature News] 3D bulk-resolved &lt;i&gt;g&lt;/i&gt;-wave altermagnetic order parameter in CrSb</title>
@@ -572,18 +596,6 @@
 <p><a href="https://www.nature.com/articles/d41586-026-02505-5">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d9876c4ecda85a4258d902047ecdef417f8bd799993f24c5d6e4f7799e8d2d6b&amp;body=Item%3A%20%22Harnessing%20nuclear%20power%20for%20a%20clean-energy%20future%22%0AFingerprint%3A%20d9876c4ecda85a4258d902047ecdef417f8bd799993f24c5d6e4f7799e8d2d6b%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
     <item>
-      <title>[Nature News] Evolutionary mystery revealed by structures of a key enzyme in the synthesis of glycolipids</title>
-      <link>https://www.nature.com/articles/d41586-026-02378-8</link>
-      <guid isPermaLink="false">musement:pool:d3e683d44378fc163597d21c10d0c4cdf51f393e91c64f39ba7bfc0ca20f5724</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Unknown</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02378-8 Structures of a protein used to make crucial sugar-carrying lipids uncover a surprising reaction mechanism and a built-in brake that emerged during primate evolution.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02378-8">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20d3e683d44378fc163597d21c10d0c4cdf51f393e91c64f39ba7bfc0ca20f5724&amp;body=Item%3A%20%22Evolutionary%20mystery%20revealed%20by%20structures%20of%20a%20key%20enzyme%20in%20the%20synthesis%20of%20glycolipids%22%0AFingerprint%3A%20d3e683d44378fc163597d21c10d0c4cdf51f393e91c64f39ba7bfc0ca20f5724%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
       <title>[Nature News] Five highlights from nuclear-power research</title>
       <link>https://www.nature.com/articles/d41586-026-02512-6</link>
       <guid isPermaLink="false">musement:pool:ca266c1987e52c84f93461a30f2093c1da377646a62cfcb7c93c314a00b90892</guid>
@@ -594,18 +606,6 @@
 <p><strong>Estimated Time:</strong> 1 min (article)</p>
 <hr/>
 <p><a href="https://www.nature.com/articles/d41586-026-02512-6">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%20ca266c1987e52c84f93461a30f2093c1da377646a62cfcb7c93c314a00b90892&amp;body=Item%3A%20%22Five%20highlights%20from%20nuclear-power%20research%22%0AFingerprint%3A%20ca266c1987e52c84f93461a30f2093c1da377646a62cfcb7c93c314a00b90892%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
-    </item>
-    <item>
-      <title>[Nature News] Does the shingles vaccine cut heart-disease risk? Mounting evidence suggests a link</title>
-      <link>https://www.nature.com/articles/d41586-026-02663-6</link>
-      <guid isPermaLink="false">musement:pool:1d57e320f055791c3192b3c99525c17c8512a17bc7e98ef0054008ceb274d01c</guid>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<p><strong>Source:</strong> Nature News | <strong>Author:</strong> Gemma Conroy</p>
-<p><strong>Durability Tier:</strong> [EMERGING]</p>
-<p>Nature, Published online: 26 August 2026; doi:10.1038/d41586-026-02663-6 Large study finds that people who received the ‘recombinant’ vaccine for the viral condition had a lower risk of cardiovascular problems.</p>
-<p><strong>Estimated Time:</strong> 1 min (article)</p>
-<hr/>
-<p><a href="https://www.nature.com/articles/d41586-026-02663-6">👉 Read Material</a> &nbsp;|&nbsp; <a href="https://github.com/ZhengHe-MD/ZhengHe-MD.github.io/issues/new?title=Musement%20Read%3A%201d57e320f055791c3192b3c99525c17c8512a17bc7e98ef0054008ceb274d01c&amp;body=Item%3A%20%22Does%20the%20shingles%20vaccine%20cut%20heart-disease%20risk%3F%20Mounting%20evidence%20suggests%20a%20link%22%0AFingerprint%3A%201d57e320f055791c3192b3c99525c17c8512a17bc7e98ef0054008ceb274d01c%0A%0ASubmit%20this%20issue%20to%20mark%20this%20material%20as%20read%20in%20Musement.">✅ Mark as Read in Musement</a></p>]]></description>
     </item>
   </channel>
 </rss>
