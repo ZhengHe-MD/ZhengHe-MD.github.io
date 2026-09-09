@@ -1,0 +1,49 @@
+{
+  "speaker": "zh_male_yuanboxiaoshu_uranus_bigtts",
+  "resourceId": "seed-tts-2.0",
+  "sampleRate": 24000,
+  "chunks": [
+    {
+      "hash": "e528ffeb3cb4f4d2",
+      "chars": 18,
+      "gapMs": 1200,
+      "cached": false
+    },
+    {
+      "hash": "2e768d79aefe392c",
+      "chars": 228,
+      "gapMs": 800,
+      "cached": false
+    },
+    {
+      "hash": "7e8fb8e4aef2c641",
+      "chars": 461,
+      "gapMs": 800,
+      "cached": false
+    },
+    {
+      "hash": "7979bfefe8099de2",
+      "chars": 217,
+      "gapMs": 800,
+      "cached": false
+    },
+    {
+      "hash": "17cd2f1e9c7611f5",
+      "chars": 188,
+      "gapMs": 800,
+      "cached": false
+    },
+    {
+      "hash": "7ecae7f40ec279e4",
+      "chars": 88,
+      "gapMs": 800,
+      "cached": false
+    },
+    {
+      "hash": "5cfe64cdf1a77f00",
+      "chars": 94,
+      "gapMs": 1500,
+      "cached": false
+    }
+  ]
+}
