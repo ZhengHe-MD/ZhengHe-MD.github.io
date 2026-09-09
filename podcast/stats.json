@@ -1,11 +1,24 @@
 {
   "_comment": "Derived by `node scripts/podcast.mjs stats` from Analytics Engine, which retains 90 days. Days before \"derivedFrom\" were carried over from earlier runs and this file is the only record of them that exists — do not delete it.",
-  "generatedAt": "2026-08-23T14:16:46.158Z",
-  "derivedFrom": "2026-05-25",
+  "generatedAt": "2026-09-09T13:49:44.022Z",
+  "derivedFrom": "2026-06-11",
   "rules": {
     "minSeconds": 60,
     "dedupHours": 24,
     "standard": "IAB Podcast Measurement v2.2"
   },
-  "episodes": {}
+  "episodes": {
+    "can-education-still-change-destiny": {
+      "total": 2,
+      "daily": {
+        "2026-08-23": 2
+      }
+    },
+    "phantom-traffic-jam": {
+      "total": 1,
+      "daily": {
+        "2026-09-09": 1
+      }
+    }
+  }
 }
