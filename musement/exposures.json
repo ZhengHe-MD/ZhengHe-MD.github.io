@@ -47,5 +47,10 @@
     "fingerprint": "d88dfbb9d82a9afbf8e5b0bad5b5cc621ae9e7e2d302f091059d2a984bb59f34",
     "action": "read",
     "exposed_at": "2026-09-08T07:08:15.934Z"
+  },
+  {
+    "fingerprint": "4891bab0e6659776bd5534e2ec6717173ff2f7e9951bb63bed19f9a8173bb2a1",
+    "action": "read",
+    "exposed_at": "2026-09-10T02:34:58.917Z"
   }
 ]
