@@ -52,5 +52,10 @@
     "fingerprint": "4891bab0e6659776bd5534e2ec6717173ff2f7e9951bb63bed19f9a8173bb2a1",
     "action": "read",
     "exposed_at": "2026-09-10T02:34:58.917Z"
+  },
+  {
+    "fingerprint": "1e5b8618d900b42a6d0b1d1d120a68d5a6363388e52c74af5ad67348ab1581c0",
+    "action": "read",
+    "exposed_at": "2026-09-11T08:37:36.694Z"
   }
 ]
